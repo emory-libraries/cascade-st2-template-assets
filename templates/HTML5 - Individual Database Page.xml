@@ -1,0 +1,87 @@
+<!--#cascade-skip--><html><!--#cascade-skip-->
+<html5bp/>
+    <head>
+        <system-region name="SITE SETTINGS"/>
+        <system-region name="DB_QUERY"/>
+        <title><system-region name="TITLE PREFIX"/><system-region name="TITLE"/><system-region name="TITLE SUFFIX"/></title>
+        <!-- <system-page-meta-keywords/>
+        <system-page-meta-description/>-->
+        <system-region name="METADATA 1"/>
+        <system-region name="METADATA 2"/>
+        <system-region name="METADATA 3"/>
+        <system-region name="CSS TEMPLATE"/>
+        <system-region name="CSS TEMPLATE SECTION"/>
+        <system-region name="CSS TEMPLATE IE"/>
+        <system-region name="CSS LOCAL"/>
+        <system-region name="CSS PAGE"/>
+        <system-region name="HEADCODE 1"/>
+        <system-region name="HEADCODE 2"/>
+        <system-region name="JQUERY"/>
+        <system-region name="JQUERY SUPPLEMENTAL1"/>
+        <system-region name="JQUERY SUPPLEMENTAL2"/>
+        <system-region name="ANALYTICS HEAD"/>
+    </head>
+    <body>
+        <div class="wrapper">
+            <!-- <system-region name="ANALYTICS BODY"/> -->
+            <!-- header tag added via xslt -->
+            <!--googleoff: all-->
+            <system-region name="HEADER"/>
+            <system-region name="UTILITY NAV"/>
+            <system-region name="UTILITY SEARCHBOX"/>
+            <system-region name="TOP NAV"/>
+            <!--googleon: all-->
+            <!-- content - may need subdivs for cols -->
+            <!-- section -->
+            <div class="container">
+              <system-region name="EMERGENCY MESSAGE"/>
+                <div id="context">
+                    <system-region name="SUB NAV"/>
+                    <system-region name="CONTEXT 1"/>
+                    <system-region name="CONTEXT 2"/>
+                    <system-region name="CONTEXT 3"/>
+                </div>
+                <!-- end optional left -->
+                <div id="main-content">
+                 
+                    <system-region name="PRECONTENT 1"/>
+                    <system-region name="PRECONTENT 2"/>
+                    <system-region name="PRECONTENT 3"/>
+                    <system-region name="DEFAULT"/>
+                    <system-region name="POST CONTENT 1"/>
+                    <system-region name="POST CONTENT 2"/>
+                    <system-region name="POST CONTENT 3"/>
+                    <system-region name="POST CONTENT 4"/>
+                 
+                </div>
+                <!-- end main-content -->
+                <div id="related">
+                    <system-region name="RELATED 1"/>
+                    <system-region name="RELATED 2"/>
+                    <system-region name="RELATED 3"/>
+                    <system-region name="RELATED 4"/>
+                    <system-region name="RELATED 5"/>
+                    <system-region name="RELATED 6"/>
+                </div>
+                <!-- end optional related/right -->
+            </div>
+            <!-- end .container -->
+            <!-- /container -->
+            <!--googleoff: all-->
+            <footer class="container" id="footer">
+                <system-region name="FOOTER 1"/>
+                <system-region name="FOOTER 2"/>
+                <system-region name="FOOTER 3"/>
+            </footer>
+            <!--googleon: all-->
+            <!-- footer -->
+        </div>
+        <!-- /wrapper -->
+        <system-region name="FOOTER SCRIPT1"/>
+        <system-region name="FOOTER SCRIPT2"/>
+        <system-region name="FOOTER SCRIPT3"/>
+        <system-region name="FOOTER SCRIPTS LAST"/>
+        <!-- <system-region name="ANALYTICS FOOTER"/> -->
+        <!-- end page js -->
+    </body>
+</html>

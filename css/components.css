@@ -1,0 +1,1231 @@
+/* modular components used on homepages and interior right and left columns */
+#related {
+    padding-top: 15px; /*override at media queries as needed*/
+}
+#related blockquote {
+    padding-right: 15px;
+}
+.boxed-heading {
+    background-color: #F5F5F5;
+    color: #666;
+    font-size: 1em;
+    margin: 10px 10px 10px 0;
+    padding: 4px 8px;
+    text-transform: none;
+}
+#context .boxed-heading, #related .boxed-heading, #related .news-feed .feed-heading {
+    background-color: #F5F5F5;
+    color: #666666;
+}
+#related .news-feed .feed-heading h2.feed-title a {
+    color: #666;
+}
+.thumbnails li {
+    background: none;
+    padding-left: 0;
+}
+.close {
+    font-size: 1.6em;
+}
+/*  FEATURES    */
+.feature h2 {
+    margin-bottom: 5px;
+}
+/*testimonial*/
+.feature.testimonial h3 {
+    margin-bottom: 8px;
+}
+.testimonial blockquote p, .profile blockquote p {
+    font: italic 1em "PT Serif", "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    line-height: normal;
+    color: #666;
+}
+/*profile default is floated left img */
+.profile img {
+    max-width: 40%;
+    float: left;
+    padding-right: 4%;
+    border-right: 1px solid #ccc;
+    margin-bottom: 1em;
+}
+.profile h2 {
+    float: left;
+    line-height: 1.2em;
+    margin-left: 4%;
+    max-width: 50%;
+}
+.profile h3, #related .profile h3 {
+    color: #848179;
+    font-size: 1.25em;
+    font-weight: normal;
+    margin-bottom: 0.25em;
+    clear: both;
+}
+.profile p.profile-summary {
+    clear: both;
+}
+.profile h3 + p.profile-summary {
+    margin-top: 1em;
+}
+#related .span3 .profile img {
+    max-width: 100%;
+    float: none;
+    margin-bottom: 0;
+    padding: 0;
+    border: none;
+}
+/*  NEWS FEEDS: styles for news center widget js output */
+
+.news-feed .emory-feed {
+    padding: 10px;
+}
+#related .news-feed .emory-feed {
+    padding-left: 0;
+}
+.news-feed .feed-heading {
+    /*margin:10px 0 0;*/ /*unneeded if using with inner div*/
+    padding: 4px 8px;
+    background-color: #C0C2C5;
+    min-height: 16px;
+}
+.news-feed .feed-heading h2.feed-title {
+    float: left;
+    font-weight: normal;
+    /*text-transform: uppercase;*/
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    /*color: #fff;*/
+}
+.news-feed h2.feed-title a, .news-feed.feed-block h2 a {
+    color: #fff;
+}
+.news-feed a.feed-icon, a.feed-icon {
+    float: right;
+    right: 15px;
+     
+    top: 15px;
+    position: absolute;
+}
+/*also includes img within*/
+.news-feed a.feed-icon img {
+    vertical-align: top;
+}
+.feed-feature {
+    clear: both;
+    width: 100%;
+    padding-left: 2px;
+}
+.feed-feature-content {
+    color: #333;
+}
+img.feed-feature-thumbnail {
+    margin-bottom: 10px;
+    padding: 0;
+    margin-left: 0;
+    margin-right: 10px;
+    float: left;
+    max-width: 98px; /*note thumbs may be unpredictable from other/non News Center sources*/
+    border: 4px solid #fff;
+}
+.span3 img.feed-feature-thumbnail {
+    display: none; /*too large when float removed*/
+}
+#related.span3 img.feed-feature-thumbnail {
+    display: block;
+    float: none;
+    max-width: 100%;
+    height: auto;
+}
+.feed-feature-summary {
+    font-size: 1em;
+    line-height: 1.37em;
+}
+.news-feed h3.feed-feature-headline {
+    /**emory home style*/
+    color: #0500A3;
+    font-size: 1.1em;
+    font-weight: bold;
+    line-height: 1.3em;
+    padding-left: 0;
+    padding-right: 10px;
+    margin-bottom: 5px;
+}
+h3.also-title {
+    color: #5B5C5E;
+}
+.news-feed h3.also-title { /*for feeds with features*/
+    color: #666666;
+    font-size: 1.1em;
+    font-weight: bold;
+    line-height: 1.3em;
+    margin: 0 0 10px 0;
+    clear:both;
+}
+.feed-body {
+    padding-left: 2px;
+}
+#related .feed-body {
+    padding-top: 10px;
+}
+.interior-narrow-feature-above .feed-body, .simple-headlines .feed-body {
+    padding-top: 11px;
+}
+.simple-headlines .feed-body {
+    background-image: none;
+}
+.headline-block {
+    clear: both;
+    max-width: 100%;
+}
+span.headline-title {
+    display: block;
+    padding-bottom: 10px;
+    line-height: 1.3em;
+}
+/*if dates are shown*/
+
+.news-feed span.headline-date {
+    color: #666;
+    float: left;
+    /* font-weight: bold; */
+    display: block;
+    width: 20%;
+    line-height: 1.2em;
+}
+.news-feed span.headline-date + span.headline-title {
+    width:75%;
+    float: left;
+}
+/* right col dates */
+#related .news-feed span.headline-date {
+    /*width: 30%;*/
+}
+#related .news-feed span.headline-date + span.headline-title {
+    width:65%;
+    float: left;
+}
+p.view-all, p.feed-feature-more {
+    text-align: left;
+    clear: both;
+}
+p.view-all {
+    clear: both;
+}
+/*smaller style*/
+.news-feed .interior-narrow-no-feature .feed-body {
+    background-image: none;
+    padding: 9px 2px;
+}
+.news-feed .interior-narrow-no-feature .feed-body {
+    clear: both;
+}
+.news-widget-feature .emory-feed div.feed-body {
+    padding-top: 8px;
+}
+.news-feed h3 {
+    font-size: 12px;
+    line-height: normal;
+}
+.news-feed .interior-narrow-no-feature .feed-body .headline-block {
+    padding-bottom: 5px;
+    clear: both;
+}
+.news-feed p.view-all {
+    font-size: 14px;
+    font-family: "PT Sans", Verdana, Arial, sans-serif;
+    clear: both;
+    /*font-style: italic;*/
+    border-top: solid 1px #ccc;
+    padding: 0;
+}
+.feed-block.headline-block .headline-title {
+    font-size: 11px;
+}
+.feed-block-feature {
+    background: url('/assets/css/img/underline-nav.gif') repeat-x center bottom;
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+}
+/*treat the first story as a feature; unfloat the date vs headline */
+.news-feed.feed-block .headline-block.feed-block-feature span.headline-date {
+    float: none;
+    padding-bottom: 1em;
+}
+.news-feed.feed-block .headline-block.feed-block-feature span.headline-title {
+    float: none;
+    max-width: 100%;
+    font-weight: bold;
+}
+/*if summaries are shown, bold the headline */
+.news-feed.feed-block .headline-block span.headline-title.summary {
+    font-weight: bold;
+    padding-bottom: 2px;
+}
+.news-feed.feed-block .headline-block p {
+    clear: both;
+}
+/*    social media icon lists         */
+.social {
+    min-height: 150px;
+    overflow: visible; /*bugs on height because images have no height attr?*/
+}
+#related .boxed-col-inner.social {
+    padding-left: 0;
+    padding-bottom: 10px;
+}
+#related .social-icons h2.boxed-heading + .boxed-col-inner ul {
+    padding-left: 5px; /*indent if using the boxed heading*/
+}
+ul.social-icons-list {
+    margin: 0 0 1em 0;
+    padding: 0;
+    list-style-type: none;
+}
+.social-icons-list li {
+    margin: 0 0 1em 0;
+    padding: 0;
+    background: none;
+}
+.social-icons-list li img {
+    margin-right: 1em;
+}
+.social-icons-list.small li {
+    max-height: 1.6em;
+}
+.social-icons-list.small img {
+    max-width: 16px;
+    max-height: 16px;
+}
+.social-icons-list.medium li {
+    max-height: 32px;
+}
+.social-icons-list.medium img {
+    max-width: 32px;
+    max-height: 32px;
+}
+.social-icons-list.large li {
+    max-height: 64px;
+}
+.social-icons-list.large img {
+    max-width: 64px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.social-icons-list.social-no-text li { /*only used with no-text option*/
+    float: left;/*width: 50%;*/
+}
+ul.social-icons-list li a span {
+    display: inline;
+}
+ul.social-icons-list.social-no-text.large li a span {
+    display: block;
+    padding: 0 0 8px 8px;
+}
+/* horizontal treatments - no link text*/
+.span3 ul.social-icons-list.small.social-no-text li, .span4 ul.social-icons-list.small.social-no-text li, .span5 ul.social-icons-list.small.social-no-text li {
+    width: 15%;
+}
+.span3 ul.social-icons-list.medium.social-no-text li, .span4 ul.social-icons-list.medium.social-no-text li, .span5 ul.social-icons-list.medium.social-no-text li {
+    width: 25%;
+}
+.span3 ul.social-icons-list.large.social-no-text li {
+    width: 50%;
+    margin-bottom: 20px;
+}
+.span4 ul.social-icons-list.large.social-no-text li, .span5 ul.social-icons-list.large.social-no-text li {
+    width: 33%;
+    margin-bottom: 20px;
+}
+/*  lists of links:    CONSOLIDATE WITH MAIN/SUBPAGE STYLES  */
+.audience-guide, .home-boxed-col-outer.audience-guide, #hero-col.home-boxed-col-outer.audience-guide {
+    outline: none;
+    background-color: #E6E6E6;
+}
+.audience-guide h2 {
+    color: #828282;
+    font-size: 12px;
+    font-weight: 700;
+    margin: 15px 5px 0 0;
+    padding: 0 0 8px 6px;
+    line-height: 17px; /*need to reset BS css*/
+}
+#related .audience-guide h2 {
+    padding: 10px 0 8px 6px;
+}
+.audience-guide ul.guides-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-image: url('/assets/css/img/underline-nav.gif');
+    background-position: 0 top;
+    background-repeat: repeat-x;
+}
+.audience-guide ul.guides-list li {
+    max-height: 29px;
+    line-height: 29px;
+    background-image: url('/assets/css/img/underline-nav.gif');
+    background-position: 0 bottom;
+    background-repeat: repeat-x;
+    margin: 0; /* reset core LI */
+    padding: 0;
+}
+.audience-guide ul.guides-list li a {
+    background-image: url('/assets/css/img/arrow-dark.gif');
+    background-repeat: no-repeat;
+    display: block;
+    padding-left: 6px;
+    max-width: 200px;
+    padding-right: 29px;
+    background-position: 92.5% 48%;
+}
+/*    right col variant    */
+#related .audience-guide ul.guides-list li a, #related .audience-guide h2 {
+    padding-left: 10px;
+}
+.audience-guide ul.guides-list li a:hover {
+    background-color: #C8C9CB;
+    text-decoration: none;
+}
+/*left oriented hero audience guides - not in padded wrapper*/
+.hero-right .audience-guide h2, .hero-right .audience-guide ul.guides-list {
+    margin-left: 10px;
+}
+p.breadcrumbs {
+    font-size: 1em;
+    line-height: 1.37em;
+    margin-bottom: 10px;
+}
+/* see also subpage.css list styles*/
+ul.quick-links {
+    list-style: none outside none;
+    margin: 0; /* wrapped in inner div for padding*/
+}
+ul.quick-links li {
+    line-height: 1.3em;
+    margin-bottom: 10px;
+    margin-left: 0;
+    background-image: none;
+    padding-left: 8px;
+}
+/*A-Z lists - TODO: try to streamline if we can stop relying on main-content */
+/* a-z filtering */
+#letter-filter {
+    width: auto;
+    height: auto;
+    margin: 0 0 2em 0;
+    padding: 0;
+    color: #666;
+}
+#letter-filter li {
+    background-image: none;
+    margin: 0;
+    padding: 0;
+}
+#main-content #letter-filter li {
+    display: block;
+    float: left;
+    height: 0.75em;
+    width: 3.018867924528%;
+    margin-right: 0.5%;
+    text-align: center;
+    padding: 0;
+}
+#letter-filter li#letter_all {
+    font-size: 1.09090909090909em;
+    width: 3.207547169811%;
+}
+#letter-filter li a {
+    text-decoration: none;
+    cursor: text;
+    display: block;
+    color: #666;
+    padding: 2px 0 1px 0;
+}
+#letter-filter li#letter_all a {
+    font-weight: normal;
+}
+#letter-filter li.enabled a {
+    color: #002878;
+    font-weight: bold;
+    background-color: #D0DAED;
+    cursor: pointer;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+#letter-filter li.enabled a:hover, #letter-filter li.enabled a.selected {
+    text-decoration: none;
+    background-color: #006;
+    color: #CCC;
+}
+/* end a-z filtering */
+
+/*   Responsive Slideshow     */
+/*hero styles for responsive slides */
+/* based on http://responsiveslides.com v1.25 by @viljamis */
+.slides {
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    max-width: 716px;
+    max-height: 318px;
+}
+.slides ul {
+    list-style: none;
+    margin: 0;
+}
+.slides ul li {
+    margin: 0;
+    padding: 0;
+    background: none;
+}
+.rslides p {
+    margin: 0;
+}
+/* full width variant */
+.span12 .slides {
+    max-width: 960px;
+}
+/* these apply to all configurations */
+.rslides {
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    max-width: 716px;
+    max-height: 318px;
+}
+/* full width variant */
+.span12 .rslides {
+    max-width: 960px;
+}
+.rslides li {
+    /*position: absolute;*/
+        -webkit-backface-visibility: hidden;
+    display: none;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+.rslides li:first-child {
+    position: relative;
+    display: block;
+    float: left;
+}
+.rslides img {
+    display: block;
+    height: auto; /*max 318? */
+    float: left;
+    width: 100%;
+    border: 0;
+}
+.rslides .caption {
+    display: block;
+    position: absolute;
+    z-index: 2;
+    font-size: 15px;
+    text-shadow: none;
+    color: #fff;
+    /* this would be nice progressive enhancement later 
+    background: #000;
+    background: rgba(0,0,0, .8);*/
+    background: url('/assets/css/img/bg-blue-trans.png')\9; /* ie8 and below - switch to .ie8 when we get that support */
+    background: rgba(0, 41, 121, 0.58);
+    color: #fff;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 15px;
+    min-height: 30px;
+    margin: 0;
+    max-width: none;
+    font-weight: 200;/*font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;*/
+}
+.rslides .caption a {
+    color: #fff;
+    text-decoration: none;
+}
+.rslides .caption a:hover, .rslides .caption a:focus, .rslides .caption a:active {
+    color: #dab000;
+}
+/* end apply to all configs */
+
+/* specific to pagination config */
+.rslides_tabs {
+    list-style: none;
+    padding: 0;
+    /* more prog enh stuff 
+    background: rgba(0,0,0,.25);
+    */
+    background: url('/assets/css/img/bg-blue-trans.png');
+    background: rgba(0, 41, 121, 0.58);
+    font-size: 18px;
+    list-style: none;
+    margin: 0 auto 50px;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    z-index: 3;
+    bottom: 0;
+}
+.rslides_tabs li {
+    display: inline;
+    float: none;
+    margin-right: 1px;
+}
+.rslides_tabs a {
+    width: auto;
+    line-height: 20px;
+    padding: 9px 20px;
+    height: auto;
+    background: transparent;
+    display: inline;
+}
+.rslides_tabs li:first-child {
+    margin-left: 0;
+}
+.rslides_tabs .rslides_here a {
+    background: rgba(255, 255, 255, .1);
+    color: #fff;
+    font-weight: bold;
+}
+/* end pagination config */
+
+/* previous/next arrows only */
+.callbacks {
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.callbacks li {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+.callbacks img {
+    display: block;
+    position: relative;
+    z-index: 1;
+    height: auto;
+    width: 100%;
+    border: 0;
+}
+.callbacks_nav {
+    position: absolute;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    top: 52%;
+    left: 0;
+    opacity: 0.7;
+    z-index: 3;
+    text-indent: -9999px;
+    overflow: hidden;
+    text-decoration: none;
+    height: 61px;
+    width: 38px;
+    background: transparent url('/assets/css/img/hero-arrows.png') no-repeat left top;
+    margin-top: -45px;
+}
+.callbacks_nav:active {
+    opacity: 1.0;
+}
+.callbacks_nav.next {
+    left: auto;
+    background-position: right top;
+    right: 0;
+}
+/* end previous/next arrows only */
+
+/* hero randomizer */
+.rslides.randomizer li {
+    position: static;
+}
+/* end hero randomizer */
+
+/* bootstrap carousel */
+.carousel {
+    line-height: inherit;
+}
+/* end bootstrap carousel */
+
+/*    video gallery    
+__________________________________________*/
+
+.video-playlist-container, .main-video {
+/*    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+*/}
+
+.video-gallery {
+    padding: .5em
+}
+
+.video-gallery .thumbnail img {
+    width:25%;
+    padding: .25em .25em;
+    position: relative;
+}
+
+
+
+.video-playlist {
+    overflow-y: scroll;
+    list-style: none;
+    margin-left:0;
+    width:100%
+}
+
+.video-playlist  {
+}
+
+.video-playlist li {
+    clear:both;
+    background: none;
+    padding: 0;
+    margin: 0 0 0 0;
+    position: relative;
+    float: left;
+    width: 99.9%;
+    border:none;
+}
+
+.video-playlist li:nth-child(even){
+    background-color:#f5f5f5;
+}
+
+.video-playlist li a {
+    width: 100%;
+    padding: 0;
+}
+
+.video-playlist li a:hover, .video-playlist li a:focus, .video-playlist li a:active {
+    text-decoration: none;
+    background: #ddd;
+}
+
+.video-playlist li h3 {
+    font-size: 1em;
+    line-height: 1.2em;
+    margin: .1em 5% 0 30%;
+}
+
+/* end video gallery */
+
+/*    callouts    
+__________________________________________*/
+ul.callouts-list {
+    list-style-type: none;
+    margin: 1em 0;
+    padding: 0;
+    max-width: 100%;
+}
+#related ul.callouts-list {
+    margin: 0; /* #related has top padding */
+}
+ul.callouts-list li {
+    margin: 0 0 1em 0;
+    background: none;
+    padding: 0;
+}
+.component ul.callouts-list li {
+    margin-bottom: 1em;
+}
+.callout { /*desktop/larger views*/
+    background-color: #C4C4C2;
+    display: block;
+}
+ #related .callout h3.callout-caption, #context .callout h3.callout-caption, .home-row .callout h3.callout-caption, #hero-row .callout h3.callout-caption{
+     display: none;
+}
+ .callout .learnMore {
+     display: block;
+     background-color: #C4C4C2;
+}
+.callout p {
+    margin-top: 0;
+}
+
+/* hours
+_________________________________________*/
+/*max-width (for smaller screen sizes) could/should be debated*/
+#related .component.quick-hours {
+    max-width: 240px;
+    margin-right: .5em;
+}
+#related .component.quick-hours .alt-heading {
+    font-family: "PT Sans Narrow", Verdana, Arial, sans-serif;
+    padding: 0 .25em;
+}
+#related .component.quick-hours table {
+    width: 100%;
+}
+#related .component.quick-hours tr:first-child {
+    font-weight: 700;
+}
+
+#related .component.quick-hours td:nth-child(2) {
+    text-align: right;
+}
+
+#related .component.quick-hours tr:nth-child(even) {
+    background-color: #efefef;
+}
+
+#related .component.quick-hours tr:last-child {
+    font-size: 14px;
+    font-style: italic;
+    text-align: right;
+    background-color: #fff;
+}
+
+/* content box
+_________________________________________*/
+#related .component .content-box {
+    border:none;
+}
+
+#related .component .content-box img.pull-left {
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+
+.content-box-row .span6 .emory-feed, 
+.content-box-row .boxed-col-inner, 
+.content-box-row .content-box.span6.equal-height > .boxed-heading {
+    /*border: 1px solid #E7E7E7;
+    box-shadow: 1px 1px 6px #ECECEC;*/
+}
+.content-box-row .span6 .emory-feed .feed-heading,
+.content-box-row .content-box.span6.equal-height .boxed-heading{
+    padding:0.25em 16px;
+    padding: 0.25em 1rem;
+    background-color: #F5F5F5;
+    position: relative;
+}
+.content-box-row .span6 .emory-feed .feed-heading h2{
+    margin: 0em;
+    position: relative;
+}
+
+.content-box-row .span6 .emory-feed .feed-body{
+    padding: 0.25em 1em;
+}
+.content-box-row .boxed-col-inner{
+    padding: 0.25em 0.6em;
+}
+
+.content-box-row .content-box.span12 {
+    position: relative;
+}
+.content-box-row .content-box.span6.equal-height {
+    padding: 1em 0;
+}
+.content-box-row .content-box.span6.equal-height > .boxed-heading{
+   margin:0;
+   border-bottom:0px;
+   font-size:1.5em;
+   box-shadow: none;
+}
+
+.content-box-row.boxed-col-inner{
+    border-top:0px;
+}
+.emory-feed .feed-feature {
+    padding: 0 1em;
+    width: auto;
+}
+#marbl-blog .feed-feature-headline {
+    font-size: 1.3em;
+    line-height: 1.25em;
+}
+
+/* see also homepage css variants   */
+
+/* Media Queries
+______________________________________________________________________________ */
+
+/*desktop*/
+@media (min-width: 980px) {
+#context .boxed-heading {
+ max-width: 184px;
+}
+#related {
+    padding-top: 75px;
+}
+#related ul.social-icons-list {
+ padding: 0 0 0 5px;
+}
+ #related .boxed-col-inner {
+ padding: 0 1em 1em 0;
+}
+ #context .alt-heading {
+ padding-left: 0.5em;
+}
+ .callout {
+ max-height: 140px;
+ max-width: 200px;
+ width: 200px; /*for IE 7-9*/
+ overflow: hidden;
+ background-color: #C4C4C2;
+}
+ .callout .learnMore {
+ display: block;
+}
+ .callout .learnMore {
+ display: block;
+ background-color: #C4C4C2;
+ font-size: 9px;
+ line-height: 12px;
+ font-family: "PT Serif", Georgia, "Times New Roman", Times, serif;
+ display: block;
+ padding: 4px 12px 2px 6px;
+ text-transform:uppercase;
+ max-width: 173px; /*190: 200-10 for right arrow position REVISE WITH PERCENTAGES*/
+ text-align:right;
+ background-image: url('/assets/css/img/arrow-dark.gif'); /*offline work*/
+ background-repeat:no-repeat;
+ background-position: right center;/*background-color: #F00;*/ /*debug*/
+}
+
+}
+
+/*portrait tablet to landscape and desktop*/
+@media (min-width: 768px) and (max-width: 979px) {
+ 
+ .callout {
+ max-width:100%;
+}
+ .callout .learnMore {
+ font-size: 9px;
+ line-height: 12px;
+ font-family: "PT Serif", Georgia, "Times New Roman", Times, serif;
+ display: block;
+ padding: 4px 6px 2px 6px;
+ text-transform:uppercase;
+ text-align: right;
+ padding: 1% 2%;
+ max-width: 96%;
+}
+#related.span3 {
+ overflow: hidden;
+}
+#related blockquote {/**/
+}
+
+/*debug extra width in right col at this view*/
+#related .news-feed .emory-feed {
+padding: 0;
+/*background-color: red;*/
+}
+#related .news-feed .feed-feature img.feed-feature-thumbnail {
+ border: none;
+ margin-top: 5px;
+}
+#related .headline-block {
+max-width: 90%;
+}
+/*#related .news-feed img, #related img.feed-feature-thumbnail, #related .feed-feature, #related .news-feed h3, #related .news-feed h2 {
+    display:none;
+}*/
+#related .news-feed .feed-heading {
+ max-width: 167px;
+}
+#related .news-feed p.view-all, #related .news-feed p.feed-feature-more {
+ max-width: 70%;
+ text-align: left;
+}
+ #related .news-feed span.headline-date {
+ color: #666;
+ float: left;
+ font-weight: bold;
+ display: block;
+float: none;
+width: 90%;
+}
+#related .news-feed span.headline-date + span.headline-title {
+float: none;
+width: 90%;
+}
+
+.span3 ul.social-icons-list.medium.social-no-text li, .span4 ul.social-icons-list.medium.social-no-text li, .span5 ul.social-icons-list.medium.social-no-text li {
+ width: 33%;
+}
+ .callout {
+ max-width:100%;
+}
+ .callout .learnMore {
+ font-family: Georgia, "Times New Roman", Times, serif;
+ text-align: right;
+ padding: 1% 2%;
+ max-width: 96%;
+}
+ #context.span3, #related.span3 {
+ overflow: hidden;
+}
+#related blockquote {/**/
+}
+
+/*debug extra width in right col at this view*/
+#related .news-feed .emory-feed {
+padding: 0;
+/*background-color: red;*/
+}
+#related .news-feed .feed-feature img.feed-feature-thumbnail {
+ border: none;
+ margin-top: 5px;
+}
+#related .headline-block {
+width: 90%;
+}
+/*#related .news-feed img, #related img.feed-feature-thumbnail, #related .feed-feature, #related .news-feed h3, #related .news-feed h2 {
+    display:none;
+}*/
+#related .news-feed .feed-heading {
+ max-width: 167px;
+}
+#related .news-feed p.view-all, #related .news-feed p.feed-feature-more {
+ max-width: 70%;
+ text-align: right;
+}
+.span3.news-feed.feed-block h2 a {
+/*width:60%;
+    float:left;*/
+}
+.span3.news-feed.feed-block a.feed-icon {
+ display: none;
+}
+
+}
+
+/*landscape phone to portrait tablet*/
+@media (max-width: 767px) {
+ 
+ #related .news-feed, #related .social, #related .testimonial, #related .calendar, #related .profile {
+/*padding-left: 10px;*/
+}
+.component {
+ border-top: 5px solid #EEEEEE;
+ padding-bottom: 10px;
+ padding-top: 10px;
+}
+.component.callout-set, .home-row .component.callout-set {
+ padding-bottom: 0;
+}
+#hero-row .component {
+ padding-top: 0;
+ border-top: 0;
+ padding-bottom: 0;
+}
+.component.audience-guide {
+ border-top: none;
+ padding-top: 0;
+}
+/*.home-row .boxed-col-outer h2.boxed-heading, .home-row .boxed-heading.callout-heading {
+   max-width: 100%;
+   margin: 10px;
+   padding: 0;
+   background-color: transparent;
+   color: #999;
+   clear: both; 
+} */
+.component .boxed-heading, #related .component .boxed-heading, #context .component .boxed-heading, .component.news-feed .feed-heading, .home-row .component .boxed-heading.callout-heading {
+ max-width: 100%;
+ margin: 0 0 10px 0;
+ padding: 0;
+    /*padding: 0;*/
+    background-color: transparent;
+ color: #999;
+ clear: both; /*misc clear after floated lists etc*/
+}
+ #related.span3 .profile > .testimonial {
+ border-bottom: none;
+}
+ .news-feed {
+ padding: 0;
+ margin: 0;
+}
+ .news-feed .feed-feature img.feed-feature-thumbnail {
+ display: block;
+ margin-right: 10px;
+}
+ .news-feed h3.feed-feature-headline {
+ padding: 0;
+}
+.news-feed a.feed-icon {
+ float: none;
+ padding-left: 15px;
+}
+ .feed-feature {
+ padding: 0;
+}
+/* news with dates */
+ .news-feed span.headline-date {
+    color: #666;
+    float: left;
+    /*font-weight: bold;*/
+    display: block;
+    padding-right: 2%;
+    width: 10%;
+}
+ .news-feed span.headline-date + span.headline-title {
+ width: 85%;
+ float: left;
+}
+/* .span3 .profile h2 {
+ float: left;
+ line-height: 20px;
+ margin-left: 4%;
+ max-width: 50%;
+}*/
+ div#main-content ol#letter-filter li {
+ font-size: 0.9em;
+ width: 3.25%;
+}
+ .boxed-col-outer {
+ background-color: #fff;
+ outline: none;
+ padding-top: 10px;
+}
+.boxed-col-outer:last-child {
+ border-bottom: 0;
+}
+ .audience-guide {
+ background-color:#E8E8E8;
+ margin-bottom: 10px;
+ padding-bottom: 10px;
+}
+ .audience-guide + div, .audience-guide + h2, .audience-guide + ul {
+ clear: both;
+ margin-top: 10px;
+}
+ .audience-guide ul.guides-list li {
+ float: left;
+ width: 49%;
+ margin: 0;
+}
+.audience-guide ul.guides-list li a {
+ max-width: 100%;
+}
+ #related .component.news-feed .feed-heading {
+ margin-left: 0;
+ padding: 0;
+ background-color: transparent;
+}
+ .news-feed .feed-heading h2.feed-title a, .news-feed.feed-block h2 a {
+ color: #999;
+}
+.component.news-feed .interior-narrow-no-feature .feed-body {
+ padding-left: 0;
+}
+ ul.quick-links li {
+ padding-left: 0;
+}
+/*social */
+.span3 ul.social-icons-list.large.social-no-text li {
+ margin-bottom: 20px;
+ width: 33%;
+}
+.span3 ul.social-icons-list.medium.social-no-text li, .span4 ul.social-icons-list.medium.social-no-text li, .span5 ul.social-icons-list.medium.social-no-text li {
+ width: 15%;
+}
+
+
+ /*callouts */
+    ul.callouts-list {
+ margin-bottom: 0;
+ padding-bottom: 0;
+}
+ .callout {
+ max-width: 96%;
+ padding: 2%;
+ background-color: #a0c3da;
+ background-image: url('/assets/css/img/callout-mobile-arrow-lg.png');
+ background-position: 96% center;
+ background-repeat: no-repeat;
+}
+ .callouts-list li a:hover {
+ text-decoration: none;
+}
+ .callout p {
+ background-position: center left;
+ background-image: url('/assets/css/img/callout-dots-crop.png');
+ background-repeat: repeat-x;
+ max-width: 65%;
+ margin-left: 3%;
+ text-align: right;
+}
+ .callout .learnMore {
+ display: inline;
+ text-transform: uppercase;
+ background-image: none;
+ padding-left: 3%;
+}
+ .callout.light .learnMore {
+ color: #C4ECF7;
+}
+ .callout.dark .learnMore {
+ color: #C4ECF7;
+}
+ #related .callout h3.callout-caption, #context .callout h3.callout-caption, .home-row .callout h3.callout-caption, #hero-row .callout h3.callout-caption {
+ display: block;
+ font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+ font-weight: bold;
+ font-size: 18px;
+ color: #fff;
+ line-height: 21px;
+ padding-bottom: 5px;
+ margin: 0;
+ text-transform:capitalize;
+ text-align: right;
+ max-width: 65%;
+ padding-left: 3%;
+}
+ #related .callout.dark h3.callout-caption, #context .callout.dark h3.callout-caption, .home-row .callout.dark h3.callout-caption, #hero-row .callout.dark h3.callout-caption {
+ color: #fff;
+}
+ .callout.dark.blue, .callout.dark.blue .learnMore {
+ background-color: #002878;
+}
+ .callout.dark.purple, .callout.dark.purple .learnMore {
+ background-color: #7c2b83;
+}
+ .callout.dark.red, .callout.dark.red .learnMore {
+ background-color: #8e302d;
+}
+ .callout.dark.orange, .callout.dark.orange .learnMore {
+ background-color: #935403;
+}
+ .callout.dark.green, .callout.dark.green .learnMore {
+ background-color: #566c11;
+}
+ .callout.dark.gray, .callout.dark.gray .learnMore {
+ background-color: #5b5c5e;
+}
+}
+
+/*landscape phones and down*/
+@media (max-width: 480px) {
+ .callout {
+ background-image: url('/assets/css/img/callout-mobile-arrow.png');
+}
+ .news-feed span.headline-date {
+ color: #666;
+ float: left;
+ font-weight: bold;
+ display: block;
+ width: 20%;
+}
+ .news-feed span.headline-date + span.headline-title {
+ width: 75%;
+ float: left;
+}
+#footer .social-icons-list li, #footer .social-icons-list.social-no-text li {
+    clear: none;
+    border: 0;
+    margin: 0;
+}

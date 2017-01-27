@@ -1,0 +1,12 @@
+/*news and events*/
+#main-content div.data-entry{
+    height:1550px;
+    padding-bottom:150px;
+}
+#main-content div.data-entry #section1 {
+    height:auto;
+}
+#main-content div.data-entry #section2, #main-content div.data-entry #section3 {
+    height:600px;
+}
+/*end news and events fixes*/

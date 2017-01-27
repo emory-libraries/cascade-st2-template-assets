@@ -1,0 +1,370 @@
+.toggles {display: none;}
+.js #emory-wide, .js #main-nav {display: block;}
+body {
+    padding-bottom: 0.53571428571429em;
+}
+.wrapper {
+    width: 960px;
+}
+#header h1 a {
+    filter: alpha(opacity=0); /* internet explorer */
+    opacity: 0;           /* fx, safari, opera, chrome */
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(opacity=0)"; /*IE8*/
+}
+
+#related {
+    padding-top: 75px;
+}
+.hero .library-search .search-scope{
+    width:77.75%;
+}
+
+
+/* section pages - 980 */
+.col2col3 #main-content.span9 .data-entry, .col2 #main-content.span12 .data-entry,
+.col2col3 #main-content.span9 > h1#title-heading, .col2col3 #main-content.span9 > .breadcrumbs,
+.col2 #main-content.span12 > h1#title-heading, .col2 #main-content.span12 > .breadcrumbs {
+    padding-left: 1.593252108716%;
+    margin-right: 15px;
+}
+.col2col3 .people.general li {
+    padding: 2em 1.36364em;
+}
+.col2 .people.general li.span6 {
+    width: 204.5px;
+}
+.col2col3 .people.general li figure {
+    clear: both;
+    float: left;
+    position: relative;
+    left: auto;
+    margin-bottom: 1em;
+}
+.col2col3 .people.general li h3, .col2col3 .people.general .no-results h3 {
+    clear: both;
+    float: none;
+}
+#main-content .intro.horizontal p, #main-content .intro.horizontal h2 {
+    margin-bottom: 1.75em;
+}
+/* thumbnails layout */
+.col2col3 .span9 .pages .span3 {
+    width: 32.27116526085599%; /* like span4 */
+}
+.col2col3 .span9 .pages .span3.three_n, .col2 .span12 .pages .span3.four_n {
+    margin-left: 0;
+    clear: both;
+}
+/* end thumbnails layout */
+
+/* people thumbnails */
+.people li figure .thumbnail {
+    min-height: 128px;
+    outline: 0;
+}
+.people.general li.odd {
+    margin-right: 1.5624%;
+}
+/* end people thumbnails */
+#main-content .intro.horizontal h1 {
+    width: 31.515151515152%;
+    float: left;
+        margin: 0.75em 0 0.25em 0;
+}
+#main-content .intro.horizontal p, #main-content .intro.horizontal h2 {
+    width: 64.848484848485%;
+    float: right;
+    border-left: 2px solid #D8D8D8;
+    padding: 0 0 0.5em 1.818181818182%;
+        margin-bottom: 0.5em;
+}
+.col2 #main-content .intro.horizontal h1 {
+    width: 22.903225806452%;
+}
+.col2 #main-content .intro.horizontal p, .col2 #main-content .intro.horizontal h2 {
+    width: 73.333333333333%;
+}
+.col2col3 #main-content .intro.horizontal h1 {
+    width: 31.515151515152%;
+}
+.col2col3 #main-content .intro.horizontal p, .col2col3 #main-content .intro.horizontal h2 {
+    width: 64.848484848485%;
+}
+/* end section pages */
+
+/* interior pages - adjust margins */
+/*adj main content on desktop only to reduce margins rel to 200px subnav*/
+    #main-content {
+        min-height: 400px;
+        padding-bottom: 1em;
+    }
+.subject-libs td a.figure{
+    width:100px;
+    height:100px;
+    overflow:hidden;
+    display:block;
+}
+    /* .row.col1col2col3 = 3 cols visible 
+    .row.col1col2 = left and center only 
+    .row.col2col3 = center and right
+    .row.col2 = center only 
+    */
+
+/*if left col enabled */
+    .row.col1col2col3 #main-content.span6, .row.col1col2 #main-content.span9 { /*debug - may have span9 left and span3 right */
+        /*margin-left:0;
+        margin-right:15px;*/
+        margin: 0 15px 0 0;
+    }
+    .row-fluid.col1col2col3 #main-content.span6, .row-fluid.col1col2 #main-content.span9 { /*debug - may have span9 left and span3 right */
+        /*margin-left:0;
+        margin-right:15px;*/
+        margin: 0 1.593252108716% 0 0;
+    }
+
+    /*
+    pad contents if no left col enabled - breadcrumbs, main h1, .data-entry (wysiwyg div)
+    note - if using additional pre-content regions, need to pad those also. use .data-entry?
+     */
+    .row.col2col3 #main-content.span9 .data-entry, .row.col2 #main-content.span12 .data-entry, .row.col2col3 #main-content.span9 > h1#title-heading, .row.col2col3 #main-content.span9 > .breadcrumbs,  .row.col2 #main-content.span12 > h1#title-heading, .row.col2 #main-content.span12 > .breadcrumbs  {
+        padding-left: 1.593252108716%;
+    }
+    /* full width content */
+    .row.col2 #main-content.span12 .data-entry { 
+        padding: 0 1.593252108716%;
+    }
+   
+
+/* interior pages - subnav and callout widths */
+nav#sub-nav, #context .callout, #related .callout {
+    width: 200px;
+}
+ul.callouts-list li a {
+    display-block;
+}
+ul.callouts-list li a .callout p span.learnMore {
+    display:block;
+}
+/* components media query css - copy of 980+ */
+#context .social, #context .boxed-heading {
+ max-width: 184px;
+}
+#related ul.social-icons-list, #context ul.social-icons-list {
+    padding: 0 0 0 5px;
+}
+ #related .boxed-col-inner, #context .boxed-col-inner {
+ padding: 0 1em 1em 0;
+}
+ #context .alt-heading {
+ padding-left: 1em;
+} 
+ .callout {
+ width: 200px; /*for IE 7-9*/
+ overflow: hidden;
+}
+ .callout .learnMore {
+ display: block;
+}
+ .callout .learnMore {
+ display: block;
+ font-size: 9px;
+ line-height: 12px;
+ color: #0500A3;
+ display: block;
+ padding: 4px 12px 2px 6px;
+ text-transform:uppercase;
+ max-width: 173px;
+ text-align:right;
+}
+#sub-nav {
+
+}
+
+nav#sub-nav {
+        max-width: 200px;
+        padding-bottom: 80px;
+}
+#hero-col.boxed-col-outer {
+    height: 318px;
+}
+.last ul.callouts-list, .last h2.callout-heading.boxed-heading, .hero-left ul.callouts-list {
+    margin-right: 20px;
+    width:200px;
+}
+.first ul.callouts-list, .first h2.callout-heading.boxed-heading, .hero-right ul.callouts-list {
+    margin-left: 20px;
+    width:200px;
+}
+.hero.span12{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+.hero h1{
+    background-color:#5b5c5e;
+    color:#fff;
+    margin-left:-30px;
+    padding:5px 0px 5px 30px;
+    width:57%;
+    position:relative;
+}
+
+.library-search input.span10 {
+  font-size:1.12em;
+  font-style:normal;
+  font-variant:normal;
+  font-weight:normal;
+  line-height:1.4em;
+  width:80%;
+}
+
+.library-search footer a{
+    background-color:#5b5c5e;
+}
+.library-search footer a.alternative{
+    padding-left:30px !important;
+    margin-left:-30px;
+}
+
+.rslides .caption{
+    background-color:#5b5c5e;  
+}
+
+.row-fluid.full-page #main-content > .hero.span12{
+    padding-bottom:0;
+    margin-bottom:3em;
+}
+.news-widget-simple-dates.news-feed{
+    overflow:auto;
+    height:auto !important;    
+}
+
+.utilities{
+    display:block;
+    float:left;
+    width:100%;
+    margin-left:0;
+    background-color:#FFFFFF;
+}
+.utility li{
+    list-style:none;
+    display:block;
+    position:relative;
+    float:left;
+    border-bottom:#f4f4f4 1px solid;
+}
+
+.links .clearfix{
+    width:100%;
+    float:left;
+    position:relative;
+}
+
+.col1col2.row-fluid .span9#main-content {
+  margin:0 1.59%;
+  width:72.6%;
+}
+#footer{
+    margin-top:3em;
+}
+
+/* homepage desktop media query - copied over from home.css */
+    /* heroes */
+    #hero-row {
+ max-height: 320px;
+ overflow: hidden;
+}
+ #hero-img {
+ min-height:318px;
+}
+    /* end heroes */
+    
+    /* boxes */
+#hero-col.boxed-col-outer {
+ /*margin-top:10px;*/
+min-height: 318px; /*if using outline. also test for breakpoints*/
+ margin-top: -1px;
+}
+ .home-row .boxed-col-outer {
+ min-height: 300px; /*adjust relative to height of callouts?*/
+}
+ .home-row .boxed-col-outer.stacked {
+ min-height: 135px;
+}
+ #hero-row .boxed-col-outer.stacked {
+ min-height: 100px;
+ padding-top: 10px;
+}
+ 
+ .home-row .boxed-col-outer.stacked .boxed-col-inner {
+ min-height: 80px;
+}
+ .equal-height.emory-feed {
+/*height:auto;*/
+    }
+ .home-row {
+ overflow:visible;
+ margin-top: 10px;
+ min-height:300px;
+}
+ .home-row.equal-height-row {
+ overflow: hidden;
+}
+/* end boxes */
+a[href]:after{
+    content:"";
+    display:none;
+    visibility:hidden;
+}
+        
+/* callouts */
+.callout {
+ height: 140px;
+}
+ ul.callouts-list {
+ max-width: 200px;
+ margin-top: 0; /*default*/
+}
+ .home-row.callouts-horiz-row {
+ min-height: 150px;
+}
+ .home-row ul.callouts-list.callouts-horiz {
+ margin-top:5px;
+}
+ .home-row ul.callouts-list.callouts-horiz li {
+ margin-bottom: 0px;
+}
+/* end callouts */
+/* min heights for ajax loaded content: max 6 headlines */
+    .news-feed.news-widget-feature, .news-feed.news-widget-simple-dates, .news-feed.news-widget-simple {
+ overflow: hidden;
+}
+ .span3.news-feed.news-widget-feature {
+ min-height: 480px;
+}
+ .span4.news-feed.news-widget-feature {
+ min-height: 465px;
+}
+ .span5.news-feed.news-widget-feature, .span6.news-feed.news-widget-feature {
+ min-height: 410px;
+}
+ .span3.news-feed.news-widget-simple-dates {
+ min-height: 415px;
+}
+ .span4.news-feed.news-widget-simple-dates {
+ min-height: 340px;
+}
+ .span5.news-feed.news-widget-simple-dates, .span6.news-feed.news-widget-simple-dates {
+ min-height: 335px;
+}
+ .span3.news-feed..news-widget-simple {
+ min-height: 315px;
+}
+ .span4.news-feed..news-widget-simple, .span5.news-feed..news-widget-simple, .span6.news-feed..news-widget-simple {
+ min-height: 310px;
+}
+
+/* typeahead */
+.twitter-typeahead input.tt-hint.span12 {
+    margin-top: -7px;
+}
+/* end typeahead */

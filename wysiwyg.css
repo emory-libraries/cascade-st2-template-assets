@@ -1,0 +1,6 @@
+/* add core text/image/table styles etc here for end users to preview while editing */
+/* if you want users to be able to apply a class, e.g. table-striped, it must be listed in the CSS Classes field in the Site Management screen */
+
+
+@import url('https://template.emory.edu/assets/css/wysiwyg.min.css');
+@import url('https://template.library.emory.edu/css/wysiwyg.min.css');
