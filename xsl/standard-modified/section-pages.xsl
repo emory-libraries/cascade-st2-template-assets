@@ -252,13 +252,7 @@
                             </xsl:when>
                             <xsl:otherwise>
                                 <xsl:if test="descendant::system-data-structure/thumbnail/section-icon !='---'">
-                                    <i>
-                                        <xsl:attribute name="class">
-                                            <xsl:text>icon-</xsl:text>
-                                            <xsl:value-of select="descendant::system-data-structure/thumbnail/section-icon"/>
-                                        </xsl:attribute>
-                                        <xsl:text> </xsl:text>
-                                    </i>
+                                    <i><xsl:attribute name="class"><xsl:text>fa fa-</xsl:text><xsl:value-of select="descendant::system-data-structure/thumbnail/section-icon"/></xsl:attribute><xsl:text> </xsl:text></i>
                                 </xsl:if>
                             </xsl:otherwise>
                         </xsl:choose>
@@ -304,13 +298,7 @@
                             </xsl:when>
                             <xsl:otherwise>
                                 <xsl:if test="descendant::system-data-structure/thumbnail/section-icon !='---'">
-                                    <i>
-                                        <xsl:attribute name="class">
-                                            <xsl:text>icon-</xsl:text>
-                                            <xsl:value-of select="descendant::system-data-structure/thumbnail/section-icon"/>
-                                        </xsl:attribute>
-                                        <xsl:text> </xsl:text>
-                                    </i>
+                                    <i><xsl:attribute name="class"><xsl:text>fa fa-</xsl:text><xsl:value-of select="descendant::system-data-structure/thumbnail/section-icon"/></xsl:attribute><xsl:text> </xsl:text></i>
                                 </xsl:if>
                             </xsl:otherwise>
                         </xsl:choose>
