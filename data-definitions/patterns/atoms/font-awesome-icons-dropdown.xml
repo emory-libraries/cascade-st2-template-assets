@@ -1,4 +1,5 @@
-<text type="dropdown" identifier="button-style" label="Select or type an icon name" help-text="Google Font Awesome icons for a list.">
+<text type="dropdown" default="---" identifier="icon" label="Select or type an icon name" help-text="Google Font Awesome icons for a list.">
+    <dropdown-item value="---"/>
     <!-- Web Application Icons -->
     <dropdown-item value="address-book" />
     <dropdown-item value="address-book-o" />
@@ -543,7 +544,8 @@
     <dropdown-item value="file-word-o" />
     <dropdown-item value="file-zip-o" />
     <!-- Spinner Icons
-Note: These icons work great with the fa-spin class. Check out the spinning icons example. -->
+        Note: These icons work great with the fa-spin class. Check out the spinning icons example.
+     -->
     <dropdown-item value="circle-o-notch" />
     <dropdown-item value="cog" />
     <dropdown-item value="gear" />
