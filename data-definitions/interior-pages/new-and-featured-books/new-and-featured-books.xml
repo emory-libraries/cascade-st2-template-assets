@@ -1,0 +1,27 @@
+<system-data-structure>
+    <group identifier="books" label="Books" collapsed="true">
+        <group identifier="book" label="Book" multiple="true">
+            <text identifier="isbn" label="ISBN"/>
+            <text identifier="call-number" label="Call Number"/>
+            <text identifier="hard-copy-link" label="Hard Copy Link" help-text="Insert link to hard copy info (e.g. - DiscoverE)"/>
+            <text identifier="ebook-link" label="Ebook Link" help-text="Insert link to database (e.g.-DiscoverE)"/>
+            <group identifier="featured" label="Featured" collapsed="true">
+                <text type="checkbox" identifier="featured" label="Featured Book?">
+                    <checkbox-item value="Yes"/>
+                </text>
+                <text wysiwyg="true" identifier="summary" label="Summary" wysiwyg-toolbar-remove="insert image,"/>
+            </group>
+            <group identifier="manual-entry" label="Manual Entry" collapsed="true">
+                <text identifier="title" label="Title"/>
+                <group identifier="authors" label="Author(s)">
+                    <text identifier="author" label="Author" multiple="true"/>
+                </group>
+                <asset type="file" identifier="cover" label="Cover"/>
+                <text identifier="preview-link" label="Preview Link"/>
+            </group>
+            <group identifier="categories" label="Categories" collapsed="true">
+                <asset type="page" identifier="category-page" label="Category Page" multiple="true" help-text="Select a Category Page"/>
+            </group>
+        </group>
+    </group>
+</system-data-structure>

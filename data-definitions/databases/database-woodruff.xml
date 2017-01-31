@@ -1,0 +1,133 @@
+<system-data-structure>
+    <group identifier="whsc" label="WHSC Options" collapsed="true">
+        <text type="checkbox" identifier="exclude" label="Exclude from Woodruff Listing">
+            <checkbox-item value="Yes"/>
+        </text>
+        <text type="checkbox" identifier="include" label="Include on WHSC Listing">
+            <checkbox-item value="Yes"/>
+        </text>
+        <text type="checkbox" identifier="whsc_feature" label="Feature on WHSC">
+            <checkbox-item value="Yes"/>
+        </text>
+        <text wysiwyg="true" identifier="description" label="WHSC Description"/>
+        <!--<group identifier="subjects" label="WHSC Subjects"><group identifier="subject" label="Subject" multiple="true"><text type="dropdown" identifier="name" label="Subject" default=" "><dropdown-item value=""/><dropdown-item value="Clinical"/><dropdown-item value="Drug Information"/><dropdown-item value="Medicine"/><dropdown-item value="Medical Images"/><dropdown-item value="Nursing"/><dropdown-item value="Public Health"/></text><text type="checkbox" identifier="featured" label="Featured in this Subject"><checkbox-item value="Yes"/></text></group></group>-->
+    </group>
+    <text type="dropdown" identifier="default_collection" label="Default Collection" restrict-to-groups="Standard Template Asset Managers,administrators" default="library-databases-main">
+        <dropdown-item value="library-databases-main"/>
+        <dropdown-item value="library-databases-health"/>
+        <dropdown-item value="library-databases-business"/>
+    </text>
+    <text identifier="link" label="Database Link" required="true"/>
+    <text type="calendar" identifier="new-until" label="New Until"/>
+    <text identifier="coverage" label="Coverage"/>
+    <text type="dropdown" identifier="location" label="Location (for Internal Use Only)">
+        <dropdown-item value=""/>
+        <dropdown-item value="Beck Center"/>
+        <dropdown-item value="Business Library"/>
+        <dropdown-item value="Chemistry Library"/>
+        <dropdown-item value="Electronic Data Center"/>
+        <dropdown-item value="GALILEO"/>
+        <dropdown-item value="Information Gateway"/>
+        <dropdown-item value="Infocommons Menu"/>
+        <dropdown-item value="Infocommons: Non Web Database"/>
+        <dropdown-item value="Stand-Alone CD"/>
+        <dropdown-item value="Web"/>
+    </text>
+    <text type="checkbox" identifier="fulltext" label="Full Text">
+        <checkbox-item value="Yes"/>
+    </text>
+    <text wysiwyg="true" identifier="description" label="Database Description"/>
+    <text wysiwyg="true" identifier="alert" label="Notice or Alert"/>
+    <text type="radiobutton" identifier="alert-type" label="Notice Type" default="Note">
+        <radio-item value="Note"/>
+        <radio-item value="Alert"/>
+    </text>
+    <!--<group identifier="subject" label="Subject" restrict-to-groups="Library - Woodruff Publishers"><text type="dropdown" identifier="subject-dropdown" label="Subject" multiple="true" default=" "><dropdown-item value=""/><dropdown-item value="African American Studies"/><dropdown-item value="African Studies (Sub-Saharan)"/><dropdown-item value="Anthropology"/><dropdown-item value="Archives and Primary Sources"/><dropdown-item value="Area Studies"/><dropdown-item value="Art and Architecture"/><dropdown-item value="Audio and Video Online"/><dropdown-item value="Biographies"/><dropdown-item value="Biological Sciences"/><dropdown-item value="Book Reviews"/><dropdown-item value="Business"/><dropdown-item value="Career and Job Information"/><dropdown-item value="Chemistry"/><dropdown-item value="Chinese Studies"/><dropdown-item value="Classics"/><dropdown-item value="Clinical"/><dropdown-item value="Comparative Literature"/><dropdown-item value="Computer Science"/><dropdown-item value="Current Events"/><dropdown-item value="Dance"/><dropdown-item value="Development Studies"/><dropdown-item value="Dissertations and Theses"/><dropdown-item value="Drug Information"/><dropdown-item value="Economics"/><dropdown-item value="Education"/><dropdown-item value="English and American Literature"/><dropdown-item value="Environmental Sciences"/><dropdown-item value="Ethnic Studies"/><dropdown-item value="Film and Media Studies"/><dropdown-item value="French Literature and Language"/><dropdown-item value="Georgia"/><dropdown-item value="Government Information"/><dropdown-item value="Grants and Funding"/><dropdown-item value="Health"/><dropdown-item value="History, Ancient (-400)"/><dropdown-item value="History, Early Modern (1450-1800)"/><dropdown-item value="History, Middle Ages (400-1450)"/><dropdown-item value="History, Modern (1800-)"/><dropdown-item value="History, U.S."/><dropdown-item value="History, World"/><dropdown-item value="Japanese Studies"/><dropdown-item value="Jewish Studies"/><dropdown-item value="Journalism"/><dropdown-item value="Korean Studies"/><dropdown-item value="Latin American and Caribbean Studies"/><dropdown-item value="Law"/><dropdown-item value="LGBT Studies"/><dropdown-item value="Library and Information Science"/><dropdown-item value="Linguistics"/><dropdown-item value="Mathematics"/><dropdown-item value="Medicine"/><dropdown-item value="Medical Images"/><dropdown-item value="Middle East Studies"/><dropdown-item value="Multidisciplinary Databases"/><dropdown-item value="Music"/><dropdown-item value="Neuroscience, Animal Behavior"/><dropdown-item value="News Sources"/><dropdown-item value="Nursing"/><dropdown-item value="Philosophy"/><dropdown-item value="Physical Education and Sports"/><dropdown-item value="Physics"/><dropdown-item value="Political Science"/><dropdown-item value="Psychology"/><dropdown-item value="Psychology, Measurement instruments"/><dropdown-item value="Public Health"/><dropdown-item value="Reference Sources"/><dropdown-item value="Religion"/><dropdown-item value="Russian, East European and Eurasian Studies"/><dropdown-item value="Science and Technology"/><dropdown-item value="Sociology"/><dropdown-item value="South Asian Studies"/><dropdown-item value="Spanish"/><dropdown-item value="Statistics and Demography"/><dropdown-item value="Theater Studies"/><dropdown-item value="Women's and Gender Studies"/></text></group>-->
+    <group identifier="subjects" label="Subjects">
+        <group identifier="subject" label="Subject" multiple="true">
+            <text type="dropdown" identifier="name" label="Subject" default=" ">
+                <dropdown-item value=""/>
+                <dropdown-item value="African American Studies"/>
+                <dropdown-item value="African Studies (Sub-Saharan)"/>
+                <dropdown-item value="American Indian Studies"/>
+                <dropdown-item value="Anthropology"/>
+                <dropdown-item value="Archives and Primary Sources"/>
+                <dropdown-item value="Area Studies"/>
+                <dropdown-item value="Art and Architecture"/>
+                <dropdown-item value="Audio and Video Online"/>
+                <dropdown-item value="Biographies"/>
+                <dropdown-item value="Biological Sciences"/>
+                <dropdown-item value="Book Reviews"/>
+                <dropdown-item value="Business"/>
+                <dropdown-item value="Career and Job Information"/>
+                <dropdown-item value="Chemistry"/>
+                <dropdown-item value="Chinese Studies"/>
+                <dropdown-item value="Classics"/>
+                <dropdown-item value="Clinical"/>
+                <dropdown-item value="Comparative Literature"/>
+                <dropdown-item value="Computer Science"/>
+                <dropdown-item value="Current Events"/>
+                <dropdown-item value="Dance"/>
+                <dropdown-item value="Development Studies"/>
+                <dropdown-item value="Dissertations and Theses"/>
+                <dropdown-item value="Drug Information"/>
+                <dropdown-item value="Economics"/>
+                <dropdown-item value="Education"/>
+                <dropdown-item value="English and American Literature"/>
+                <dropdown-item value="Environmental Sciences"/>
+                <dropdown-item value="Ethnic Studies"/>
+                <dropdown-item value="Film and Media Studies"/>
+                <dropdown-item value="French Literature and Language"/>
+                <dropdown-item value="Georgia"/>
+                <dropdown-item value="Government Information"/>
+                <dropdown-item value="Grants and Funding"/>
+                <dropdown-item value="Health"/>
+                <dropdown-item value="History, Ancient (-400)"/>
+                <dropdown-item value="History, Early Modern (1450-1800)"/>
+                <dropdown-item value="History, Middle Ages (400-1450)"/>
+                <dropdown-item value="History, Modern (1800-)"/>
+                <dropdown-item value="History, U.S."/>
+                <dropdown-item value="History, World"/>
+                <dropdown-item value="Institutional Productivity and Research Analytics"/>
+                <dropdown-item value="Japanese Studies"/>
+                <dropdown-item value="Jewish Studies"/>
+                <dropdown-item value="Journalism"/>
+                <dropdown-item value="Korean Studies"/>
+                <dropdown-item value="Latin American and Caribbean Studies"/>
+                <dropdown-item value="Law"/>
+                <dropdown-item value="LGBT Studies"/>
+                <dropdown-item value="Library and Information Science"/>
+                <dropdown-item value="Linguistics"/>
+                <dropdown-item value="Mathematics"/>
+                <dropdown-item value="Medicine"/>
+                <dropdown-item value="Medical Images"/>
+                <dropdown-item value="Middle East Studies"/>
+                <dropdown-item value="Multidisciplinary Databases"/>
+                <dropdown-item value="Music"/>
+                <dropdown-item value="Neuroscience, Animal Behavior"/>
+                <dropdown-item value="News Sources"/>
+                <dropdown-item value="Nursing"/>
+                <dropdown-item value="Philosophy"/>
+                <dropdown-item value="Physical Education and Sports"/>
+                <dropdown-item value="Physics"/>
+                <dropdown-item value="Political Science"/>
+                <dropdown-item value="Psychology"/>
+                <dropdown-item value="Psychology, Measurement instruments"/>
+                <dropdown-item value="Public Health"/>
+                <dropdown-item value="Reference Sources"/>
+                <dropdown-item value="Religion"/>
+                <dropdown-item value="Russian, East European and Eurasian Studies"/>
+                <dropdown-item value="Science and Technology"/>
+                <dropdown-item value="Sociology"/>
+                <dropdown-item value="South Asian Studies"/>
+                <dropdown-item value="Spanish"/>
+                <dropdown-item value="Statistics"/>
+                <dropdown-item value="Theater Studies"/>
+                <dropdown-item value="Women's and Gender Studies"/>
+            </text>
+            <text type="checkbox" identifier="featured" label="Featured" restrict-to-groups="Library - Woodruff Publishers">
+                <checkbox-item value="Yes"/>
+            </text>
+        </group>
+    </group>
+</system-data-structure>

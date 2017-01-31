@@ -1,0 +1,35 @@
+<system-data-structure>
+    <group identifier="callout" label="Callout">
+        <group identifier="image" label="Callout Image">
+            <text type="dropdown" identifier="background-color" label="Mobile color" default="Light blue" help-text="Select a background color for mobile version">
+                <dropdown-item value="Dark blue"/>
+                <dropdown-item value="Dark red"/>
+                <dropdown-item value="Dark green"/>
+                <dropdown-item value="Dark gray"/>
+                <dropdown-item value="Dark orange"/>
+                <dropdown-item value="Dark purple"/>
+            </text>
+            <asset type="file" identifier="image_name" label="Internal Image (200x120)" help-text="200x120"/>
+            <text identifier="external" label="-or- External Image URL (200x120)" help-text="200x120"/>
+            <text identifier="alt-text" label="Text for Image Caption" required="true" help-text="Descriptive text for visually impaired users"/>
+        </group>
+        <group identifier="link" label="Callout Link">
+            <asset type="page" identifier="page" label="Link to Internal Page"/>
+            <text identifier="external" label="-or- Link to External URL"/>
+            <text type="checkbox" identifier="new_window" label="Open link in new window: ">
+                <checkbox-item value="Yes"/>
+            </text>
+            <text identifier="link-text" label="Link Text" required="true" help-text="Text on link beneath image"/>
+        </group>
+        <group identifier="placement" label="Callout Placement">
+            <text type="dropdown" identifier="location" label="Location for Callout" default="Select a Location:">
+                <dropdown-item value="Select a Location"/>
+                <dropdown-item value="Site-wide Right" restrict-to-groups="Standard Template Asset Managers,administrators"/>
+                <dropdown-item value="Site-wide Left" restrict-to-groups="Standard Template Asset Managers,administrators"/>
+                <dropdown-item value="Selected Pages Right"/>
+                <dropdown-item value="Selected Pages Left"/>
+            </text>
+            <asset type="page" identifier="publish_to" label="Display on selected pages" multiple="true"/>
+        </group>
+    </group>
+</system-data-structure>

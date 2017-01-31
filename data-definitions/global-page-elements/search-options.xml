@@ -1,0 +1,22 @@
+<system-data-structure>
+    <group identifier="search-page" label="Search Page">
+        <asset type="page" identifier="page" label="Search Page"/>
+        <text identifier="placeholder" label="Default Placeholder" default="Find books, eBooks, articles, and more"/>
+    </group>
+    <group identifier="search-option" label="Search Option" multiple="true">
+        <text type="checkbox" identifier="default" label="Default" help-text="The option that is checked by default. Only use this once.">
+            <checkbox-item value="Yes"/>
+        </text>
+        <text identifier="name" label="System Name"/>
+        <group identifier="form-action" label="Form Submit ">
+            <asset type="page" identifier="page" label="Internal Page" render-content-depth="4" help-text="Use this if your form submits to a page inside Cascade."/>
+            <text identifier="external" label="External URL" default="http://" help-text="If you are not submitting to a page within Cascade, use this field."/>
+        </group>
+        <text identifier="params" label="Required Parameters" help-text="Ex: discoverE requires 'fn=search' to be part of the URL."/>
+        <text identifier="field-id" label="Field Name"/>
+        <text identifier="placeholder" label="Field Placeholder"/>
+        <text identifier="short-placeholder" label="Short Placeholder" help-text="This will be used in the site header if you enter text here."/>
+        <text identifier="dropdown-label" label="Dropdown Label"/>
+        <text wysiwyg="true" identifier="what-does-this-search" label="What does this search?" help-text="Text for the 'what does this search' area"/>
+    </group>
+</system-data-structure>

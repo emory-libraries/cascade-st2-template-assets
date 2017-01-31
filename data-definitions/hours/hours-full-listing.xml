@@ -1,0 +1,9 @@
+<system-data-structure>
+    <text wysiwyg="true" identifier="announcement" label="Announcement Text"/>
+    <text identifier="range" label="Range Title (i.e. Summer Hours)"/>
+    <group identifier="hours-listing" multiple="true">
+        <text identifier="override-title" label="Override Default Title"/>
+        <asset type="block" identifier="hours-block" label="Hours Blocks" render-content-depth="2"/>
+    </group>
+    <text wysiwyg="true" identifier="post" label="Post-Hours Text"/>
+</system-data-structure>

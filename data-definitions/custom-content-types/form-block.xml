@@ -1,0 +1,7 @@
+<system-data-structure>
+    <text multi-line="true" identifier="form_code" label="Code"/>
+    <group identifier="receiver-contact" label="Submitted Form Info ">
+        <text identifier="name" label="Name of person to receive form"/>
+        <text identifier="email" label="Email address to send the form"/>
+    </group>
+</system-data-structure>

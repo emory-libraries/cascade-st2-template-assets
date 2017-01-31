@@ -1,0 +1,20 @@
+<system-data-structure>
+    <text identifier="heading" label="Heading" default="Browse Databases"/>
+    <group identifier="filter-list" label="Filter List" multiple="true">
+        <text identifier="heading" label="Heading"/>
+        <asset type="block" identifier="list" label="List" render-content-depth="3"/>
+        <text type="checkbox" identifier="hide" label="Hide this list" help-text="Hide a list without removing it.">
+            <checkbox-item value="Yes"/>
+        </text>
+        <text type="checkbox" identifier="expanded" label="Expanded by Default" help-text="Checking this item will cause this list within the accordion to be expanded unless the user collapses it.">
+            <checkbox-item value="Yes"/>
+        </text>
+    </group>
+    <group identifier="aside" label="Post Filter Link">
+        <text identifier="text" label="Link Text"/>
+        <asset type="page" identifier="page" label="Internal Page"/>
+        <text identifier="external" label="External URL"/>
+        <asset type="file" identifier="file" label="Document"/>
+        <text wysiwyg="true" identifier="wysiwyg" label="-- OR -- WYSIWYG Content"/>
+    </group>
+</system-data-structure>

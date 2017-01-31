@@ -1,0 +1,52 @@
+<system-data-structure>
+    <group identifier="hours-main" label="Library Hours">
+        <text identifier="title" label="Hours Title"/>
+        <asset type="page" identifier="page" label="Link to Site"/>
+        <text identifier="external" label="-OR - External URL"/>
+        <group identifier="default-hours" label="Default Hours">
+            <group identifier="hour-set" label="Day" multiple="true">
+                <text type="dropdown" identifier="day" label="Day">
+                    <dropdown-item value="Monday"/>
+                    <dropdown-item value="Tuesday"/>
+                    <dropdown-item value="Wednesday"/>
+                    <dropdown-item value="Thursday"/>
+                    <dropdown-item value="Friday"/>
+                    <dropdown-item value="Saturday"/>
+                    <dropdown-item value="Sunday"/>
+                </text>
+                <text type="checkbox" identifier="allhours" label="Open 24 Hours">
+                    <checkbox-item value="Yes"/>
+                </text>
+                <text type="checkbox" identifier="closed" label="Closed">
+                    <checkbox-item value="Yes"/>
+                </text>
+                <text identifier="hours" label="Hours"/>
+            </group>
+        </group>
+        <group identifier="exception-hours" label="Exception Hours">
+            <group identifier="hour-set" label="Day(s)" multiple="true">
+                <text type="calendar" identifier="start-date" label="Start Date" help-text="Select any future date that will have exceptions to the default hours."/>
+                <text type="calendar" identifier="end-date" label="End Date" help-text="If no end date is included, the days covered will be the start date only."/>
+                <text type="checkbox" identifier="allhours" label="Open 24 Hours">
+                    <checkbox-item value="Yes"/>
+                </text>
+                <text type="checkbox" identifier="closed" label="Closed">
+                    <checkbox-item value="Yes"/>
+                </text>
+                <text identifier="hours" label="Hours"/>
+            </group>
+        </group>
+        <group identifier="all-hours" label="All Library Hours">
+            <asset type="page" identifier="full-listing-page" label="Full Listing Page" render-content-depth="1"/>
+            <text identifier="external" label="-OR - External URL"/>
+            <text identifier="link-text" label="Link Text" default="View Table of All Hours"/>
+        </group>
+        <group identifier="placement" label="Placement Options">
+            <text type="dropdown" identifier="location" label="Placement" default="Select a Location:">
+                <dropdown-item value="Select a Location:"/>
+                <dropdown-item value="Selected Pages Right"/>
+            </text>
+            <asset type="page" identifier="publish_to" label="Display on selected pages" multiple="true"/>
+        </group>
+    </group>
+</system-data-structure>

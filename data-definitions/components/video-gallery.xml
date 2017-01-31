@@ -1,0 +1,11 @@
+<system-data-structure>
+    <group identifier="video-gallery" label="Video Gallery">
+        <group identifier="video" multiple="true">
+            <text identifier="title" label="Title" required="true"/>
+            <text identifier="youtube-url" label="YouTube Link" required="true" help-text="Paste in the full YouTube address"/>
+            <text type="checkbox" identifier="open-first" label="Open First?" help-text="Only check one video - it will appear in the main player when the page loads.">
+                <checkbox-item value="Yes"/>
+            </text>
+        </group>
+    </group>
+</system-data-structure>

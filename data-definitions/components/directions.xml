@@ -1,0 +1,13 @@
+<system-data-structure>
+    <text identifier="title" label="Title"/>
+    <text multi-line="true" identifier="map-embed-code" label="Map Embed Code"/>
+    <group identifier="address" label="Address" multiple="true">
+        <text identifier="name" label="Name"/>
+        <text wysiwyg="true" identifier="flex-entry" label="Flexible Entry" wysiwyg-toolbar-remove="insert image,insert table,"/>
+        <text multi-line="true" identifier="street-address" label="Street Address"/>
+        <text identifier="city" label="City" size="50"/>
+        <text identifier="state" label="State" size="2"/>
+        <text identifier="zip-code" label="Zip Code" size="10"/>
+        <text identifier="phone" label="Phone" size="13"/>
+    </group>
+</system-data-structure>

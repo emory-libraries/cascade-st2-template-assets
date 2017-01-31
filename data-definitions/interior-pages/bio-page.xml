@@ -1,0 +1,187 @@
+<system-data-structure>
+  <group identifier="thumbnail" label="Photo">
+    <asset type="file" identifier="photo-bio" label="Main Photo - 150x150px"/>
+  </group>
+  <group identifier="page-options" label="Page Options">
+    <text type="radiobutton" identifier="layout" label="Section Display" default="Accordions">
+      <radio-item value="Standard"/>
+      <radio-item value="Accordions"/>
+    </text>
+  </group>
+  <group identifier="main-content-bio" label="Main Page Content">
+    <text identifier="first_main" label="First Name for Sorting" required="true"/>
+    <text identifier="last_main" label="Last Name for Sorting" required="true"/>
+    <text type="checkbox" identifier="leadership" label="Leadership / Administration">
+      <checkbox-item value="Yes"/>
+    </text>
+    <!-- <group identifier="photos" label="Photos" collapsed="true">
+      <asset type="file" identifier="photo-bio" label="Photo"/>
+     
+    </group>-->
+    <group identifier="roletitle" label="Roles/Titles" multiple="true">
+      <text identifier="role" label="Role/Title"/>
+      <text identifier="org" label="Organization/Institution"/>
+    </group>
+    <text wysiwyg="true" identifier="main-bio" label="Biography Text"/>
+    <group identifier="contact" label="Contact Information">
+      <text identifier="email" label="Email Address" required="true"/>
+      <text identifier="phone" label="Phone Number" required="true"/>
+      <text identifier="fax" label="Fax"/>
+      <text identifier="website" label="Website URL" multiple="true"/>
+      <group identifier="mailing_address" label="Mailing Address">
+        <text identifier="addr_org" label="Organization"/>
+        <text identifier="addr_line1" label="Street Address Line 1"/>
+        <text identifier="addr_line2" label="Streeet Address Line 2"/>
+        <text identifier="addr_city" label="City"/>
+        <text identifier="addr_state" label="State"/>
+        <text identifier="addr_zip" label="Zip Code"/>
+      </group>
+    </group>
+    <group identifier="education" label="Education" multiple="true" collapsed="true">
+      <text identifier="degree" label="Degree Type"/>
+      <text identifier="details" label="Degree"/>
+      <text identifier="school" label="School"/>
+      <text identifier="location" label="Location"/>
+      <text identifier="year" label="Year"/>
+    </group>
+    <group identifier="research" label="Research and Publications" collapsed="true">
+      <text identifier="research-guide" label="Research Guide URL"/>
+      <text wysiwyg="true" identifier="research-interests" label="Research Interests"/>
+      <group identifier="publications" label="Publications">
+        <group identifier="pubs" label="Collected Publication Sources" multiple="true">
+          <text identifier="pubs_label" label="Publications Source (e.g. PubMed)"/>
+          <text identifier="pubs_url" label="Publications URL"/>
+        </group>
+        <text wysiwyg="true" identifier="wysiwyg" label="Publications - Flexible Entry" help-text="List selected publications manually"/>
+      </group>
+    </group>
+    <group identifier="teaching" label="Teaching" collapsed="true">
+      <group identifier="entries" label="Courses Taught" multiple="true">
+        <text identifier="link-text" label="Course Name"/>
+        <asset type="page" identifier="page" label="Link to Internal Course Page"/>
+        <asset type="file" identifier="file" label="-or- Document"/>
+        <text identifier="external" label="-or- External URL"/>
+      </group>
+    </group>
+    <group identifier="attachments" label="Attachments" collapsed="true">
+      <asset type="file" identifier="cv" label="CV (Upload to Site first)"/>
+      <text identifier="online_cv_url" label="External Bio/CV URL"/>
+      <group identifier="misc_attachments" label="Other Attachments" multiple="true">
+        <text identifier="attachment_label" label="Attachment Label"/>
+        <asset type="file" identifier="attachment" label="Attachment"/>
+      </group>
+    </group>
+    <group identifier="subjects" label="Subjects">
+      <text type="dropdown" identifier="subject-dropdown" label="Subject" multiple="true" allow-custom-values="true">
+        <dropdown-item value=""/>
+        <dropdown-item value="African American Studies"/>
+        <dropdown-item value="African History"/>
+        <dropdown-item value="African Studies"/>
+        <dropdown-item value="American Literature"/>
+        <dropdown-item value="Ancient and Medieval History"/>
+        <dropdown-item value="Anthropology"/>
+        <dropdown-item value="Art History"/>
+        <dropdown-item value="Biological and Biomedical Sciences"/>
+        <dropdown-item value="British Literature"/>
+        <dropdown-item value="Buddhism"/>
+        <dropdown-item value="Career Resources"/>
+        <dropdown-item value="Chemistry"/>
+        <dropdown-item value="Chinese Studies"/>
+        <dropdown-item value="Christianity"/>
+        <dropdown-item value="Classical Studies"/>
+        <dropdown-item value="Collection Management "/>
+        <dropdown-item value="Comparative and Other Religions"/>
+        <dropdown-item value="Comparative Literature"/>
+        <dropdown-item value="Computer Science"/>
+        <dropdown-item value="Copyright and Open Access"/>
+        <dropdown-item value="Dance"/>
+        <dropdown-item value="Data Sets"/>
+        <dropdown-item value="Data Management "/>
+        <dropdown-item value="Development Studies (Masters in Development Practice)"/>
+        <dropdown-item value="East Asian History "/>
+        <dropdown-item value="East Asian Literature"/>
+        <dropdown-item value="East Asian Studies"/>
+        <dropdown-item value="Economics"/>
+        <dropdown-item value="Education"/>
+        <dropdown-item value="EndNote"/>
+        <dropdown-item value="Environmental Sciences"/>
+        <dropdown-item value="European History"/>
+        <dropdown-item value="Film Studies"/>
+        <dropdown-item value="French Literature"/>
+        <dropdown-item value="French Studies"/>
+        <dropdown-item value="Geospatial Data Librarian (GIS)"/>
+        <dropdown-item value="German Studies"/>
+        <dropdown-item value="Government Documents"/>
+        <dropdown-item value="Health, Physical Education and Sports"/>
+        <dropdown-item value="Hinduism"/>
+        <dropdown-item value="Instruction "/>
+        <dropdown-item value="Interdisciplinary Studies/ILA"/>
+        <dropdown-item value="International Documentation"/>
+        <dropdown-item value="Islam"/>
+        <dropdown-item value="Italian Studies"/>
+        <dropdown-item value="Japanese Studies"/>
+        <dropdown-item value="Jewish Studies"/>
+        <dropdown-item value="Journalism"/>
+        <dropdown-item value="Judaism"/>
+        <dropdown-item value="Latin American History"/>
+        <dropdown-item value="Latin American Literature"/>
+        <dropdown-item value="Latin American Studies"/>
+        <dropdown-item value="LGBT Studies"/>
+        <dropdown-item value="Library Science"/>
+        <dropdown-item value="Linguistics"/>
+        <dropdown-item value="Math"/>
+        <dropdown-item value="Medicine"/>
+        <dropdown-item value="Middle Eastern Studies"/>
+        <dropdown-item value="Music"/>
+        <dropdown-item value="Neuroscience and Behavioral Biology"/>
+        <dropdown-item value="Open Access"/>
+        <dropdown-item value="Philosophy"/>
+        <dropdown-item value="Physics"/>
+        <dropdown-item value="Political Science"/>
+        <dropdown-item value="Popular Literature"/>
+        <dropdown-item value="Portuguese"/>
+        <dropdown-item value="Portuguese Literature"/>
+        <dropdown-item value="Psychology"/>
+        <dropdown-item value="Public Health"/>
+        <dropdown-item value="Reference Books"/>
+        <dropdown-item value="Russian and East European Studies"/>
+        <dropdown-item value="Science (General)"/>
+        <dropdown-item value="Sociology"/>
+        <dropdown-item value="South Asian History"/>
+        <dropdown-item value="South Asian Literature"/>
+        <dropdown-item value="South Asian Studies"/>
+        <dropdown-item value="Spanish"/>
+        <dropdown-item value="Spanish Literature"/>
+        <dropdown-item value="Theater Studies"/>
+        <dropdown-item value="United States History"/>
+        <dropdown-item value="Womens Studies"/>
+        <dropdown-item value="Zotero"/>
+      </text>
+    </group>
+  </group>
+  <group identifier="side" label="Sidebar" collapsed="true">
+    <group identifier="item" label="Sidebar Item" multiple="true">
+      <!-- feature -->
+      <!-- <text identifier="heading" label="Heading" help-text="Optional - for Callouts or Flexible Entry"/>-->
+      <text type="dropdown" identifier="type2" label="Type of Content" default="Select an option" help-text="Select which option you will display">
+        <dropdown-item value="Select an option"/>
+        <dropdown-item value="Callouts"/>
+        <dropdown-item value="Calendar - Trumba"/>
+        <dropdown-item value="Content Box"/>
+        <dropdown-item value="Hours"/>
+        <dropdown-item value="News Center Widget"/>
+        <dropdown-item value="Profile"/>
+        <dropdown-item value="Related Links"/>
+        <dropdown-item value="Social Media Icons"/>
+        <dropdown-item value="Testimonial"/>
+      </text>
+      <text type="radiobutton" identifier="item-priority" label="Placement" default="Add to existing site-wide set" help-text="Page settings relative to Site-wide settings">
+        <radio-item value="Add to existing site-wide set"/>
+        <radio-item value="Replace site-wide set"/>
+        <radio-item value="Do not display this type on this page"/>
+      </text>
+      <asset type="block" identifier="block" label="Select a Component Block" render-content-depth="3" help-text="for Feature, Quick Links, News, Calendar, Audience Nav, Quick Links"/>
+      <asset type="page" identifier="callout-page" label="-OR- Select Callout Page" multiple="true" render-content-depth="2" help-text="Select one or more callouts"/>
+    </group>
+  </group>
+</system-data-structure>

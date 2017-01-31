@@ -1,0 +1,10 @@
+<system-data-structure>
+    <group identifier="type" label="Type" multiple="true">
+        <text type="dropdown" identifier="name" label="Name" help-text="This is the group in the sidebar that the filters appear under">
+            <dropdown-item value="Subject"/>
+            <dropdown-item value="Letter"/>
+            <dropdown-item value="Status"/>
+        </text>
+        <text identifier="filter" label="Filter" multiple="true" help-text="This is the text that shows in the navigation"/>
+    </group>
+</system-data-structure>

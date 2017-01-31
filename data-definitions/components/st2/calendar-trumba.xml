@@ -1,0 +1,21 @@
+<system-data-structure>
+    <group identifier="calendar-trumba" label="Trumba Calendar">
+        <text identifier="heading" label="Heading"/>
+        <text multi-line="true" identifier="spud" label="Paste in Spud Code" rows="10" cols="40"/>
+        <!-- <group identifier="link" label="Read More Link"><text identifier="link-text" label="Link Text"/><asset type="page" identifier="page" label="Internal Page"/><text identifier="external" label="External URL"/><asset type="file" identifier="file" label="Document"/></group>-->
+        <text type="radiobutton" identifier="link-type" label="Link Type">
+            <radio-item value="Cascade Page" show-fields="calendar-trumba/page"/>
+            <radio-item value="External Link" show-fields="calendar-trumba/external-link"/>
+        </text>
+        <asset type="page" identifier="page" label="Cascade Page"/>
+        <text identifier="external-link" label="External Link"/>
+        <group identifier="placement" label="Placement Options">
+            <text type="dropdown" identifier="location" label="Placement" default="Select a Location:">
+                <dropdown-item value="Select a Location:"/>
+                <dropdown-item value="Site-wide Right"/>
+                <dropdown-item value="Selected Pages Right"/>
+            </text>
+            <asset type="page" identifier="publish_to" label="Display on selected pages" multiple="true"/>
+        </group>
+    </group>
+</system-data-structure>

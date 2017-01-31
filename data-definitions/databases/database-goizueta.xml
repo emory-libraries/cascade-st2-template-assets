@@ -1,0 +1,131 @@
+<system-data-structure>
+    <text type="dropdown" identifier="default_collection" label="Default Collection" restrict-to-groups="Standard Template Asset Managers,administrators" default="library-databases-business">
+        <dropdown-item value="library-databases-main"/>
+        <dropdown-item value="library-databases-health"/>
+        <dropdown-item value="library-databases-business"/>
+    </text>
+    <asset type="block" identifier="search-box" label="Search Box" restrict-to-groups="Standard Template Asset Managers,administrators" render-content-depth="unlimited"/>
+    <text identifier="short-description" label="Short Description (160 chars)" maxlength="160" help-text="Displays in database search page"/>
+    <asset type="file" identifier="logo" label="Logo"/>
+    <group identifier="notices" label="Notices" collapsed="true">
+        <group identifier="notice" label="Notice" multiple="true" collapsed="true">
+            <text type="radiobutton" identifier="notice-type" label="Notice Type" default="Note">
+                <radio-item value="Note"/>
+                <radio-item value="Alert"/>
+            </text>
+            <text wysiwyg="true" identifier="notice-message" label="Notice Message" wysiwyg-toolbar-remove="insert image,"/>
+        </group>
+    </group>
+    <group identifier="access" label="Access Details" collapsed="true">
+        <group identifier="on-campus" label="On Campus Access" collapsed="true">
+            <text type="dropdown" identifier="access-type" label="Access Type" default="--Select Access Type--">
+                <dropdown-item value="--Select Access Type--"/>
+                <dropdown-item value="Emory Unplugged"/>
+                <dropdown-item value="Emory NetID"/>
+                <dropdown-item value="Library Computer Use"/>
+                <dropdown-item value="Individual Registration"/>
+                <dropdown-item value="Get Passwords Here"/>
+                <dropdown-item value="Library Computer Use with Unique Password"/>
+            </text>
+            <text identifier="access-link" label="Access Link" help-text="Link to appropriate database access"/>
+            <text identifier="password-link" label="Password Link"/>
+            <text type="radiobutton" identifier="new-window" label="Open new window/tab?" default="Yes">
+                <radio-item value="Yes"/>
+                <radio-item value="No"/>
+            </text>
+            <text type="checkbox" identifier="database-down" label="Is this database down?">
+                <checkbox-item value="Yes"/>
+            </text>
+        </group>
+        <group identifier="off-campus" label="Off Campus" collapsed="true">
+            <text type="dropdown" identifier="access-type" label="Access Type">
+                <dropdown-item value="--Select Access Type--"/>
+                <dropdown-item value="Not Available"/>
+                <dropdown-item value="Emory NetID"/>
+                <dropdown-item value="Individual Registration"/>
+                <dropdown-item value="Get Passwords Here"/>
+            </text>
+            <text identifier="access-link" label="Access Link" help-text="Link to appropriate database access"/>
+            <text identifier="password-link" label="Password Link"/>
+            <text type="radiobutton" identifier="new-window" label="Open new window/tab?" default="Yes">
+                <radio-item value="Yes"/>
+                <radio-item value="No"/>
+            </text>
+            <text type="checkbox" identifier="database-down" label="Is this database down?">
+                <checkbox-item value="Yes"/>
+            </text>
+        </group>
+    </group>
+    <text wysiwyg="true" identifier="description" label="Description" wysiwyg-toolbar-remove="insert image,"/>
+    <group identifier="help" label="Need Help Content" collapsed="true">
+        <text wysiwyg="true" identifier="start-help-content" label="Start Help Content" wysiwyg-toolbar-remove="insert image,"/>
+        <group identifier="resource-links" label="Resource Links" collapsed="true">
+            <text identifier="heading" label="Custom Heading" help-text="Allows you to enter an optional custom heading for your list of links"/>
+            <text type="dropdown" identifier="heading-level" label="Heading Level" default="Heading 2">
+                <dropdown-item value="Heading 2"/>
+                <dropdown-item value="Heading 3"/>
+                <dropdown-item value="Heading 4"/>
+                <dropdown-item value="Heading 5"/>
+                <dropdown-item value="Heading 6"/>
+            </text>
+            <group identifier="resource-link" label="Resource Link" multiple="true" collapsed="true">
+                <text identifier="link-label" label="Link Label"/>
+                <asset type="page" identifier="internal-page" label="Internal Page"/>
+                <text identifier="external-link" label="External Web Address"/>
+                <asset type="file" identifier="document" label="Document File"/>
+            </group>
+        </group>
+        <text wysiwyg="true" identifier="end-help-content" label="End Help Content" wysiwyg-toolbar-remove="insert image,"/>
+    </group>
+    <group identifier="subjects" label="Subjects" collapsed="true">
+        <group identifier="subject" label="Subject" multiple="true" collapsed="true">
+            <text type="dropdown" identifier="name" label="Subject" default="--Select a Subject--">
+                <dropdown-item value="--Select a Subject--"/>
+                <dropdown-item value="Accounting and Taxation"/>
+                <dropdown-item value="Book Summaries"/>
+                <dropdown-item value="Careers"/>
+                <dropdown-item value="Companies"/>
+                <dropdown-item value="eBooks"/>
+                <dropdown-item value="Economics"/>
+                <dropdown-item value="Finance"/>
+                <dropdown-item value="Industries"/>
+                <dropdown-item value="Global"/>
+                <dropdown-item value="Market Research Reports"/>
+                <dropdown-item value="Marketing Data"/>
+                <dropdown-item value="News and Articles"/>
+                <dropdown-item value="Statistics and Trade"/>
+            </text>
+            <text type="checkbox" identifier="featured" label="Featured">
+                <checkbox-item value="Yes"/>
+            </text>
+        </group>
+    </group>
+    <group identifier="databases-like-this" label="More Databases Like This" collapsed="true">
+        <asset type="page" identifier="database" label="Database" multiple="true"/>
+    </group>
+    <group identifier="side" label="Sidebar" collapsed="true">
+        <group identifier="item" label="Sidebar Item" multiple="true">
+            <!-- feature -->
+            <!-- <text identifier="heading" label="Heading" help-text="Optional - for Callouts or Flexible Entry"/>-->
+            <text type="dropdown" identifier="type2" label="Type of Content" default="Select an option" help-text="Select which option you will display">
+                <dropdown-item value="Select an option"/>
+                <dropdown-item value="Callouts"/>
+                <dropdown-item value="Calendar - Trumba"/>
+                <dropdown-item value="Content Box"/>
+                <dropdown-item value="Hours"/>
+                <dropdown-item value="News Center Widget"/>
+                <dropdown-item value="Profile"/>
+                <dropdown-item value="Related Links"/>
+                <dropdown-item value="Social Media Icons"/>
+                <dropdown-item value="Testimonial"/>
+            </text>
+            <text type="radiobutton" identifier="item-priority" label="Placement" restrict-to-groups="Standard Template Asset Managers,administrators" default="Add to existing site-wide set" help-text="Page settings relative to Site-wide settings">
+                <radio-item value="Add to existing site-wide set"/>
+                <radio-item value="Replace site-wide set"/>
+                <radio-item value="Do not display this type on this page"/>
+            </text>
+            <asset type="block" identifier="block" label="Select a Component Block" render-content-depth="3" help-text="for Feature, Quick Links, News, Calendar, Audience Nav, Quick Links"/>
+            <asset type="page" identifier="callout-page" label="-OR- Select Callout Page" multiple="true" render-content-depth="2" help-text="Select one or more callouts"/>
+        </group>
+    </group>
+</system-data-structure>

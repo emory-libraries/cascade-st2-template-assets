@@ -1,0 +1,31 @@
+<system-data-structure>
+    <group identifier="featured-bio" label="Featured Researcher">
+        <group identifier="entry" label="Entry">
+            <text identifier="heading" label="Heading"/>
+            <asset type="page" identifier="page-import" label="Import Bio" render-content-depth="3"/>
+            <!-- <asset type="file" identifier="photo-thumb" label="Photo (75x113)"/> -->
+            <text type="radiobutton" identifier="blurb_type" label="Blurb Type" required="true">
+                <radio-item value="Summary"/>
+                <radio-item value="Quote"/>
+            </text>
+            <group identifier="manual_entry" label="Manual Entry" collapsed="true">
+                <asset type="file" identifier="photo-bio" label="Photo"/>
+                <text identifier="title" label="Name"/>
+                <text multi-line="true" identifier="blurb" label="Quote or Summary" help-text="Approx 57 chars if adding to homepage hero column."/>
+            </group>
+            <group identifier="link" label="Read More Link">
+                <text identifier="link-text" label="Link Text"/>
+                <asset type="page" identifier="page" label="Internal Page"/>
+                <text identifier="external" label="External URL"/>
+            </group>
+        </group>
+        <group identifier="placement" label="Placement Options">
+            <text type="dropdown" identifier="location" label="Placement" default="Select a Location:">
+                <dropdown-item value="Select a Location:"/>
+                <dropdown-item value="Site-wide Right" restrict-to-groups="Standard Template Asset Managers,administrators"/>
+                <dropdown-item value="Selected Pages Right"/>
+            </text>
+            <asset type="page" identifier="publish_to" label="Display on selected pages" multiple="true"/>
+        </group>
+    </group>
+</system-data-structure>
