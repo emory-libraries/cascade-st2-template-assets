@@ -1,0 +1,45 @@
+<system-data-structure>
+  <group identifier="thumbnail" label="Thumbnail" collapsed="true">
+    <asset type="file" identifier="image" label="Image for Section Page - 200x120px" help-text="Optional - may be used by Section listings"/>
+  </group>
+  <group identifier="main-content" label="Main Content">
+    <text wysiwyg="true" identifier="main" label="Main Entry" help-text="Static Content Before PHP"/>
+  </group>
+  <!-- <group identifier="related" label="Related">
+    <text type="checkbox" identifier="subnav" label="Show Subnav">
+      <checkbox-item value="Yes"/>
+    </text>
+  </group>-->
+  <group identifier="code" label="PHP">
+    <asset type="file" identifier="file" label="Include PHP file" help-text="Include PHP file in CMS"/>
+    <!-- <asset type="block" identifier="block" label="Import PHP Block" help-text="Import the contents of a block"/>
+    <text multi-line="true" rows="20" identifier="code-entry" label="Direct PHP code entry"/>-->
+    <text identifier="include-external" label="Include External PHP File" help-text="Provide a URL for a PHP file outside the CMS"/>
+  </group>
+  
+  <group identifier="side" label="Sidebar" collapsed="true">
+    <group identifier="item" label="Sidebar Item" multiple="true">
+      <!-- feature -->
+      <!-- <text identifier="heading" label="Heading" help-text="Optional - for Callouts or Flexible Entry"/>-->
+      <text type="dropdown" identifier="type2" label="Type of Content" default="Select an option" help-text="Select which option you will display">
+        <dropdown-item value="Select an option"/>
+        <dropdown-item value="Callouts"/>
+        <dropdown-item value="Calendar - Trumba"/>
+        <dropdown-item value="Content Box"/>
+        <dropdown-item value="Hours"/>
+        <dropdown-item value="News Center Widget"/>
+        <dropdown-item value="Profile"/>
+        <dropdown-item value="Related Links"/>
+        <dropdown-item value="Social Media Icons"/>
+        <dropdown-item value="Testimonial"/>
+      </text>
+      <text type="radiobutton" identifier="item-priority" label="Placement" default="Add to existing site-wide set" help-text="Page settings relative to Site-wide settings">
+        <radio-item value="Add to existing site-wide set"/>
+        <radio-item value="Replace site-wide set"/>
+        <radio-item value="Do not display this type on this page"/>
+      </text>
+      <asset type="block" identifier="block" label="Select a Component Block" render-content-depth="3" help-text="for Feature, Quick Links, News, Calendar, Audience Nav, Quick Links"/>
+      <asset type="page" identifier="callout-page" label="-OR- Select Callout Page" multiple="true" render-content-depth="2" help-text="Select one or more callouts"/>
+    </group>
+  </group>
+</system-data-structure>

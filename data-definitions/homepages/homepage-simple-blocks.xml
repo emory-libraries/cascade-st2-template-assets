@@ -1,0 +1,85 @@
+<system-data-structure>
+    <group identifier="toprow" label="Top Row" collapsed="true">
+        <group identifier="hero" label="Hero Image">
+            <text type="radiobutton" identifier="align" label="Alignment" default="Left" required="true">
+                <radio-item value="Right"/>
+                <radio-item value="Left"/>
+                <radio-item value="Full-width"/>
+            </text>
+            <text type="radiobutton" identifier="type" label="Treatment" default="Basic Image" required="true">
+                <radio-item value="Basic Image"/>
+                <radio-item value="Random Image on Refresh"/>
+                <radio-item value="Timed Slideshow"/>
+                <radio-item value="Custom"/>
+            </text>
+            <text identifier="interval" label="Slideshow Time Interval" help-text="For slideshow option, seconds per slide"/>
+            <group identifier="basic-slideshow" label="Basic or Random Image or Timed Slideshow">
+                <group identifier="image-set" label="Image" multiple="true">
+                    <asset type="file" identifier="image" label="Image 716x318 or 960x318" help-text="716 for narrower 960 for full width"/>
+                    <text identifier="caption" label="Caption"/>
+                    <asset type="page" identifier="page" label="Internal Page"/>
+                    <text identifier="external" label="External URL"/>
+                    <asset type="file" identifier="file" label="Document"/>
+                </group>
+            </group>
+            <group identifier="custom-hero" label="Custom Slideshow Option">
+                <text type="radiobutton" identifier="type" label="Custom Slideshow Type" help-text="Blue bar style or other custom code insert">
+                    <radio-item value="Emory Homepage"/>
+                    <radio-item value="Other"/>
+                </text>
+                <asset type="block" identifier="block" label="Select a slideshow block" render-content-depth="2" help-text="Custom slideshows are created as separate blocks"/>
+            </group>
+        </group>
+        <group identifier="item" label="Hero Row Column">
+            <text identifier="heading" label="Heading" help-text="Optional - for Flexible Entry"/>
+            <text type="dropdown" identifier="type2" label="Type of Content" default="Select an option" help-text="Select which option you will display">
+                <dropdown-item value="Select an option"/>
+                <dropdown-item value="Callouts"/>
+                <dropdown-item value="Audience Nav"/>
+                <dropdown-item value="Quick Links"/>
+                <dropdown-item value="Feature"/>
+                <dropdown-item value="Profile"/>
+                <dropdown-item value="Testimonial"/>
+                <dropdown-item value="Social Media Icons"/>
+                <dropdown-item value="Flexible Entry"/>
+            </text>
+            <asset type="block" identifier="block" label="Select a Block" render-content-depth="2" help-text="for Feature, Quick Links, News, Calendar, Audience Nav, Quick Links"/>
+            <asset type="page" identifier="callout" label="Callouts" multiple="true" maximum-number="2" render-content-depth="2" help-text="Select callouts to display"/>
+            <text wysiwyg="true" identifier="flex" label="Flex entry"/>
+        </group>
+    </group>
+    <group identifier="row" label="Second Row">
+        <text type="radiobutton" identifier="row-height" label="Balanced Column Heights" default="Yes" help-text="Adjust all col heights to the tallest one">
+            <radio-item value="Yes"/>
+            <radio-item value="No"/>
+        </text>
+        <!-- <text type="radiobutton" identifier="layout" label="Layout" restrict-to-groups="Standard Template Asset Managers,administrators" default="New Column"><radio-item value="New Column"/></text>-->
+        <!-- <text type="radiobutton" identifier="callouts-position" label="Display Callouts" default="None"><radio-item value="None"/><radio-item value="Left Column"/><radio-item value="Right Column"/><radio-item value="Horizontal row"/></text><asset type="page" identifier="callouts" label="Select callouts" multiple="true"/>-->
+        <group identifier="item" label="Column" multiple="true" maximum-number="4" minimum-number="2">
+            <!-- feature -->
+            <text identifier="heading" label="Heading" help-text="Optional - for Callouts or Flexible Entry"/>
+            <text type="dropdown" identifier="type2" label="Type of Content" default="Select an option" help-text="Select which option you will display">
+                <dropdown-item value="Select an option"/>
+                <dropdown-item value="Callouts"/>
+                <dropdown-item value="News Center Widget"/>
+                <dropdown-item value="Misc Feed"/>
+                <dropdown-item value="Calendar - Trumba"/>
+                <dropdown-item value="Audience Nav"/>
+                <dropdown-item value="Quick Links"/>
+                <dropdown-item value="Feature"/>
+                <dropdown-item value="Profile"/>
+                <dropdown-item value="Testimonial"/>
+                <dropdown-item value="Social Media Icons"/>
+                <dropdown-item value="Flexible Entry"/>
+            </text>
+            <!--  <text type="radiobutton" identifier="type" label="Type"><radio-item value="Callouts"/><radio-item value="Flex"/><radio-item value="Feature"/><radio-item value="Audience Nav"/><radio-item value="Quick Links"/><radio-item value="Testimonial"/><radio-item value="News"/><radio-item value="Calendar"/></text> -->
+            <asset type="block" identifier="block" label="Select a Block" render-content-depth="2" help-text="for Feature, Quick Links, News, Calendar, Audience Nav, Quick Links"/>
+            <asset type="page" identifier="callout" label="Callouts" multiple="true" render-content-depth="2" help-text="Select callouts to display"/>
+            <text type="radiobutton" identifier="callout-location" label="Callouts Display" restrict-to-groups="Standard Template Asset Managers,administrators" default="Vertical Stack" help-text="Horizontal creates row of callouts only">
+                <radio-item value="Vertical stack"/>
+            </text>
+            <!-- <text type="radiobutton" identifier="callout-location" label="Callouts Display" default="Left"><radio-item value="Left"/><radio-item value="Right"/></text>-->
+            <text wysiwyg="true" identifier="flex" label="Flex entry"/>
+        </group>
+    </group>
+</system-data-structure>

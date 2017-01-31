@@ -1,0 +1,4 @@
+<system-data-structure>
+  <text identifier="external-url" label="External URL" required="true" help-text="Enter the URL for the external media coverage (e.g. - http://www.cnn.com/path)"/>
+  <text identifier="source" label="Source" help-text="Enter the source of the media coverage (e.g. - CNN)"/>
+</system-data-structure>

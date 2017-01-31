@@ -1,0 +1,37 @@
+<system-data-structure>
+    <group identifier="content-box" label="Content Box">
+        <group identifier="entry" label="Entry">
+            <text identifier="heading" label="Heading"/>
+            <asset type="file" identifier="photo" label="Feature Photo (286x127)" help-text="This image must be 286x127 pixels"/>
+            <!--<text type="radiobutton" identifier="feature-photo-position" label="Feature Photo Position" default="Above Heading" help-text="Select where your photo will appear in relation to the heading"><radio-item value="Above Heading"/><radio-item value="Below Heading"/></text>-->
+            <text multi-line="true" identifier="caption" label="Feature Photo Caption" rows="3"/>
+            <asset type="file" identifier="thumbnail" label="Thumbnail (75x75 pixels)" help-text="Thumbnails must be 75x75 pixels"/>
+            <text wysiwyg="true" identifier="body-content" label="Body Content" help-text="Enter your content here." wysiwyg-toolbar-remove="font assignment,insert image,insert table,"/>
+            <group identifier="primary-link" label="Primary Link">
+                <asset type="page" identifier="page" label="Internal Page"/>
+                <text identifier="external" label="External URL"/>
+                <asset type="file" identifier="file" label="Document"/>
+                <text type="radiobutton" identifier="link-application" label="Apply Link To: " default="Heading and Photo" help-text="Where should the primary link be applied?">
+                    <radio-item value="Heading and Photo"/>
+                    <radio-item value="Button"/>
+                </text>
+                <group identifier="button-details" label="Button Details" collapsed="true">
+                    <text identifier="button-label" label="Button Label"/>
+                    <text type="dropdown" identifier="button-style" label="Button Style" default="Default (Grey)" help-text="Select the style of the button">
+                        <dropdown-item value="Default (Grey)"/>
+                        <dropdown-item value="Primary (Blue)"/>
+                        <dropdown-item value="Info (Aqua)"/>
+                    </text>
+                </group>
+            </group>
+        </group>
+        <group identifier="placement" label="Placement Options">
+            <text type="dropdown" identifier="location" label="Placement" default="Select a Location:">
+                <dropdown-item value="Select a Location:"/>
+                <dropdown-item value="Site-wide Right" restrict-to-groups="Standard Template Asset Managers,administrators"/>
+                <dropdown-item value="Selected Pages Right"/>
+            </text>
+            <asset type="page" identifier="publish_to" label="Display on selected pages" multiple="true"/>
+        </group>
+    </group>
+</system-data-structure>

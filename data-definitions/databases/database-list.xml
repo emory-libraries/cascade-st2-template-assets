@@ -1,0 +1,201 @@
+<system-data-structure>
+    <group identifier="data" label="Data" restrict-to-groups="Standard Template Asset Managers,administrators" collapsed="true">
+        <asset type="file" identifier="php-include" label="PHP Include File"/>
+        <text identifier="gsa-collection" label="Google Search Appliance Collection"/>
+        <text type="checkbox" identifier="use-database-pages" label="Use Individual Database Pages" help-text="If this is checked, users will be sent to the individual database pages when they click a database title.">
+            <checkbox-item value="Yes"/>
+        </text>
+        <text type="checkbox" identifier="get-all-results" label="Get All Results Before Sorting">
+            <checkbox-item value="Yes" checked="true"/>
+        </text>
+        <text type="checkbox" identifier="use-cache" label="Use Cache" help-text="If this is checked, the server will try to cache appropriate search results.">
+            <checkbox-item value="Yes"/>
+        </text>
+        <text identifier="cache-time" label="Cache time (in milliseconds)" default="3600" help-text="Time before the cache files expire"/>
+    </group>
+    <group identifier="thumbnail" label="Parent Section Page Options" collapsed="true">
+        <asset type="file" identifier="image" label="Image for Section Page" help-text="Optional - may be used by Section listings"/>
+        <text type="dropdown" identifier="section-icon" label="Icon for Section Page" default="---">
+            <dropdown-item value="---"/>
+            <dropdown-item value="adjust"/>
+            <dropdown-item value="align-left"/>
+            <dropdown-item value="android"/>
+            <dropdown-item value="apple"/>
+            <dropdown-item value="anchor"/>
+            <dropdown-item value="arrow-right"/>
+            <dropdown-item value="archive"/>
+            <dropdown-item value="asterisk"/>
+            <dropdown-item value="ban-circle"/>
+            <dropdown-item value="bar-chart"/>
+            <dropdown-item value="barcode"/>
+            <dropdown-item value="beaker"/>
+            <dropdown-item value="bell"/>
+            <dropdown-item value="bolt"/>
+            <dropdown-item value="book"/>
+            <dropdown-item value="bookmark"/>
+            <dropdown-item value="briefcase"/>
+            <dropdown-item value="bug"/>
+            <dropdown-item value="building"/>
+            <dropdown-item value="bullhorn"/>
+            <dropdown-item value="bullseye"/>
+            <dropdown-item value="calendar"/>
+            <dropdown-item value="camera"/>
+            <dropdown-item value="camera-retro"/>
+            <dropdown-item value="certificate"/>
+            <dropdown-item value="check"/>
+            <dropdown-item value="cloud"/>
+            <dropdown-item value="cloud-download"/>
+            <dropdown-item value="cloud-upload"/>
+            <dropdown-item value="code"/>
+            <dropdown-item value="coffee"/>
+            <dropdown-item value="cogs"/>
+            <dropdown-item value="comment"/>
+            <dropdown-item value="comments"/>
+            <dropdown-item value="compass"/>
+            <dropdown-item value="credit-card"/>
+            <dropdown-item value="desktop"/>
+            <dropdown-item value="envelope"/>
+            <dropdown-item value="eraser"/>
+            <dropdown-item value="exchange"/>
+            <dropdown-item value="exclamation-sign"/>
+            <dropdown-item value="external-link"/>
+            <dropdown-item value="eye-close"/>
+            <dropdown-item value="eye-open"/>
+            <dropdown-item value="facetime-video"/>
+            <dropdown-item value="female"/>
+            <dropdown-item value="fighter-jet"/>
+            <dropdown-item value="film"/>
+            <dropdown-item value="fire"/>
+            <dropdown-item value="fire-extinguisher"/>
+            <dropdown-item value="flag"/>
+            <dropdown-item value="folder-close"/>
+            <dropdown-item value="folder-open"/>
+            <dropdown-item value="food"/>
+            <dropdown-item value="gamepad"/>
+            <dropdown-item value="gift"/>
+            <dropdown-item value="glass"/>
+            <dropdown-item value="globe"/>
+            <dropdown-item value="group"/>
+            <dropdown-item value="hdd"/>
+            <dropdown-item value="headphones"/>
+            <dropdown-item value="heart"/>
+            <dropdown-item value="home"/>
+            <dropdown-item value="inbox"/>
+            <dropdown-item value="info-sign"/>
+            <dropdown-item value="key"/>
+            <dropdown-item value="keyboard"/>
+            <dropdown-item value="laptop"/>
+            <dropdown-item value="leaf"/>
+            <dropdown-item value="legal"/>
+            <dropdown-item value="lightbulb"/>
+            <dropdown-item value="link"/>
+            <dropdown-item value="location-arrow"/>
+            <dropdown-item value="lock"/>
+            <dropdown-item value="magic"/>
+            <dropdown-item value="magnet"/>
+            <dropdown-item value="male"/>
+            <dropdown-item value="map-marker"/>
+            <dropdown-item value="meh"/>
+            <dropdown-item value="microphone"/>
+            <dropdown-item value="mobile-phone"/>
+            <dropdown-item value="money"/>
+            <dropdown-item value="moon"/>
+            <dropdown-item value="music"/>
+            <dropdown-item value="off"/>
+            <dropdown-item value="ok-sign"/>
+            <dropdown-item value="pencil"/>
+            <dropdown-item value="phone"/>
+            <dropdown-item value="picture"/>
+            <dropdown-item value="plane"/>
+            <dropdown-item value="print"/>
+            <dropdown-item value="pushpin"/>
+            <dropdown-item value="puzzle-piece"/>
+            <dropdown-item value="qrcode"/>
+            <dropdown-item value="question-sign"/>
+            <dropdown-item value="quote-left"/>
+            <dropdown-item value="random"/>
+            <dropdown-item value="refresh"/>
+            <dropdown-item value="reorder"/>
+            <dropdown-item value="retweet"/>
+            <dropdown-item value="road"/>
+            <dropdown-item value="rocket"/>
+            <dropdown-item value="rss"/>
+            <dropdown-item value="search"/>
+            <dropdown-item value="share"/>
+            <dropdown-item value="shield"/>
+            <dropdown-item value="shopping-cart"/>
+            <dropdown-item value="signal"/>
+            <dropdown-item value="sitemap"/>
+            <dropdown-item value="smile"/>
+            <dropdown-item value="sort"/>
+            <dropdown-item value="sort-by-alphabet"/>
+            <dropdown-item value="spinner"/>
+            <dropdown-item value="star"/>
+            <dropdown-item value="subscript"/>
+            <dropdown-item value="suitcase"/>
+            <dropdown-item value="sun"/>
+            <dropdown-item value="superscript"/>
+            <dropdown-item value="tablet"/>
+            <dropdown-item value="tags"/>
+            <dropdown-item value="tasks"/>
+            <dropdown-item value="terminal"/>
+            <dropdown-item value="thumbs-down"/>
+            <dropdown-item value="thumbs-up"/>
+            <dropdown-item value="ticket"/>
+            <dropdown-item value="time"/>
+            <dropdown-item value="tint"/>
+            <dropdown-item value="trash"/>
+            <dropdown-item value="trophy"/>
+            <dropdown-item value="truck"/>
+            <dropdown-item value="umbrella"/>
+            <dropdown-item value="user"/>
+            <dropdown-item value="volume-up"/>
+            <dropdown-item value="warning-sign"/>
+            <dropdown-item value="wrench"/>
+        </text>
+        <text wysiwyg="true" identifier="summary" label="Summary for Section Page"/>
+    </group>
+    <group identifier="current-selections" label="Current Selection Options" collapsed="true">
+        <text type="checkbox" identifier="display-location" label="Display Location" help-text="Where to display the current selections">
+            <checkbox-item value="Sidebar"/>
+            <checkbox-item value="Main Body"/>
+        </text>
+    </group>
+    <group identifier="results-options" label="Result List Options" collapsed="true">
+        <text identifier="num" label="Results Per Page" default="25"/>
+        <group identifier="search-options" label="Search">
+            <text type="checkbox" identifier="use-autosuggest" label="Use Autosuggest">
+                <checkbox-item value="Yes"/>
+            </text>
+        </group>
+        <group identifier="featured-options" label="Featured">
+            <text type="checkbox" identifier="show" label="Show Featured Databases" help-text="This applies to the main content area.">
+                <checkbox-item value="Yes" checked="true"/>
+            </text>
+            <text identifier="title" label="Featured Section Title" default="Need a place to start? Try these."/>
+        </group>
+        <group identifier="new-options" label="New">
+            <text type="checkbox" identifier="show" label="Show New Databases" help-text="This applies to the main content area.">
+                <checkbox-item value="Yes"/>
+            </text>
+            <text identifier="title" label="New Section Title" default="Newly Added Databases"/>
+        </group>
+    </group>
+    <group identifier="database-options" label="Database Display Options" collapsed="true">
+        <text type="checkbox" identifier="use-summary" label="Use Summary View" help-text="This will create a smaller result display with an expand link to show the rest.">
+            <checkbox-item value="Yes"/>
+        </text>
+        <text type="checkbox" identifier="show-status" label="Show Status" help-text="Show indicator for new or trial">
+            <checkbox-item value="Yes"/>
+        </text>
+        <text type="checkbox" identifier="show-fulltext" label="Show Full Text" help-text="Show full text status for each (if applicable)">
+            <checkbox-item value="Yes"/>
+        </text>
+        <text type="checkbox" identifier="show-coverage" label="Show Coverage" help-text="Show years of coverage for each resource (if available)">
+            <checkbox-item value="Yes"/>
+        </text>
+        <text type="checkbox" identifier="show-subjects" label="Show Subjects" help-text="Show list of subjects below description">
+            <checkbox-item value="Yes"/>
+        </text>
+    </group>
+</system-data-structure>

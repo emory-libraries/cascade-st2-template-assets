@@ -1,0 +1,44 @@
+<system-data-structure>
+    <group identifier="data" label="Data" restrict-to-groups="Standard Template Asset Managers,administrators" collapsed="true">
+        <asset type="file" identifier="php-include" label="PHP Include File"/>
+        <text type="checkbox" identifier="use-cache" label="Use Cache" help-text="If this is checked, the server will try to cache appropriate search results.">
+            <checkbox-item value="Yes"/>
+        </text>
+        <text identifier="cache-time" label="Cache time (in milliseconds)" default="3600" help-text="Time before the cache files expire"/>
+    </group>
+    <group identifier="results-options" label="Result List Options" collapsed="true">
+        <text identifier="numgm" label="KeyMatch results" default="0" help-text="Number of KeyMatch results to return with the results"/>
+        <text identifier="num" label="Results Per Page" default="10"/>
+        <group identifier="required-fields" label="Meta Fields" collapsed="true">
+            <group identifier="data-pair" label="Data Pair" multiple="true">
+                <text identifier="key" label="Key"/>
+                <text identifier="value" label="Value"/>
+            </group>
+        </group>
+    </group>
+    <group identifier="side" label="Sidebar" collapsed="true">
+        <group identifier="item" label="Sidebar Item" multiple="true">
+            <!-- feature -->
+            <!-- <text identifier="heading" label="Heading" help-text="Optional - for Callouts or Flexible Entry"/>-->
+            <text type="dropdown" identifier="type2" label="Type of Content" default="Select an option" help-text="Select which option you will display">
+                <dropdown-item value="Select an option"/>
+                <dropdown-item value="Callouts"/>
+                <dropdown-item value="Calendar - Trumba"/>
+                <dropdown-item value="Content Box"/>
+                <dropdown-item value="Hours"/>
+                <dropdown-item value="News Center Widget"/>
+                <dropdown-item value="Profile"/>
+                <dropdown-item value="Related Links"/>
+                <dropdown-item value="Social Media Icons"/>
+                <dropdown-item value="Testimonial"/>
+            </text>
+            <text type="radiobutton" identifier="item-priority" label="Placement" default="Add to existing site-wide set" help-text="Page settings relative to Site-wide settings">
+                <radio-item value="Add to existing site-wide set"/>
+                <radio-item value="Replace site-wide set"/>
+                <radio-item value="Do not display this type on this page"/>
+            </text>
+            <asset type="block" identifier="block" label="Select a Component Block" render-content-depth="3" help-text="for Feature, Quick Links, News, Calendar, Audience Nav, Quick Links"/>
+            <asset type="page" identifier="callout-page" label="-OR- Select Callout Page" multiple="true" render-content-depth="2" help-text="Select one or more callouts"/>
+        </group>
+    </group>
+</system-data-structure>

@@ -1,0 +1,41 @@
+<system-data-structure>
+    <group identifier="news-center-widget" label="News Widget">
+        <text identifier="feed_source" label="URL for Feed " required="true"/>
+        <text type="dropdown" identifier="layout" label="News Block Layout Type">
+            <dropdown-item value="Headlines Only"/>
+            <dropdown-item value="Headlines with Dates"/>
+            <dropdown-item value="Feature Story Above"/>
+        </text>
+        <text identifier="max_number" label="Number of Stories (Max 6)" help-text="Including the feature (max 6)"/>
+        <text type="checkbox" identifier="link_target" label="Open links in new window">
+            <checkbox-item value="Yes"/>
+        </text>
+        <text identifier="feed_heading_text" label="Override Feed Title" help-text="Override the original feed title - main block heading"/>
+        <group identifier="custom_options" label="Advanced Options" collapsed="true">
+            <!-- <text type="checkbox" identifier="include_jquery" label="Include JQuery Library" help-text="If your Site already uses Jquery, the widget does not need to add it"><checkbox-item value="Yes"/></text>-->
+            <text type="radiobutton" identifier="feature_override" label="Disable Feature Treatment" default="N/A" help-text="Only applies to #1, #3, #5">
+                <!-- <radio-item value="Remove Feature"/>-->
+                <radio-item value="Remove Thumbnail Only"/>
+                <radio-item value="N/A"/>
+            </text>
+            <!-- <text type="checkbox" identifier="story_dates" label="Include Story Dates" help-text="Some layouts include dates by default"><checkbox-item value="Yes"/></text>-->
+            <text identifier="feature_continue_text" label="Feature: Read More Link Text" default="Continue Reading" help-text="e.g. Continue reading, Read more"/>
+            <text identifier="heading_reg_headlines" label="Heading for Regular Headlines Block" default="Also in the News" help-text="e.g. Also in the News"/>
+            <text identifier="view_all_text" label="View All link text" default="View All" help-text="Appears after reg headlines; links back to the feed source by default"/>
+            <text identifier="view_all_URL" label="View All/Main Feed HTML Link" help-text="Override the default feed's HTML source page"/>
+            <text identifier="unique_id" label="News Widget Unique Name" help-text="Unique name if more than one feed on a page"/>
+            <!--<text identifier="whsc_viewall_addtl" label="Additional View All Link Text" help-text="For #5 Wide Layout"/><text identifier="whsc_viewall_addtl_url" label="Additional View All URL" help-text="For #5 Wide Layout"/>-->
+            <text identifier="icon_alternate_feed_source" label="Alternate Subscribe URL" help-text="Alternate feed source for the subscribe icon"/>
+            <!-- <text identifier="icon_URL" label="Override Icon: External Image URL" help-text="Override the default RSS icon - external image "/><asset type="file" identifier="icon_internal" label="Override Icon: Internal Image" help-text="Override the default RSS icon - image in Cascade"/>-->
+            <!-- <text type="checkbox" identifier="features_disable" label="Disable Feature Treatment" help-text="Not recommended for all layouts"><checkbox-item value="Yes"/></text><text type="checkbox" identifier="disable_feature_thumbs" label="Disable Feature Thumbnail"><checkbox-item value="Yes"/></text>-->
+        </group>
+        <group identifier="placement" label="Placement Options">
+            <text type="dropdown" identifier="location" label="Placement" default="Select a Location:">
+                <dropdown-item value="Select a Location:"/>
+                <dropdown-item value="Site-wide Right" restrict-to-groups="Standard Template Asset Managers,administrators"/>
+                <dropdown-item value="Selected Pages Right"/>
+            </text>
+            <asset type="page" identifier="publish_to" label="Display on selected pages" multiple="true"/>
+        </group>
+    </group>
+</system-data-structure>

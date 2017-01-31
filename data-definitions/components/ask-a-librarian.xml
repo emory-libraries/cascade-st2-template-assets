@@ -1,0 +1,24 @@
+<system-data-structure>
+    <group identifier="ask-a-librarian" label="Ask a Librarian">
+        <asset type="page" identifier="page" label="Page Link" help-text="Select the page you want to link to"/>
+        <text identifier="external-url" label="External Link"/>
+        <asset type="file" identifier="image-override" label="Ask A Librarian Image Override"/>
+        <group identifier="email-details" label="Email Details" multiple="true">
+            <text identifier="label" label="Label for Email" help-text="EX: Consultations"/>
+            <text identifier="address" label="Email Address" help-text="Enter Email address if needed"/>
+        </group>
+        <group identifier="phone-details" label="Phone Details" multiple="true">
+            <text identifier="label" label="Label for Phone" help-text="EX: Consultations"/>
+            <text identifier="number" label="Phone #" help-text="Enter phone # if needed"/>
+        </group>
+        <text wysiwyg="true" identifier="code-insert" label="Code" help-text="Copy and Paste widget code here" wysiwyg-toolbar-remove="font formatting,font assignment,text formatting,insert image,insert table,"/>
+        <group identifier="placement" label="Placement Options">
+            <text type="dropdown" identifier="location" label="Placement" default="Select a Location:">
+                <dropdown-item value="Select a Location:"/>
+                <dropdown-item value="Site-wide Right"/>
+                <dropdown-item value="Selected Pages Right"/>
+            </text>
+            <asset type="page" identifier="publish_to" label="Display on selected pages" multiple="true"/>
+        </group>
+    </group>
+</system-data-structure>

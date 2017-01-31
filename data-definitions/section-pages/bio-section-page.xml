@@ -1,0 +1,45 @@
+<system-data-structure>
+  <group identifier="thumbnail" label="Thumbnail" collapsed="true">
+    <asset type="file" identifier="image" label="Image for Section Page" help-text="Optional - may be used by Section listings"/>
+  </group>
+  <group identifier="main-content" label="Main Content Options">
+    <text type="radiobutton" identifier="title-alignment" label="Title / Summary Alignment" default="Default (Vertical)" help-text="How the title text and summary text relate to each other">
+      <radio-item value="Default (Vertical)"/>
+      <radio-item value="Horizontal Sections"/>
+    </text>
+    <text type="radiobutton" identifier="layout" label="Layout" default="Hierarchical" help-text="Layout of each bio">
+      <radio-item value="Hierarchical"/>
+      <radio-item value="Full-Width"/>
+      <radio-item value="Tiles"/>
+      <radio-item value="Table Listing"/>
+    </text>
+    <text identifier="button-text" label="Button Text (for Thumbnail Lists)"/>
+    <text identifier="leadership-heading" label="Leadership Bios Heading" help-text="This will be used to title the leadership section of the bio page, if there is one."/>
+    <text identifier="general-heading" label="General Bios Heading" help-text="This will be the title for the general bios section."/>
+  </group>
+  <group identifier="side" label="Sidebar" collapsed="true">
+    <group identifier="item" label="Sidebar Item" multiple="true">
+      <!-- feature -->
+      <!-- <text identifier="heading" label="Heading" help-text="Optional - for Callouts or Flexible Entry"/>-->
+      <text type="dropdown" identifier="type2" label="Type of Content" default="Select an option" help-text="Select which option you will display">
+        <dropdown-item value="Select an option"/>
+        <dropdown-item value="Callouts"/>
+        <dropdown-item value="Calendar - Trumba"/>
+        <dropdown-item value="Content Box"/>
+        <dropdown-item value="Hours"/>
+        <dropdown-item value="News Center Widget"/>
+        <dropdown-item value="Profile"/>
+        <dropdown-item value="Related Links"/>
+        <dropdown-item value="Social Media Icons"/>
+        <dropdown-item value="Testimonial"/>
+      </text>
+      <text type="radiobutton" identifier="item-priority" label="Placement" default="Add to existing site-wide set" help-text="Page settings relative to Site-wide settings">
+        <radio-item value="Add to existing site-wide set"/>
+        <radio-item value="Replace site-wide set"/>
+        <radio-item value="Do not display this type on this page"/>
+      </text>
+      <asset type="block" identifier="block" label="Select a Component Block" render-content-depth="3" help-text="for Feature, Quick Links, News, Calendar, Audience Nav, Quick Links"/>
+      <asset type="page" identifier="callout-page" label="-OR- Select Callout Page" multiple="true" render-content-depth="2" help-text="Select one or more callouts"/>
+    </group>
+  </group>
+</system-data-structure>

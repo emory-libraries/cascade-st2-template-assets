@@ -1,0 +1,5 @@
+<system-data-structure>
+    <group identifier="search-options" label="Search Options">
+        <asset type="block" identifier="block" label="Search Options Block" render-content-depth="2"/>
+    </group>
+</system-data-structure>

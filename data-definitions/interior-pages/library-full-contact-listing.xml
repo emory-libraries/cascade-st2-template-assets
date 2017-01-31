@@ -1,0 +1,42 @@
+<system-data-structure>
+    <group identifier="thumbnail" label="Thumbnail" collapsed="true">
+        <asset type="file" identifier="image" label="Image for Section Page - 200x120px" help-text="Optional - may be used by Section listings"/>
+    </group>
+    <group identifier="page-options" label="Page Options" collapsed="true">
+        <text type="radiobutton" identifier="layout" label="Sections Display" default="Standard">
+            <radio-item value="Standard"/>
+            <radio-item value="Accordions"/>
+            <radio-item value="Tabs"/>
+        </text>
+    </group>
+    <group identifier="main-content" label="Overview Content" collapsed="true">
+        <group identifier="main-images" label="Main Image or Media" collapsed="true">
+            <text type="radiobutton" identifier="type" label="Type" default="Do Not Display">
+                <radio-item value="Do Not Display"/>
+                <radio-item value="Image"/>
+                <radio-item value="Video"/>
+                <radio-item value="Slideshow"/>
+                <radio-item value="Photo Gallery"/>
+                <radio-item value="Video Gallery"/>
+            </text>
+            <text type="radiobutton" identifier="display" label="Display Before or After Text" default="Before" help-text="If Flexible Entry added, display before or after overview text">
+                <radio-item value="Before"/>
+                <radio-item value="After"/>
+            </text>
+            <asset type="file" identifier="image" label="Image"/>
+            <text multi-line="true" identifier="code" label="-OR- Video Code Insert" help-text="e.g. YouTube" rows="7" cols="40"/>
+            <asset type="block" identifier="slideshow-block" label="-OR - Slideshow or Gallery Block " render-content-depth="unlimited" help-text="Edit block directly to change slideshow contents"/>
+            <text identifier="caption" label="Image or Media Caption" help-text="For static image or video code"/>
+        </group>
+        <text wysiwyg="true" identifier="main" label="Flexible Entry" wysiwyg-toolbar-remove="font assignment,insert image,"/>
+        <group identifier="figure" label="Figure" collapsed="true">
+            <text type="radiobutton" identifier="align" label="Align" default="Right" help-text="Left or Right of Flexible Entry text">
+                <radio-item value="Left"/>
+                <radio-item value="Right"/>
+            </text>
+            <asset type="file" identifier="image" label="Image"/>
+            <text identifier="caption" label="Figure Caption" help-text="For accompanying figure"/>
+        </group>
+    </group>
+    <asset type="block" identifier="bio" label="Bio Index Block" multiple="true" render-content-depth="2"/>
+</system-data-structure>

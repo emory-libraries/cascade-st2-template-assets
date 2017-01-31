@@ -1,0 +1,538 @@
+<system-data-structure>
+  <group identifier="thumbnail" label="Parent Section Page Options" collapsed="true">
+    <asset type="file" identifier="image" label="Image for Section Page" help-text="Optional - may be used by Section listings"/>
+    <text type="dropdown" identifier="section-icon" label="Icon for Section Page" default="---">
+      <dropdown-item value="---"/>
+      <dropdown-item value="adjust"/>
+      <dropdown-item value="adn"/>
+      <dropdown-item value="align-center"/>
+      <dropdown-item value="align-justify"/>
+      <dropdown-item value="align-left"/>
+      <dropdown-item value="align-right"/>
+      <dropdown-item value="ambulance"/>
+      <dropdown-item value="anchor"/>
+      <dropdown-item value="android"/>
+      <dropdown-item value="angle-down"/>
+      <dropdown-item value="angle-left"/>
+      <dropdown-item value="angle-right"/>
+      <dropdown-item value="angle-up"/>
+      <dropdown-item value="apple"/>
+      <dropdown-item value="archive"/>
+      <dropdown-item value="arrow-down"/>
+      <dropdown-item value="arrow-left"/>
+      <dropdown-item value="arrow-right"/>
+      <dropdown-item value="arrow-up"/>
+      <dropdown-item value="asterisk"/>
+      <dropdown-item value="backward"/>
+      <dropdown-item value="ban-circle"/>
+      <dropdown-item value="bar-chart"/>
+      <dropdown-item value="barcode"/>
+      <dropdown-item value="beaker"/>
+      <dropdown-item value="beer"/>
+      <dropdown-item value="bell"/>
+      <dropdown-item value="bell-alt"/>
+      <dropdown-item value="bitbucket"/>
+      <dropdown-item value="bitbucket-sign"/>
+      <dropdown-item value="bold"/>
+      <dropdown-item value="bolt"/>
+      <dropdown-item value="book"/>
+      <dropdown-item value="bookmark"/>
+      <dropdown-item value="bookmark-empty"/>
+      <dropdown-item value="briefcase"/>
+      <dropdown-item value="btc"/>
+      <dropdown-item value="bug"/>
+      <dropdown-item value="building"/>
+      <dropdown-item value="bullhorn"/>
+      <dropdown-item value="bullseye"/>
+      <dropdown-item value="calendar"/>
+      <dropdown-item value="calendar-empty"/>
+      <dropdown-item value="camera"/>
+      <dropdown-item value="camera-retro"/>
+      <dropdown-item value="caret-down"/>
+      <dropdown-item value="caret-left"/>
+      <dropdown-item value="caret-right"/>
+      <dropdown-item value="caret-up"/>
+      <dropdown-item value="certificate"/>
+      <dropdown-item value="check"/>
+      <dropdown-item value="check-empty"/>
+      <dropdown-item value="check-minus"/>
+      <dropdown-item value="check-sign"/>
+      <dropdown-item value="chevron-down"/>
+      <dropdown-item value="chevron-left"/>
+      <dropdown-item value="chevron-right"/>
+      <dropdown-item value="chevron-sign-down"/>
+      <dropdown-item value="chevron-sign-left"/>
+      <dropdown-item value="chevron-sign-right"/>
+      <dropdown-item value="chevron-sign-up"/>
+      <dropdown-item value="chevron-up"/>
+      <dropdown-item value="circle"/>
+      <dropdown-item value="circle-arrow-down"/>
+      <dropdown-item value="circle-arrow-left"/>
+      <dropdown-item value="circle-arrow-right"/>
+      <dropdown-item value="circle-arrow-up"/>
+      <dropdown-item value="circle-blank"/>
+      <dropdown-item value="cloud"/>
+      <dropdown-item value="cloud-download"/>
+      <dropdown-item value="cloud-upload"/>
+      <dropdown-item value="cny"/>
+      <dropdown-item value="code"/>
+      <dropdown-item value="code-fork"/>
+      <dropdown-item value="coffee"/>
+      <dropdown-item value="cog"/>
+      <dropdown-item value="cogs"/>
+      <dropdown-item value="collapse"/>
+      <dropdown-item value="collapse-alt"/>
+      <dropdown-item value="collapse-top"/>
+      <dropdown-item value="columns"/>
+      <dropdown-item value="comment"/>
+      <dropdown-item value="comment-alt"/>
+      <dropdown-item value="comments"/>
+      <dropdown-item value="comments-alt"/>
+      <dropdown-item value="compass"/>
+      <dropdown-item value="copy"/>
+      <dropdown-item value="credit-card"/>
+      <dropdown-item value="crop"/>
+      <dropdown-item value="css3"/>
+      <dropdown-item value="cut"/>
+      <dropdown-item value="dashboard"/>
+      <dropdown-item value="desktop"/>
+      <dropdown-item value="double-angle-down"/>
+      <dropdown-item value="double-angle-left"/>
+      <dropdown-item value="double-angle-right"/>
+      <dropdown-item value="double-angle-up"/>
+      <dropdown-item value="download"/>
+      <dropdown-item value="download-alt"/>
+      <dropdown-item value="dribbble"/>
+      <dropdown-item value="dropbox"/>
+      <dropdown-item value="edit"/>
+      <dropdown-item value="edit-sign"/>
+      <dropdown-item value="eject"/>
+      <dropdown-item value="ellipsis-horizontal"/>
+      <dropdown-item value="ellipsis-vertical"/>
+      <dropdown-item value="envelope"/>
+      <dropdown-item value="envelope-alt"/>
+      <dropdown-item value="eraser"/>
+      <dropdown-item value="eur"/>
+      <dropdown-item value="exchange"/>
+      <dropdown-item value="exclamation"/>
+      <dropdown-item value="exclamation-sign"/>
+      <dropdown-item value="expand"/>
+      <dropdown-item value="expand-alt"/>
+      <dropdown-item value="external-link"/>
+      <dropdown-item value="external-link-sign"/>
+      <dropdown-item value="eye-close"/>
+      <dropdown-item value="eye-open"/>
+      <dropdown-item value="facebook"/>
+      <dropdown-item value="facebook-sign"/>
+      <dropdown-item value="facetime-video"/>
+      <dropdown-item value="fast-backward"/>
+      <dropdown-item value="fast-forward"/>
+      <dropdown-item value="female"/>
+      <dropdown-item value="fighter-jet"/>
+      <dropdown-item value="file"/>
+      <dropdown-item value="file-alt"/>
+      <dropdown-item value="file-text"/>
+      <dropdown-item value="file-text-alt"/>
+      <dropdown-item value="film"/>
+      <dropdown-item value="filter"/>
+      <dropdown-item value="fire"/>
+      <dropdown-item value="fire-extinguisher"/>
+      <dropdown-item value="flag"/>
+      <dropdown-item value="flag-alt"/>
+      <dropdown-item value="flag-checkered"/>
+      <dropdown-item value="flickr"/>
+      <dropdown-item value="folder-close"/>
+      <dropdown-item value="folder-close-alt"/>
+      <dropdown-item value="folder-open"/>
+      <dropdown-item value="folder-open-alt"/>
+      <dropdown-item value="font"/>
+      <dropdown-item value="food"/>
+      <dropdown-item value="forward"/>
+      <dropdown-item value="foursquare"/>
+      <dropdown-item value="frown"/>
+      <dropdown-item value="fullscreen"/>
+      <dropdown-item value="gamepad"/>
+      <dropdown-item value="gbp"/>
+      <dropdown-item value="gift"/>
+      <dropdown-item value="github"/>
+      <dropdown-item value="github-alt"/>
+      <dropdown-item value="github-sign"/>
+      <dropdown-item value="gittip"/>
+      <dropdown-item value="glass"/>
+      <dropdown-item value="globe"/>
+      <dropdown-item value="google-plus"/>
+      <dropdown-item value="google-plus-sign"/>
+      <dropdown-item value="group"/>
+      <dropdown-item value="h-sign"/>
+      <dropdown-item value="hand-down"/>
+      <dropdown-item value="hand-left"/>
+      <dropdown-item value="hand-right"/>
+      <dropdown-item value="hand-up"/>
+      <dropdown-item value="hdd"/>
+      <dropdown-item value="headphones"/>
+      <dropdown-item value="heart"/>
+      <dropdown-item value="heart-empty"/>
+      <dropdown-item value="home"/>
+      <dropdown-item value="hospital"/>
+      <dropdown-item value="html5"/>
+      <dropdown-item value="inbox"/>
+      <dropdown-item value="indent-left"/>
+      <dropdown-item value="indent-right"/>
+      <dropdown-item value="info"/>
+      <dropdown-item value="info-sign"/>
+      <dropdown-item value="inr"/>
+      <dropdown-item value="instagram"/>
+      <dropdown-item value="italic"/>
+      <dropdown-item value="jpy"/>
+      <dropdown-item value="key"/>
+      <dropdown-item value="keyboard"/>
+      <dropdown-item value="krw"/>
+      <dropdown-item value="laptop"/>
+      <dropdown-item value="leaf"/>
+      <dropdown-item value="legal"/>
+      <dropdown-item value="lemon"/>
+      <dropdown-item value="level-down"/>
+      <dropdown-item value="level-up"/>
+      <dropdown-item value="lightbulb"/>
+      <dropdown-item value="link"/>
+      <dropdown-item value="linkedin"/>
+      <dropdown-item value="linkedin-sign"/>
+      <dropdown-item value="linux"/>
+      <dropdown-item value="list"/>
+      <dropdown-item value="list-alt"/>
+      <dropdown-item value="list-ol"/>
+      <dropdown-item value="list-ul"/>
+      <dropdown-item value="location-arrow"/>
+      <dropdown-item value="lock"/>
+      <dropdown-item value="long-arrow-down"/>
+      <dropdown-item value="long-arrow-left"/>
+      <dropdown-item value="long-arrow-right"/>
+      <dropdown-item value="long-arrow-up"/>
+      <dropdown-item value="magic"/>
+      <dropdown-item value="magnet"/>
+      <dropdown-item value="mail-reply-all"/>
+      <dropdown-item value="male"/>
+      <dropdown-item value="map-marker"/>
+      <dropdown-item value="maxcdn"/>
+      <dropdown-item value="medkit"/>
+      <dropdown-item value="meh"/>
+      <dropdown-item value="microphone"/>
+      <dropdown-item value="microphone-off"/>
+      <dropdown-item value="minus"/>
+      <dropdown-item value="minus-sign"/>
+      <dropdown-item value="minus-sign-alt"/>
+      <dropdown-item value="mobile-phone"/>
+      <dropdown-item value="money"/>
+      <dropdown-item value="moon"/>
+      <dropdown-item value="move"/>
+      <dropdown-item value="music"/>
+      <dropdown-item value="off"/>
+      <dropdown-item value="ok"/>
+      <dropdown-item value="ok-circle"/>
+      <dropdown-item value="ok-sign"/>
+      <dropdown-item value="paper-clip"/>
+      <dropdown-item value="paste"/>
+      <dropdown-item value="pause"/>
+      <dropdown-item value="pencil"/>
+      <dropdown-item value="phone"/>
+      <dropdown-item value="phone-sign"/>
+      <dropdown-item value="picture"/>
+      <dropdown-item value="pinterest"/>
+      <dropdown-item value="pinterest-sign"/>
+      <dropdown-item value="plane"/>
+      <dropdown-item value="play"/>
+      <dropdown-item value="play-circle"/>
+      <dropdown-item value="play-sign"/>
+      <dropdown-item value="plus"/>
+      <dropdown-item value="plus-sign"/>
+      <dropdown-item value="plus-sign-alt"/>
+      <dropdown-item value="print"/>
+      <dropdown-item value="pushpin"/>
+      <dropdown-item value="puzzle-piece"/>
+      <dropdown-item value="qrcode"/>
+      <dropdown-item value="question"/>
+      <dropdown-item value="question-sign"/>
+      <dropdown-item value="quote-left"/>
+      <dropdown-item value="quote-right"/>
+      <dropdown-item value="random"/>
+      <dropdown-item value="refresh"/>
+      <dropdown-item value="remove"/>
+      <dropdown-item value="remove-circle"/>
+      <dropdown-item value="remove-sign"/>
+      <dropdown-item value="renren"/>
+      <dropdown-item value="reorder"/>
+      <dropdown-item value="repeat"/>
+      <dropdown-item value="reply"/>
+      <dropdown-item value="reply-all"/>
+      <dropdown-item value="resize-full"/>
+      <dropdown-item value="resize-horizontal"/>
+      <dropdown-item value="resize-small"/>
+      <dropdown-item value="resize-vertical"/>
+      <dropdown-item value="retweet"/>
+      <dropdown-item value="road"/>
+      <dropdown-item value="rocket"/>
+      <dropdown-item value="rss"/>
+      <dropdown-item value="rss-sign"/>
+      <dropdown-item value="save"/>
+      <dropdown-item value="screenshot"/>
+      <dropdown-item value="search"/>
+      <dropdown-item value="share"/>
+      <dropdown-item value="share-alt"/>
+      <dropdown-item value="share-sign"/>
+      <dropdown-item value="shield"/>
+      <dropdown-item value="shopping-cart"/>
+      <dropdown-item value="sign-blank"/>
+      <dropdown-item value="signal"/>
+      <dropdown-item value="signin"/>
+      <dropdown-item value="signout"/>
+      <dropdown-item value="sitemap"/>
+      <dropdown-item value="skype"/>
+      <dropdown-item value="smile"/>
+      <dropdown-item value="sort"/>
+      <dropdown-item value="sort-by-alphabet"/>
+      <dropdown-item value="sort-by-alphabet-alt"/>
+      <dropdown-item value="sort-by-attributes"/>
+      <dropdown-item value="sort-by-attributes-alt"/>
+      <dropdown-item value="sort-by-order"/>
+      <dropdown-item value="sort-by-order-alt"/>
+      <dropdown-item value="sort-down"/>
+      <dropdown-item value="sort-up"/>
+      <dropdown-item value="spinner"/>
+      <dropdown-item value="stackexchange"/>
+      <dropdown-item value="star"/>
+      <dropdown-item value="star-empty"/>
+      <dropdown-item value="star-half"/>
+      <dropdown-item value="star-half-empty"/>
+      <dropdown-item value="step-backward"/>
+      <dropdown-item value="step-forward"/>
+      <dropdown-item value="stethoscope"/>
+      <dropdown-item value="stop"/>
+      <dropdown-item value="strikethrough"/>
+      <dropdown-item value="subscript"/>
+      <dropdown-item value="suitcase"/>
+      <dropdown-item value="sun"/>
+      <dropdown-item value="superscript"/>
+      <dropdown-item value="table"/>
+      <dropdown-item value="tablet"/>
+      <dropdown-item value="tag"/>
+      <dropdown-item value="tags"/>
+      <dropdown-item value="tasks"/>
+      <dropdown-item value="terminal"/>
+      <dropdown-item value="text-height"/>
+      <dropdown-item value="text-width"/>
+      <dropdown-item value="th"/>
+      <dropdown-item value="th-large"/>
+      <dropdown-item value="th-list"/>
+      <dropdown-item value="thumbs-down"/>
+      <dropdown-item value="thumbs-down-alt"/>
+      <dropdown-item value="thumbs-up"/>
+      <dropdown-item value="thumbs-up-alt"/>
+      <dropdown-item value="ticket"/>
+      <dropdown-item value="time"/>
+      <dropdown-item value="tint"/>
+      <dropdown-item value="trash"/>
+      <dropdown-item value="trello"/>
+      <dropdown-item value="trophy"/>
+      <dropdown-item value="truck"/>
+      <dropdown-item value="tumblr"/>
+      <dropdown-item value="tumblr-sign"/>
+      <dropdown-item value="twitter"/>
+      <dropdown-item value="twitter-sign"/>
+      <dropdown-item value="umbrella"/>
+      <dropdown-item value="underline"/>
+      <dropdown-item value="undo"/>
+      <dropdown-item value="unlink"/>
+      <dropdown-item value="unlock"/>
+      <dropdown-item value="unlock-alt"/>
+      <dropdown-item value="upload"/>
+      <dropdown-item value="upload-alt"/>
+      <dropdown-item value="usd"/>
+      <dropdown-item value="user"/>
+      <dropdown-item value="user-md"/>
+      <dropdown-item value="vk"/>
+      <dropdown-item value="volume-down"/>
+      <dropdown-item value="volume-off"/>
+      <dropdown-item value="volume-up"/>
+      <dropdown-item value="warning-sign"/>
+      <dropdown-item value="weibo"/>
+      <dropdown-item value="windows"/>
+      <dropdown-item value="wrench"/>
+      <dropdown-item value="xing"/>
+      <dropdown-item value="xing-sign"/>
+      <dropdown-item value="youtube"/>
+      <dropdown-item value="youtube-play"/>
+      <dropdown-item value="youtube-sign"/>
+      <dropdown-item value="zoom-in"/>
+      <dropdown-item value="zoom-out"/>
+    </text>
+    <text wysiwyg="true" identifier="summary" label="Summary for Section Page"/>
+    <group identifier="selected-links" label="Page Links to be displayed with Summary" restrict-to-groups="OIT WDG Central Managers" collapsed="true">
+      <asset type="page" identifier="link" label="Page Link" multiple="true" render-content-depth="1"/>
+    </group>
+  </group>
+  <group identifier="main-content" label="Main Content">
+    <text wysiwyg="true" identifier="main" label="Main Entry" help-text="Static Content Before PHP"/>
+  </group>
+  <!-- <group identifier="related" label="Related">
+    <text type="checkbox" identifier="subnav" label="Show Subnav">
+      <checkbox-item value="Yes"/>
+    </text>
+  </group>-->
+  <group identifier="form" label="Form">
+    <text identifier="name" label="Form Name" help-text="Can use spaces, capitals, etc."/>
+    <text identifier="recipient" label="Recipient Email"/>
+    <text identifier="recipient_name" label="Recipient Name" default="Library Web Services" help-text="The name that will be in the from field"/>
+    <text identifier="response_subject" label="Recipient Subject" help-text="This is the subject of the confirmation email"/>
+    <text multi-line="true" identifier="response_message" label="Recipient Message" help-text="This is the message that will be included with the confirmation email"/>
+    <text multi-line="true" identifier="confirm-message" label="Confirmation Message" help-text="This is the message that will be shown when somebody submits the form"/>
+    <group identifier="attributes" label="Attributes" collapsed="true">
+      <text identifier="action" label="Action"/>
+      <text type="checkbox" identifier="multipart" label="Multipart (for attachments)">
+        <checkbox-item value="Yes"/>
+      </text>
+      <text identifier="class" label="Class"/>
+      <text identifier="id" label="ID"/>
+      <text type="checkbox" identifier="multistep" label="Multistep (multiple pages)">
+        <checkbox-item value="Yes" show-fields="form/attributes/multistep_nav, form/fieldset/attributes/title, form/fieldset/attributes/active"/>
+      </text>
+      <text type="checkbox" identifier="multistep_nav" label="Multistep Nav (for multiple pages)">
+        <checkbox-item value="Yes"/>
+      </text>
+      <text type="checkbox" identifier="nav_buttons" label="Show Nav Buttons" help-text="For multi page forms">
+        <checkbox-item value="Yes"/>
+      </text>
+      <text type="checkbox" identifier="debug" label="Debug Mode" help-text="In debug mode, emails will not be sent">
+        <checkbox-item value="Yes"/>
+      </text>
+      <text type="checkbox" identifier="honeypot" label="Include Hidden Captcha" help-text="This option includes a hidden field that bots will fill out but users will not, helping to prevent some kinds of spam.">
+        <checkbox-item value="Yes" checked="true"/>
+      </text>
+      <text type="checkbox" identifier="js_submit" label="Submit and Confirm with JavaScript" help-text="Form submits through JavaScript, rather than using the server-side submission and confirmation message.">
+        <checkbox-item value="Yes" checked="true"/>
+      </text>
+    </group>
+    <group identifier="fieldset" label="Fieldset" multiple="true">
+      <text identifier="legend" label="Legend"/>
+      <group identifier="attributes" label="Attributes" collapsed="true">
+        <text identifier="class" label="Class"/>
+        <text identifier="id" label="ID"/>
+        <text identifier="title" label="Title (for multipage)"/>
+        <text type="checkbox" identifier="active" label="Active (for multipage)">
+          <checkbox-item value="Yes"/>
+        </text>
+      </group>
+      <group identifier="field" label="Field" multiple="true">
+        <text type="dropdown" identifier="type" label="Type" default="text">
+          <dropdown-item value="checkbox" show-fields="form/fieldset/field/checked"/>
+          <dropdown-item value="color"/>
+          <dropdown-item value="date"/>
+          <dropdown-item value="datetime"/>
+          <dropdown-item value="datetime-local"/>
+          <dropdown-item value="dropdown"/>
+          <dropdown-item value="email" show-fields="form/fieldset/field/rules/valid_email"/>
+          <dropdown-item value="file"/>
+          <dropdown-item value="hidden"/>
+          <dropdown-item value="image"/>
+          <dropdown-item value="month"/>
+          <dropdown-item value="number"/>
+          <dropdown-item value="password"/>
+          <dropdown-item value="radio"/>
+          <dropdown-item value="range"/>
+          <dropdown-item value="reset"/>
+          <dropdown-item value="search"/>
+          <dropdown-item value="select" show-fields="form/fieldset/field/select-options"/>
+          <dropdown-item value="subject"/>
+          <dropdown-item value="submit"/>
+          <dropdown-item value="tel"/>
+          <dropdown-item value="text"/>
+          <dropdown-item value="textarea" show-fields="form/fieldset/field/attributes/rows"/>
+          <dropdown-item value="time"/>
+          <dropdown-item value="url"/>
+          <dropdown-item value="week"/>
+        </text>
+        <text identifier="name" label="Name" help-text="lowercase, no spaces"/>
+        <text identifier="label" label="Label"/>
+        <text identifier="icon" label="Icon"/>
+        <text identifier="placeholder" label="Placeholder"/>
+        <text identifier="error_text" label="Error Text"/>
+        <text type="checkbox" identifier="checked" label="Checked By Default" help-text="If this field is a checkbox, it can be checked by default">
+          <checkbox-item value="Yes"/>
+        </text>
+        <group identifier="select-options" label="Select Items" collapsed="true">
+          <text identifier="select-item" label="Select Item" multiple="true"/>
+        </group>
+        <group identifier="rules" label="Validation Rules" collapsed="true">
+          <text type="checkbox" identifier="required" label="Required">
+            <checkbox-item value="Yes"/>
+          </text>
+          <text type="checkbox" identifier="valid_email" label="Valid Email">
+            <checkbox-item value="Yes"/>
+          </text>
+          <text type="checkbox" identifier="alpha" label="Alpha">
+            <checkbox-item value="Yes"/>
+          </text>
+          <text type="checkbox" identifier="alpha_numeric" label="Alpha-numeric">
+            <checkbox-item value="Yes"/>
+          </text>
+          <text type="checkbox" identifier="alpha_dash" label="Alpha-dash">
+            <checkbox-item value="Yes"/>
+          </text>
+          <text type="checkbox" identifier="numeric" label="Numeric">
+            <checkbox-item value="Yes"/>
+          </text>
+          <text type="checkbox" identifier="integer" label="Integer">
+            <checkbox-item value="Yes"/>
+          </text>
+          <text type="checkbox" identifier="decimal" label="Decimal">
+            <checkbox-item value="Yes"/>
+          </text>
+        </group>
+        <group identifier="attributes" label="Attributes" collapsed="true">
+          <text identifier="class" label="Class"/>
+          <text identifier="rows" label="Rows (for textareas only)"/>
+        </group>
+      </group>
+    </group>
+    <group identifier="submit" label="Submit">
+      <text identifier="value" label="Button Text" default="Submit"/>
+      <text type="radiobutton" identifier="type" label="Button Type" default="Default (gray)">
+        <radio-item value="Default (gray)"/>
+        <radio-item value="Primary (blue)"/>
+        <radio-item value="Info (light blue)"/>
+        <radio-item value="Success (green)"/>
+        <radio-item value="Warning (orange)"/>
+        <radio-item value="Danger (red)"/>
+        <radio-item value="Alternate (dark gray)"/>
+        <radio-item value="Text Link"/>
+      </text>
+    </group>
+    <group identifier="code" label="Form-specific Code" collapsed="true">
+      <text multi-line="true" identifier="javascript" label="JavaScript" help-text="Enter code to be rendered between the script tags"/>
+    </group>
+  </group>
+  <group identifier="side" label="Sidebar" collapsed="true">
+    <group identifier="item" label="Sidebar Item" multiple="true">
+      <!-- feature -->
+      <!-- <text identifier="heading" label="Heading" help-text="Optional - for Callouts or Flexible Entry"/>-->
+      <text type="dropdown" identifier="type2" label="Type of Content" default="Select an option" help-text="Select which option you will display">
+        <dropdown-item value="Select an option"/>
+        <dropdown-item value="Callouts" show-fields="side/item/callout-page"/>
+        <dropdown-item value="News Center Widget" show-fields="side/item/block"/>
+        <dropdown-item value="Calendar - Trumba" show-fields="side/item/block"/>
+        <dropdown-item value="Audience Nav" show-fields="side/item/block"/>
+        <dropdown-item value="Quick Links" show-fields="side/item/block"/>
+        <dropdown-item value="Feature" show-fields="side/item/block"/>
+        <dropdown-item value="Profile" show-fields="side/item/block"/>
+        <dropdown-item value="Testimonial" show-fields="side/item/block"/>
+        <dropdown-item value="Social Media Icons" show-fields="side/item/block"/>
+      </text>
+      <text type="radiobutton" identifier="item-priority" label="Placement" default="Add to existing site-wide set" help-text="Page settings relative to Site-wide settings">
+        <radio-item value="Add to existing site-wide set"/>
+        <radio-item value="Replace site-wide set"/>
+        <radio-item value="Do not display this type on this page"/>
+      </text>
+      <asset type="block" identifier="block" label="Select a Component Block" render-content-depth="3" help-text="for Feature, Quick Links, News, Calendar, Audience Nav, Quick Links"/>
+      <asset type="page" identifier="callout-page" label="Select Callout Page" multiple="true" render-content-depth="2" help-text="Select one or more callouts"/>
+    </group>
+  </group>
+</system-data-structure>

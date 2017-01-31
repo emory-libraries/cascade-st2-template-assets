@@ -1,0 +1,18 @@
+<system-data-structure>
+    <group identifier="books-slider" label="Books Slider">
+        <text identifier="heading" label="Heading"/>
+        <group identifier="slider" label="Slider">
+            <asset type="block" identifier="book" label="Book" multiple="true" maximum-number="8" minimum-number="1" render-content-depth="3"/>
+        </group>
+        <text wysiwyg="true" identifier="body-content" label="Body Content" help-text="Enter your content here." wysiwyg-toolbar-remove="font assignment,insert image,insert table,"/>
+        <group identifier="link" label="Link">
+            <asset type="page" identifier="page" label="Cascade Book Category Page"/>
+            <text identifier="button-label" label="Button Label"/>
+            <text type="dropdown" identifier="button-style" label="Button Style" default="Default (Grey)" help-text="Select the style of the button">
+                <dropdown-item value="Default (Grey)"/>
+                <dropdown-item value="Primary (Blue)"/>
+                <dropdown-item value="Info (Aqua)"/>
+            </text>
+        </group>
+    </group>
+</system-data-structure>

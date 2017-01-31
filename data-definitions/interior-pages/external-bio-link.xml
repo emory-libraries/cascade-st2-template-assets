@@ -1,0 +1,103 @@
+<system-data-structure>
+
+    <text identifier="url" label="Link URL" required="true" help-text="Enter the complete URL, including http://"/>
+    <group identifier="main-content-bio" label="Main Page Content">
+      <text identifier="first_main" label="First Name for Sorting" required="true"/>
+      <text identifier="last_main" label="Last Name for Sorting" required="true"/>
+
+    <group identifier="roletitle" label="Roles/Titles" multiple="true">
+      <text identifier="role" label="Role/Title"/>
+      <text identifier="org" label="Organization/Institution"/>
+    </group>
+    <group identifier="contact" label="Contact Information">
+      <text identifier="email" label="Email Address" required="true"/>
+      <text identifier="phone" label="Phone Number" required="true"/>
+    </group>
+    <group identifier="subjects" label="Subjects">
+      <text type="dropdown" identifier="subject-dropdown" label="Subject" multiple="true" default=" ">
+        <dropdown-item value=" "/>
+        <dropdown-item value="African American Studies"/>
+        <dropdown-item value="African History"/>
+        <dropdown-item value="African Studies"/>
+        <dropdown-item value="American Literature"/>
+        <dropdown-item value="Ancient and Medieval History"/>
+        <dropdown-item value="Anthropology"/>
+        <dropdown-item value="Art History"/>
+        <dropdown-item value="Biological and Biomedical Sciences"/>
+        <dropdown-item value="British Literature"/>
+        <dropdown-item value="Buddhism"/>
+        <dropdown-item value="Career Resources"/>
+        <dropdown-item value="Chemistry"/>
+        <dropdown-item value="Christianity"/>
+        <dropdown-item value="Classical Studies"/>
+        <dropdown-item value="Collection Management "/>
+        <dropdown-item value="Comparative and Other Religions"/>
+        <dropdown-item value="Comparative Literature"/>
+        <dropdown-item value="Computer Science"/>
+        <dropdown-item value="Copyright and Publishing"/>
+        <dropdown-item value="Dance"/>
+        <dropdown-item value="Data Sets"/>
+        <dropdown-item value="Data Management "/>
+        <dropdown-item value="Development Studies (Masters in Development Practice)"/>
+        <dropdown-item value="East Asian History "/>
+        <dropdown-item value="East Asian Literature"/>
+        <dropdown-item value="East Asian Studies"/>
+        <dropdown-item value="Economics"/>
+        <dropdown-item value="Education"/>
+        <dropdown-item value="EndNote"/>
+        <dropdown-item value="Environmental Studies"/>
+        <dropdown-item value="European History"/>
+        <dropdown-item value="Film Studies"/>
+        <dropdown-item value="French Literature"/>
+        <dropdown-item value="French Studies"/>
+        <dropdown-item value="Geospatial Data Librarian (GIS)"/>
+        <dropdown-item value="German Studies"/>
+        <dropdown-item value="Government Documents"/>
+        <dropdown-item value="Health, Physical Education and Sports"/>
+        <dropdown-item value="Hinduism"/>
+        <dropdown-item value="Instruction "/>
+        <dropdown-item value="Interdisciplinary Studies/ILA"/>
+        <dropdown-item value="International Documentation"/>
+        <dropdown-item value="Islam"/>
+        <dropdown-item value="Italian Studies"/>
+        <dropdown-item value="Jewish Studies"/>
+        <dropdown-item value="Journalism"/>
+        <dropdown-item value="Judaism"/>
+        <dropdown-item value="Latin American History"/>
+        <dropdown-item value="Latin American Literature"/>
+        <dropdown-item value="Latin American Studies"/>
+        <dropdown-item value="LGBT Studies"/>
+        <dropdown-item value="Library Science"/>
+        <dropdown-item value="Linguistics"/>
+        <dropdown-item value="Math"/>
+        <dropdown-item value="Medicine"/>
+        <dropdown-item value="Middle Eastern Studies"/>
+        <dropdown-item value="Music"/>
+        <dropdown-item value="Neuroscience and Behavioral Biology"/>
+        <dropdown-item value="Open Access"/>
+        <dropdown-item value="Philosophy"/>
+        <dropdown-item value="Physics"/>
+        <dropdown-item value="Political Science"/>
+        <dropdown-item value="Popular Literature"/>
+        <dropdown-item value="Portuguese"/>
+        <dropdown-item value="Portuguese Literature"/>
+        <dropdown-item value="Psychology"/>
+        <dropdown-item value="Public Health"/>
+        <dropdown-item value="Reference Books"/>
+        <dropdown-item value="Russian and East European Studies"/>
+        <dropdown-item value="Science (General)"/>
+        <dropdown-item value="Sociology"/>
+        <dropdown-item value="South Asian History"/>
+        <dropdown-item value="South Asian Literature"/>
+        <dropdown-item value="South Asian Studies"/>
+        <dropdown-item value="Spanish"/>
+        <dropdown-item value="Spanish Literature"/>
+        <dropdown-item value="Theater Studies"/>
+        <dropdown-item value="United States History"/>
+        <dropdown-item value="Womens Studies"/>
+        <dropdown-item value="Zotero"/>
+      </text>
+    </group>
+
+  </group>
+</system-data-structure>

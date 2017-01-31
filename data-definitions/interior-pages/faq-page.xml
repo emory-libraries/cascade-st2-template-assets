@@ -1,0 +1,59 @@
+<system-data-structure>
+  <group identifier="thumbnail" label="Thumbnail" collapsed="true">
+    <asset type="file" identifier="image" label="Image for Section Page - 200x120px" help-text="Optional - may be used by Section listings"/>
+  </group>
+  <group identifier="main-content" label="Overview Content">
+    <text wysiwyg="true" identifier="main" label="Flexible Entry"/>
+  </group>
+  <group identifier="section-content" label="FAQ Item" multiple="true">
+    <text identifier="heading" label="Question" required="true" help-text="Required"/>
+    <!-- <group identifier="images" label="Main Image or Media" collapsed="true">
+      <text type="radiobutton" identifier="image_type" label="Type" default="Do Not Display">
+        <radio-item value="Image"/>
+        <radio-item value="Video/Audio Code"/>
+        <radio-item value="Slideshow"/>
+        <radio-item value="Photo Gallery"/>
+        <radio-item value="Do Not Display"/>
+      </text>
+      <asset type="file" identifier="story_img_main" label="Image"/>
+      <text type="radiobutton" identifier="layout" label="Image Layout Type" default="Horizontal">
+        <radio-item value="Horizontal"/>
+        <radio-item value="Vertical"/>
+      </text>
+      <text multi-line="true" identifier="multimedia_snippet" label="-OR- Multimedia Code Insert" help-text="e.g. YouTube" rows="10" cols="40"/>
+      <asset type="block" identifier="slideshow" label="-OR - Slideshow or Gallery Block " render-content-depth="unlimited" help-text="Edit block directly to change slideshow contents"/>
+      <text identifier="caption" label="Image or Media Caption" help-text="For static image or video code"/>
+    </group>-->
+    <text wysiwyg="true" identifier="main" label="Answer" help-text="Content for section/accordion/tab/faq"/>
+  </group>
+  
+  
+  <group identifier="side" label="Sidebar" collapsed="true">
+    <group identifier="item" label="Sidebar Item" multiple="true">
+      <!-- feature -->
+      <!-- <text identifier="heading" label="Heading" help-text="Optional - for Callouts or Flexible Entry"/>-->
+      <text type="dropdown" identifier="type2" label="Type of Content" default="Select an option" help-text="Select which option you will display">
+        <dropdown-item value="Select an option"/>
+        <dropdown-item value="Callouts"/>
+        <dropdown-item value="Calendar - Trumba"/>
+        <dropdown-item value="Content Box"/>
+        <dropdown-item value="Hours"/>
+        <dropdown-item value="News Center Widget"/>
+        <dropdown-item value="Profile"/>
+        <dropdown-item value="Related Links"/>
+        <dropdown-item value="Social Media Icons"/>
+        <dropdown-item value="Testimonial"/>
+      </text>
+      <text type="radiobutton" identifier="item-priority" label="Placement" default="Add to existing site-wide set" help-text="Page settings relative to Site-wide settings">
+        <radio-item value="Add to existing site-wide set"/>
+        <radio-item value="Replace site-wide set"/>
+        <radio-item value="Do not display this type on this page"/>
+      </text>
+      <asset type="block" identifier="block" label="Select a Component Block" render-content-depth="3" help-text="for Feature, Quick Links, News, Calendar, Audience Nav, Quick Links"/>
+      <asset type="page" identifier="callout-page" label="-OR- Select Callout Page" multiple="true" render-content-depth="2" help-text="Select one or more callouts"/>
+    </group>
+  </group>
+  
+  
+  
+</system-data-structure>

@@ -1,0 +1,8 @@
+<system-data-structure>
+    <text identifier="title" label="Title" default="Hours"/>
+    <text identifier="prefix" label="Site Domain" help-text="i.e. http://web.library.emory.edu"/>
+    <asset type="page" identifier="hours-page" label="Hours Page"/>
+    <asset type="page" identifier="hours-full-listing" label="Hours Full Listing Page"/>
+    <text identifier="extension" label="File Extension" restrict-to-groups="Standard Template Asset Managers,administrators" default=".xml"/>
+    <text identifier="api-link" label="Link to API Page" restrict-to-groups="Standard Template Asset Managers,administrators" default="http://web.library.emory.edu/using-the-library/visiting-the-library/hours/index.xml"/>
+</system-data-structure>

@@ -1,0 +1,27 @@
+<system-data-structure>
+    <group identifier="social-media-site-settings" label="Social Media Icon Set - Automated">
+        <text identifier="heading" label="Heading" help-text="Optional"/>
+        <text type="radiobutton" identifier="heading-style" label="Heading Style" default="Boxed">
+            <radio-item value="Boxed"/>
+            <radio-item value="Unboxed"/>
+        </text>
+        <text type="radiobutton" identifier="icon-size" label="Icon Size" default="Medium">
+            <radio-item value="Small"/>
+            <radio-item value="Medium"/>
+            <radio-item value="Large"/>
+        </text>
+        <text type="checkbox" identifier="show-text" label="Show Link Text" help-text="Text in addition to icon - requires vertical list style">
+            <checkbox-item value="Yes"/>
+        </text>
+        <!-- <text type="radiobutton" identifier="layout" label="Icons-Only Layout Type (if link text not shown)" default="Vertical list"><radio-item value="Horizontal list"/><radio-item value="Vertical list"/></text>-->
+        <!-- <asset type="block" identifier="source" label="Site Settings Block" restrict-to-groups="Standard Template Asset Managers,administrators" render-content-depth="4"/>-->
+        <group identifier="placement" label="Placement Options">
+            <text type="dropdown" identifier="location" label="Placement" default="Select a Location:">
+                <dropdown-item value="Select a Location:"/>
+                <dropdown-item value="Site-wide Right" restrict-to-groups="Standard Template Asset Managers,administrators"/>
+                <dropdown-item value="Selected Pages Right"/>
+            </text>
+            <asset type="page" identifier="publish_to" label="Display on selected pages" multiple="true"/>
+        </group>
+    </group>
+</system-data-structure>
