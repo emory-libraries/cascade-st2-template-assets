@@ -368,6 +368,7 @@ ______________________________________________________________________________ *
 
 .hero aside .content-box {
     background-color: #fff;
+    color: #333;
     max-height: 300px;
     padding: .5em;
     overflow: hidden;
