@@ -367,12 +367,13 @@ ______________________________________________________________________________ *
 }
 
 .hero aside .content-box {
-    background-color: #fff;
+    background-color: rgba(255,255,255,.5);
     color: #333;
-    max-height: 300px;
-    padding: .5em;
+    max-height: 310px;
+    padding: 0 .25em;
     overflow: hidden;
     border: 1px solid #e8ebf4;
+    font-size: 1em;
 }
 
 .hero aside .content-box .feature-img {
@@ -381,7 +382,7 @@ ______________________________________________________________________________ *
 
 .hero aside .content-box h3 {
     padding: 0;
-    margin: .5em 0;
+    margin: .1em 0;
 }
 
 .hero aside .content-box p {
