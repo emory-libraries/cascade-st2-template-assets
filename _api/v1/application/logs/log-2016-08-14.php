@@ -1,0 +1,39 @@
+<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed'); ?>
+
+ERROR - 2016-08-14 07:53:52 --> Severity: Notice  --> Array to string conversion /var/www/docs/template.library.emory.edu/_api/v1/system/libraries/Table.php 334
+ERROR - 2016-08-14 07:53:52 --> Severity: Notice  --> Array to string conversion /var/www/docs/template.library.emory.edu/_api/v1/system/libraries/Table.php 334
+ERROR - 2016-08-14 07:53:52 --> Severity: Notice  --> Array to string conversion /var/www/docs/template.library.emory.edu/_api/v1/system/libraries/Table.php 334
+ERROR - 2016-08-14 07:53:52 --> Severity: Notice  --> Array to string conversion /var/www/docs/template.library.emory.edu/_api/v1/system/libraries/Table.php 353
+ERROR - 2016-08-14 07:53:52 --> Severity: Notice  --> Array to string conversion /var/www/docs/template.library.emory.edu/_api/v1/system/libraries/Table.php 353
+ERROR - 2016-08-14 07:53:52 --> Severity: Notice  --> Array to string conversion /var/www/docs/template.library.emory.edu/_api/v1/system/libraries/Table.php 353
+ERROR - 2016-08-14 08:27:32 --> Severity: Notice  --> Array to string conversion /var/www/docs/template.library.emory.edu/_api/v1/system/libraries/Table.php 334
+ERROR - 2016-08-14 08:27:32 --> Severity: Notice  --> Array to string conversion /var/www/docs/template.library.emory.edu/_api/v1/system/libraries/Table.php 334
+ERROR - 2016-08-14 08:27:32 --> Severity: Notice  --> Array to string conversion /var/www/docs/template.library.emory.edu/_api/v1/system/libraries/Table.php 334
+ERROR - 2016-08-14 08:27:32 --> Severity: Notice  --> Array to string conversion /var/www/docs/template.library.emory.edu/_api/v1/system/libraries/Table.php 353
+ERROR - 2016-08-14 08:27:32 --> Severity: Notice  --> Array to string conversion /var/www/docs/template.library.emory.edu/_api/v1/system/libraries/Table.php 353
+ERROR - 2016-08-14 08:27:32 --> Severity: Notice  --> Array to string conversion /var/www/docs/template.library.emory.edu/_api/v1/system/libraries/Table.php 353
+ERROR - 2016-08-14 10:54:59 --> Severity: Notice  --> Array to string conversion /var/www/docs/template.library.emory.edu/_api/v1/system/libraries/Table.php 334
+ERROR - 2016-08-14 10:54:59 --> Severity: Notice  --> Array to string conversion /var/www/docs/template.library.emory.edu/_api/v1/system/libraries/Table.php 334
+ERROR - 2016-08-14 10:54:59 --> Severity: Notice  --> Array to string conversion /var/www/docs/template.library.emory.edu/_api/v1/system/libraries/Table.php 334
+ERROR - 2016-08-14 10:54:59 --> Severity: Notice  --> Array to string conversion /var/www/docs/template.library.emory.edu/_api/v1/system/libraries/Table.php 353
+ERROR - 2016-08-14 10:54:59 --> Severity: Notice  --> Array to string conversion /var/www/docs/template.library.emory.edu/_api/v1/system/libraries/Table.php 353
+ERROR - 2016-08-14 10:54:59 --> Severity: Notice  --> Array to string conversion /var/www/docs/template.library.emory.edu/_api/v1/system/libraries/Table.php 353
+ERROR - 2016-08-14 14:05:13 --> Severity: Notice  --> Array to string conversion /var/www/docs/template.library.emory.edu/_api/v1/system/libraries/Table.php 334
+ERROR - 2016-08-14 14:05:13 --> Severity: Notice  --> Array to string conversion /var/www/docs/template.library.emory.edu/_api/v1/system/libraries/Table.php 334
+ERROR - 2016-08-14 14:05:13 --> Severity: Notice  --> Array to string conversion /var/www/docs/template.library.emory.edu/_api/v1/system/libraries/Table.php 334
+ERROR - 2016-08-14 14:05:13 --> Severity: Notice  --> Array to string conversion /var/www/docs/template.library.emory.edu/_api/v1/system/libraries/Table.php 353
+ERROR - 2016-08-14 14:05:13 --> Severity: Notice  --> Array to string conversion /var/www/docs/template.library.emory.edu/_api/v1/system/libraries/Table.php 353
+ERROR - 2016-08-14 14:05:13 --> Severity: Notice  --> Array to string conversion /var/www/docs/template.library.emory.edu/_api/v1/system/libraries/Table.php 353
+ERROR - 2016-08-14 15:16:41 --> Severity: Notice  --> Array to string conversion /var/www/docs/template.library.emory.edu/_api/v1/system/libraries/Table.php 334
+ERROR - 2016-08-14 15:16:41 --> Severity: Notice  --> Array to string conversion /var/www/docs/template.library.emory.edu/_api/v1/system/libraries/Table.php 334
+ERROR - 2016-08-14 15:16:41 --> Severity: Notice  --> Array to string conversion /var/www/docs/template.library.emory.edu/_api/v1/system/libraries/Table.php 334
+ERROR - 2016-08-14 15:16:41 --> Severity: Notice  --> Array to string conversion /var/www/docs/template.library.emory.edu/_api/v1/system/libraries/Table.php 353
+ERROR - 2016-08-14 15:16:41 --> Severity: Notice  --> Array to string conversion /var/www/docs/template.library.emory.edu/_api/v1/system/libraries/Table.php 353
+ERROR - 2016-08-14 15:16:41 --> Severity: Notice  --> Array to string conversion /var/www/docs/template.library.emory.edu/_api/v1/system/libraries/Table.php 353
+ERROR - 2016-08-14 22:02:27 --> 404 Page Not Found --> ga
+ERROR - 2016-08-14 23:02:39 --> Severity: Notice  --> Array to string conversion /var/www/docs/template.library.emory.edu/_api/v1/system/libraries/Table.php 334
+ERROR - 2016-08-14 23:02:39 --> Severity: Notice  --> Array to string conversion /var/www/docs/template.library.emory.edu/_api/v1/system/libraries/Table.php 334
+ERROR - 2016-08-14 23:02:39 --> Severity: Notice  --> Array to string conversion /var/www/docs/template.library.emory.edu/_api/v1/system/libraries/Table.php 334
+ERROR - 2016-08-14 23:02:39 --> Severity: Notice  --> Array to string conversion /var/www/docs/template.library.emory.edu/_api/v1/system/libraries/Table.php 353
+ERROR - 2016-08-14 23:02:39 --> Severity: Notice  --> Array to string conversion /var/www/docs/template.library.emory.edu/_api/v1/system/libraries/Table.php 353
+ERROR - 2016-08-14 23:02:39 --> Severity: Notice  --> Array to string conversion /var/www/docs/template.library.emory.edu/_api/v1/system/libraries/Table.php 353
