@@ -1,0 +1,11 @@
+Options +FollowSymLinks
+#Options -MultiViews
+
+<IfModule mod_rewrite.c>
+RewriteBase /
+
+RewriteEngine on
+RewriteCond $1 !^(index\.php)
+RewriteRule ^(.*)$ /_api/v1/index.php/$1 [L]
+ 
+</IfModule>
