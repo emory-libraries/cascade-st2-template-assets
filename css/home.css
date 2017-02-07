@@ -201,7 +201,7 @@ ______________________________________________________________________________ *
 .library-search footer ul  a:active {
     color: #4E86DB;
 }
-.library-search footer h4 a span.icon-angle-right {
+.library-search footer h4 a span.fa-angle-right {
     display: inline-block;
     margin-left: 0.5em;
     text-decoration: none;

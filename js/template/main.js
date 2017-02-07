@@ -243,7 +243,7 @@
         // hide the explanation text by default
         if (settings.size == 'large') {
           // add arrow next to label.
-          $('footer h4 a', settings.search_form).append('<span class="icon-angle-right"></span>');
+          $('footer h4 a', settings.search_form).append('<span class="fa fa-angle-right"></span>');
         }
 
         // if user clicks the search field, show the options
@@ -368,9 +368,9 @@ function searchExplanations(settings) {
 
           $('footer', settings.search_form).toggleClass('open');
           if ($('footer', settings.search_form).hasClass('open')) {
-            $('.icon-angle-right').addClass('icon-rotate-90');
+            $('.fa-angle-right').addClass('fa-rotate-90');
           } else {
-            $('.icon-angle-right').removeClass('icon-rotate-90');
+            $('.fa-angle-right').removeClass('fa-rotate-90');
           }        
           return false;
         }); // end on click
@@ -871,7 +871,7 @@ $(document).ready(function () {
 
     $('.accordion-body.in.collapse').not('.expanded').removeClass('in');
     //reset up/down arrow .accordion-heading h2 a span
-    $('h2.accordion-heading a span.icon-rotate-90').not('.expanded').removeClass('icon-rotate-90');
+    $('h2.accordion-heading a span.fa-rotate-90').not('.expanded').removeClass('fa-rotate-90');
   }
 
   //Hide all accordions on load (default is to show all)
@@ -882,7 +882,7 @@ $(document).ready(function () {
 
   $('.accordion-heading a').click(function(){
     $(this).parent().next().toggleClass('in');
-    $(this).find('.icon-angle-right').toggleClass('icon-rotate-90');
+    $(this).find('.fa-angle-right').toggleClass('fa-rotate-90');
   });
 
 
@@ -890,7 +890,7 @@ $(document).ready(function () {
     //console.log('show');
     $('.accordion-body.collapse').addClass('in');
     //reset up/down arrow .accordion-heading h2 a span
-    $('h2.accordion-heading a span').addClass('icon-rotate-90');
+    $('h2.accordion-heading a span').addClass('fa-rotate-90');
   });
 
   $('#hideAll').click(function(){

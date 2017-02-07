@@ -289,7 +289,7 @@ ______________________________________________________________________________ *
     content: " »" 
 }*/
 
-.data-entry .accordion h2.accordion-heading .icon-angle-right {
+.data-entry .accordion h2.accordion-heading .fa-angle-right {
     font-size: 1em;
     padding-right: .5em;
 }
@@ -612,12 +612,12 @@ figure > a:active {
 
 /*    News Index    */
 
-.feed-icon a .icon-rss-sign {
+.feed-icon a .fa-rss-square {
     color: orange;
     margin-left: 2em;
 }
 
-.feed-icon a:hover .icon-rss-sign {
+.feed-icon a:hover .fa-rss-square {
     text-decoration: none;
 }
 

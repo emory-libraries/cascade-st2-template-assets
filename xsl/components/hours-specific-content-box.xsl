@@ -44,7 +44,7 @@
                         </xsl:attribute>
                         <span>
                             <xsl:attribute name="class">
-                                <xsl:text>icon-time</xsl:text>
+                                <xsl:text>fa fa-time</xsl:text>
                             </xsl:attribute>
                         </span>
                         <xsl:if test="content/system-data-structure/title != ''">
@@ -122,7 +122,7 @@
                         <xsl:if test="content/system-data-structure/icon != ''">
                             <span>
                                 <xsl:attribute name="class">
-                                    <xsl:text>icon-</xsl:text>
+                                    <xsl:text>fa fa-</xsl:text>
                                     <xsl:value-of select="content/system-data-structure/icon"/>
                                 </xsl:attribute>
                             </span>

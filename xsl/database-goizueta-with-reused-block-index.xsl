@@ -21,7 +21,7 @@
         <xsl:if test="//calling-page/system-page/system-data-structure/short-description!=''">
             <section class="clearfix">
                 <p><xsl:value-of select="//calling-page/system-page/system-data-structure/short-description"/><xsl:text> </xsl:text></p>
-                <p><a href="#description">More details below <span class="icon-double-angle-right"></span></a></p>
+                <p><a href="#description">More details below <span class="fa-angle-double-right"></span></a></p>
             </section>
         </xsl:if>       
         
@@ -133,7 +133,7 @@
                                     <h3>On-campus Access</h3>
                                 </xsl:when>
                                 <xsl:otherwise>
-                                    <h3><a href="{access-link}" rel="external nofollow">On-campus Access <span class="icon-external-link"></span></a></h3>
+                                    <h3><a href="{access-link}" rel="external nofollow">On-campus Access <span class="fa fa-external-link"></span></a></h3>
                                 </xsl:otherwise>
                             </xsl:choose>
                             <xsl:call-template name="access-details"/>
@@ -159,7 +159,7 @@
                             <h3 class="text-error">Off-campus Access is Temporarily Unavailable</h3>
                         </xsl:when>
                         <xsl:otherwise>
-                            <h3><a href="{access-link}" rel="external nofollow">Off-campus Access <span class="icon-external-link"></span></a></h3>
+                            <h3><a href="{access-link}" rel="external nofollow">Off-campus Access <span class="fa fa-external-link"></span></a></h3>
                             <xsl:call-template name="access-details"/>
                         </xsl:otherwise>
                     </xsl:choose>
@@ -231,8 +231,8 @@
                         </xsl:variable>
                         <xsl:variable name="icon">
                             <xsl:choose>
-                                <xsl:when test="external-link != ''">icon-external-link</xsl:when>
-                                <xsl:when test="document/path != '/'">icon-file-text-alt</xsl:when>
+                                <xsl:when test="external-link != ''">fa fa-external-link</xsl:when>
+                                <xsl:when test="document/path != '/'">fa fa-file-text-o</xsl:when>
                             </xsl:choose>
                         </xsl:variable>
                         <li><a href="{$url}"><xsl:value-of select="link-label"/></a><xsl:text> </xsl:text><span class="{$icon}"></span></li>

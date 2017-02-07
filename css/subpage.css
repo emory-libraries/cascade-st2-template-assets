@@ -11,11 +11,11 @@ ______________________________________________________________________________ *
     text-decoration: underline;
 }*/
 
-#main-content .data-entry section > h2 > a > .icon-link,
-#main-content .data-entry section > h3 > a > .icon-link,
-#main-content .data-entry section > h4 > a > .icon-link,
-#main-content .data-entry section > h5 > a > .icon-link,
-#main-content .data-entry section > h6 > a > .icon-link {
+#main-content .data-entry section > h2 > a > .fa-link,
+#main-content .data-entry section > h3 > a > .fa-link,
+#main-content .data-entry section > h4 > a > .fa-link,
+#main-content .data-entry section > h5 > a > .fa-link,
+#main-content .data-entry section > h6 > a > .fa-link {
     font-size: .9em;
     color: #999;
     text-decoration: none;
@@ -23,11 +23,11 @@ ______________________________________________________________________________ *
     transition: opacity .5s;
 }
 
-#main-content .data-entry section > h2:hover > a > .icon-link,
-#main-content .data-entry section > h3:hover > a > .icon-link,
-#main-content .data-entry section > h4:hover > a > .icon-link,
-#main-content .data-entry section > h5:hover > a > .icon-link,
-#main-content .data-entry section > h6:hover > a > .icon-link {
+#main-content .data-entry section > h2:hover > a > .fa-link,
+#main-content .data-entry section > h3:hover > a > .fa-link,
+#main-content .data-entry section > h4:hover > a > .fa-link,
+#main-content .data-entry section > h5:hover > a > .fa-link,
+#main-content .data-entry section > h6:hover > a > .fa-link {
     opacity: 1;
     transition: opacity .1s;
 }
@@ -254,7 +254,7 @@ transition: 0.1s all;
 content: " »"
 }*/
 
-.data-entry .accordion h2.accordion-heading .icon-angle-right {
+.data-entry .accordion h2.accordion-heading .fa-angle-right {
     font-size: 1em;
     padding-right: .5em;
 }
@@ -508,12 +508,12 @@ figure > a:hover, figure > a:focus, figure > a:active {
 
 /*    News Index    */
 
-.feed-icon a .icon-rss-sign {
+.feed-icon a .fa-rss-square {
     color: orange;
     margin-left: 2em;
 }
 
-.feed-icon a:hover .icon-rss-sign {
+.feed-icon a:hover .fa-rss-square {
     text-decoration: none;
 }
 

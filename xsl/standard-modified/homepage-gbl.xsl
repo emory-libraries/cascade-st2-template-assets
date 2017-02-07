@@ -267,8 +267,7 @@
             </xsl:attribute>
             <span>
                 <xsl:attribute name="class">
-                    <xsl:text>icon-</xsl:text>
-                    <xsl:value-of select="icon"/>
+                    <xsl:text>fa fa-</xsl:text><xsl:value-of select="icon"/>
                 </xsl:attribute>
             </span>
             <xsl:value-of select="link-label"/>

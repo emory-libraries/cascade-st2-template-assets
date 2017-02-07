@@ -186,7 +186,7 @@
                                 <xsl:if test="./system-data-structure/thumbnail/section-icon !='---'">
                                     <i>
                                         <xsl:attribute name="class">
-                                            <xsl:text>icon-</xsl:text>
+                                            <xsl:text>fa fa-</xsl:text>
                                             <xsl:value-of select="./system-data-structure/thumbnail/section-icon"/>
                                         </xsl:attribute>
                                         <xsl:text> </xsl:text>
@@ -239,7 +239,7 @@
                                <xsl:if test="./system-data-structure/thumbnail/section-icon !='---'">
                                    <i>
                                        <xsl:attribute name="class">
-                                           <xsl:text>icon-</xsl:text>
+                                           <xsl:text>fa fa-</xsl:text>
                                            <xsl:value-of select="./system-data-structure/thumbnail/section-icon"/>
                                        </xsl:attribute>
                                        <xsl:text> </xsl:text>

@@ -43,7 +43,7 @@
                         <xsl:if test="icon != '---'">
                             <span>
                                 <xsl:attribute name="class">
-                                    <xsl:text>icon-</xsl:text><xsl:value-of select="icon"/>
+                                    <xsl:text>fa fa-</xsl:text><xsl:value-of select="icon"/>
                                 </xsl:attribute>
                             </span><xsl:text> </xsl:text>
                         </xsl:if>
