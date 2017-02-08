@@ -61,7 +61,7 @@
         var $subjects = $(".subjects p a"),
         $sort_input = $("#filter-on-page"),
         $subject_dropdown = $('<select></select>').attr({'id':'subject-dropdown','class':'span9'}),
-        options = '<option value="">--All Subjects--</option>',
+        options = '<option value="" selected>--All Subjects--</option>',
         foundSubjects =[],
         uniqueSubjects = [];
 
