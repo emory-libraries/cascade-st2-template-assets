@@ -59,7 +59,7 @@
                 </label>
                 <button class="btn span2" type="submit">
                     <strong class="label">Search</strong>
-                    <span class="fa fa-search"></span>
+                    <span aria-hidden="true" class="fa fa-search"></span>
                 </button>
             </div>
             <fieldset class="search-scope span10">

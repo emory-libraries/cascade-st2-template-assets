@@ -91,7 +91,7 @@
         </xsl:choose>
         <xsl:if test="printable-list/link">
             <div class="pull-right">
-                <p><small><a href="{printable-list/link}">Download a printable list <span class="fa fa-download"></span></a></small></p>
+                <p><small><a href="{printable-list/link}">Download a printable list <span aria-hidden="true" class="fa fa-download"></span></a></small></p>
             </div>
         </xsl:if>
         <xsl:if test="supplemental-block/block/content != ''">

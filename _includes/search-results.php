@@ -159,7 +159,7 @@ class SearchResults {
                 echo '<div class="input-append span12">
                   <input '.$formparams.' id="search_q" name="search_q" placeholder="'.$this->placeholderValue().'"'.$this->formValue().' type="search"/>                                    
                   <button class="btn btn-search" type="submit"> <strong class="label">Search</strong>
-                      <span class="icon-search"></span>
+                      <span class="fa fa-search"></span>
                   </button>
                 </div>
               </form>

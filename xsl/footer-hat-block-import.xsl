@@ -198,7 +198,7 @@
                 </xsl:variable>
                 <li>
                     <a href="{$href}" rel="external">
-                        <span class="fa {$social-icon}">
+                        <span aria-hidden="true" class="fa {$social-icon}">
                             <xsl:text/>
                         </span>
                         <xsl:value-of select="$name"/>

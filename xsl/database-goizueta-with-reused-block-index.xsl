@@ -133,7 +133,7 @@
                                     <h3>On-campus Access</h3>
                                 </xsl:when>
                                 <xsl:otherwise>
-                                    <h3><a href="{access-link}" rel="external nofollow">On-campus Access <span class="fa fa-external-link"></span></a></h3>
+                                    <h3><a href="{access-link}" rel="external nofollow">On-campus Access <span aria-hidden="true" class="fa fa-external-link"></span></a></h3>
                                 </xsl:otherwise>
                             </xsl:choose>
                             <xsl:call-template name="access-details"/>
@@ -159,7 +159,7 @@
                             <h3 class="text-error">Off-campus Access is Temporarily Unavailable</h3>
                         </xsl:when>
                         <xsl:otherwise>
-                            <h3><a href="{access-link}" rel="external nofollow">Off-campus Access <span class="fa fa-external-link"></span></a></h3>
+                            <h3><a href="{access-link}" rel="external nofollow">Off-campus Access <span aria-hidden="true" class="fa fa-external-link"></span></a></h3>
                             <xsl:call-template name="access-details"/>
                         </xsl:otherwise>
                     </xsl:choose>

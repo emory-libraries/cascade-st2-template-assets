@@ -216,11 +216,11 @@
                 <xsl:when test="contains(concat(' ', normalize-space($selected), ' '), ' selected-section ')"/>
                 <xsl:when test="contains(concat(' ', normalize-space($selected), ' '), ' selected-folder ')">
                     <xsl:if test="$is-section != 'true'">
-                        <span class="fa fa-angle-down"></span>
+                        <span aria-hidden="true" class="fa fa-angle-down"></span>
                     </xsl:if>
                 </xsl:when>
                 <xsl:otherwise>
-                    <span class="fa fa-angle-right"></span>
+                    <span aria-hidden="true" class="fa fa-angle-right"></span>
                 </xsl:otherwise>
             </xsl:choose>
 

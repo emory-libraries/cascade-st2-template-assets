@@ -243,7 +243,7 @@
         // hide the explanation text by default
         if (settings.size == 'large') {
           // add arrow next to label.
-          $('footer h4 a', settings.search_form).append('<span class="fa fa-angle-right"></span>');
+          $('footer h4 a', settings.search_form).append('<span aria-hidden="true" class="fa fa-angle-right"></span>');
         }
 
         // if user clicks the search field, show the options

@@ -7,7 +7,7 @@
             <xsl:if test="system-data-structure/whsc/exclude/value='Yes'">
     
                 <p><a href="{path}"><xsl:value-of select="name"/></a></p> 
-</xsl:if>
+            </xsl:if>
         </xsl:for-each>
     </xsl:template>
 </xsl:stylesheet>

@@ -23,7 +23,7 @@ $(function() {
         });
     }
     if ($('form#database-filter').length > 0) {
-        $('form#database-filter .accordion-heading > a').after('<span class="fa fa-angle-right"></span>');
+        $('form#database-filter .accordion-heading > a').after('<span aria-hidden="true" class="fa fa-angle-right"></span>');
         $('.collapse').on('show', function(){
             $(this).parent().find('.fa-angle-right').addClass('fa-rotate-90');
         }).on('hide', function(){

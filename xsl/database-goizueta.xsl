@@ -22,7 +22,7 @@
         <xsl:if test="//calling-page/system-page/system-data-structure/short-description!=''">
             <section class="clearfix">
                 <p><xsl:value-of select="//calling-page/system-page/system-data-structure/short-description"/><xsl:text> </xsl:text></p>
-                <p><a href="#description">More details below <span class="fa fa-angle-double-right"></span></a></p>
+                <p><a href="#description">More details below <span aria-hidden="true" class="fa fa-angle-double-right"></span></a></p>
             </section>
         </xsl:if>       
         
@@ -133,7 +133,7 @@
                                     <h3>On-campus Access</h3>
                                 </xsl:when>
                                 <xsl:otherwise>
-                                    <h3><a><xsl:attribute name="rel"><xsl:if test="new-window='Yes'">external </xsl:if>nofollow</xsl:attribute><xsl:attribute name="href"><!-- hotfix for broken proxy links, sept 2015 --><xsl:choose><xsl:when test="contains(access-link,'libcat1')"><xsl:value-of select="$proxy-fix"/><xsl:value-of select="substring-after(access-link,'http://libcat1.cc.emory.edu:32888/')"/></xsl:when><xsl:otherwise><xsl:value-of select="access-link"/></xsl:otherwise></xsl:choose></xsl:attribute>On-campus Access<xsl:if test="new-window='Yes'"> <span class="fa fa-external-link"></span></xsl:if></a></h3>
+                                    <h3><a><xsl:attribute name="rel"><xsl:if test="new-window='Yes'">external </xsl:if>nofollow</xsl:attribute><xsl:attribute name="href"><!-- hotfix for broken proxy links, sept 2015 --><xsl:choose><xsl:when test="contains(access-link,'libcat1')"><xsl:value-of select="$proxy-fix"/><xsl:value-of select="substring-after(access-link,'http://libcat1.cc.emory.edu:32888/')"/></xsl:when><xsl:otherwise><xsl:value-of select="access-link"/></xsl:otherwise></xsl:choose></xsl:attribute>On-campus Access<xsl:if test="new-window='Yes'"> <span aria-hidden="true" class="fa fa-external-link"></span></xsl:if></a></h3>
                                 </xsl:otherwise>
                             </xsl:choose>
                             <xsl:call-template name="access-details"/>
@@ -159,7 +159,7 @@
                             <h3 class="text-error">Off-campus Access is Temporarily Unavailable</h3>
                         </xsl:when>
                         <xsl:otherwise>
-                            <h3><a rel="external nofollow"><xsl:attribute name="rel"><xsl:if test="new-window='Yes'">external </xsl:if>nofollow</xsl:attribute><xsl:attribute name="href"><!-- hotfix for broken proxy links, sept 2015 --><xsl:choose><xsl:when test="contains(access-link,'libcat1')"><xsl:value-of select="$proxy-fix"/><xsl:value-of select="substring-after(access-link,'http://libcat1.cc.emory.edu:32888/')"/></xsl:when><xsl:otherwise><xsl:value-of select="access-link"/></xsl:otherwise></xsl:choose></xsl:attribute>Off-campus Access<xsl:if test="new-window='Yes'"> <span class="fa fa-external-link"></span></xsl:if></a></h3>
+                            <h3><a rel="external nofollow"><xsl:attribute name="rel"><xsl:if test="new-window='Yes'">external </xsl:if>nofollow</xsl:attribute><xsl:attribute name="href"><!-- hotfix for broken proxy links, sept 2015 --><xsl:choose><xsl:when test="contains(access-link,'libcat1')"><xsl:value-of select="$proxy-fix"/><xsl:value-of select="substring-after(access-link,'http://libcat1.cc.emory.edu:32888/')"/></xsl:when><xsl:otherwise><xsl:value-of select="access-link"/></xsl:otherwise></xsl:choose></xsl:attribute>Off-campus Access<xsl:if test="new-window='Yes'"> <span aria-hidden="true" class="fa fa-external-link"></span></xsl:if></a></h3>
                             <xsl:call-template name="access-details"/>
                         </xsl:otherwise>
                     </xsl:choose>
