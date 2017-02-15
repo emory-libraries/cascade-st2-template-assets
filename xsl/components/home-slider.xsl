@@ -1,5 +1,6 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
     <!-- relative to system-data-structure/slider/ -->
+    <xsl:import href="/_cms/xsl/patterns.xsl"/>
     <xsl:output indent="yes"/>
     <xsl:template name="home-slider">
         <ul class="utilities" id="home-slider-utilities">
@@ -44,7 +45,7 @@
                         </xsl:attribute>
                         <span>
                             <xsl:attribute name="class">
-                                <xsl:text>fa fa-time</xsl:text>
+                                <xsl:text>fa fa-clock-o</xsl:text>
                             </xsl:attribute>
                         </span>
                         <xsl:if test="content/system-data-structure/title != ''">
@@ -121,10 +122,7 @@
                         </xsl:if>
                         <xsl:if test="content/system-data-structure/icon != ''">
                             <span>
-                                <xsl:attribute name="class">
-                                    <xsl:text>fa fa-</xsl:text>
-                                    <xsl:value-of select="content/system-data-structure/icon"/>
-                                </xsl:attribute>
+                                <xsl:attribute name="class"><xsl:text>fa </xsl:text><xsl:call-template name="replace-icon"><xsl:with-param name="icon" select="content/system-data-structure/icon"/></xsl:call-template></xsl:attribute>
                             </span>
                         </xsl:if>
                         <xsl:if test="content/system-data-structure/title != ''">

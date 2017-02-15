@@ -1,7 +1,7 @@
 <system-data-structure>
       <group identifier="thumbnail" label="Referencing Section Page Options" collapsed="true">
             <asset type="file" identifier="image" label="Image for Section Page" help-text="Optional - may be used by Section listings"/>
-            <text type="dropdown" default="---" identifier="icon" label="Select or type an icon name" help-text="Google Font Awesome icons for a list.">
+            <text type="dropdown" identifier="section-icon" label="Icon for Section Page" default="---">
                 <dropdown-item value="---"/>
                 <!-- Web Application Icons -->
                 <dropdown-item value="address-book" />

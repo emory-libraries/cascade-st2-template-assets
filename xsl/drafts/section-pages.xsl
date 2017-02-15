@@ -1,4 +1,5 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
+    <xsl:import href="/_cms/xsl/patterns.xsl"/>
     <xsl:output indent="yes"/>
     <xsl:template match="/">
         <div>
@@ -186,8 +187,7 @@
                                 <xsl:if test="./system-data-structure/thumbnail/section-icon !='---'">
                                     <i>
                                         <xsl:attribute name="class">
-                                            <xsl:text>fa fa-</xsl:text>
-                                            <xsl:value-of select="./system-data-structure/thumbnail/section-icon"/>
+                                            <xsl:text>fa </xsl:text><xsl:call-template name="replace-icon"><xsl:with-param name="icon" select="./system-data-structure/thumbnail/section-icon"/></xsl:call-template>
                                         </xsl:attribute>
                                         <xsl:text> </xsl:text>
                                     </i>
@@ -239,8 +239,7 @@
                                <xsl:if test="./system-data-structure/thumbnail/section-icon !='---'">
                                    <i>
                                        <xsl:attribute name="class">
-                                           <xsl:text>fa fa-</xsl:text>
-                                           <xsl:value-of select="./system-data-structure/thumbnail/section-icon"/>
+                                           <xsl:text>fa </xsl:text><xsl:call-template name="replace-icon"><xsl:with-param name="icon" select="./system-data-structure/thumbnail/section-icon"/></xsl:call-template>
                                        </xsl:attribute>
                                        <xsl:text> </xsl:text>
                                    </i>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
+    <xsl:import href="/_cms/xsl/patterns.xsl"/>
     <xsl:import href="/_cms/xsl/components/hero-search-box.xsl"/>
 
     <xsl:template name="goizueta-homepage">
@@ -267,7 +268,7 @@
             </xsl:attribute>
             <span>
                 <xsl:attribute name="class">
-                    <xsl:text>fa fa-</xsl:text><xsl:value-of select="icon"/>
+                    <xsl:text>fa </xsl:text><xsl:call-template name="replace-icon"><xsl:with-param name="icon" select="icon"/></xsl:call-template>
                 </xsl:attribute>
             </span>
             <xsl:value-of select="link-label"/>
