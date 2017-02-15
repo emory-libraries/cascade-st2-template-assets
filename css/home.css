@@ -590,11 +590,12 @@ ______________________________________________________________________________ *
 .hero .featured-links ul li {
     margin: 0 0 0.75em 0;
 }
-.hero .featured-links ul li span {
-    display: block;
+.hero .featured-links ul li .fa {
+    width: 1.25em;
+    /*display: inline;
     float: left;
     margin-right: 16px;
-    margin-right: 1rem;
+    margin-right: 1rem;*/
 }
 .hero .featured-links ul li a {
     -webkit-transition: color 0.1s ease;
@@ -679,8 +680,9 @@ ______________________________________________________________________________ *
     float: left;
     margin-top: -12px;
 }
-.gbl.hero .links span {
-    margin-right:0.5em
+.gbl.hero .links .fa {
+    width: 1.25em;
+    /*margin-right:0.5em*/
 }
 .gbl.hero .aside {
     float: left;
