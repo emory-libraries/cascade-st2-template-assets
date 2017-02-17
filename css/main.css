@@ -153,18 +153,18 @@ ______________________________________________________________________________ *
 
 body {
     margin: 0 auto;
-    background: #f2f5f7;
+    background: #fff;
     text-rendering: optimizeLegibility;
 }
 .wrapper {
     margin: 0 auto;
-    background: #fff;
+    /*background: #fff;*/
 }
 .wrapper > .container, .wrapper > .container-fluid {
     position: relative;
     margin-right: auto;
     margin-left: auto;
-    max-width: 960px;
+    max-width: 1200px;
 }
 .container-fluid {
     padding-right: 0;
@@ -174,7 +174,7 @@ body {
 .container-fluid > .row-fluid {
     margin-top: 0.75em;
     margin-bottom: 0.75em;
-    min-height:20em;
+    min-height: 20em;
 }
 .container-fluid .row-fluid.col1, .container-fluid .row-fluid.col1col2, .container-fluid .row-fluid.col1col2col3 {
     background: url('img/border-left-col.gif') repeat-y 23.80506091846298% 0 transparent;
@@ -202,7 +202,7 @@ body {
     /*color: #002878;*/
     border-top: 2px solid #fff;
     padding-top: 1em;
-    margin-top: 2em;
+    /*margin-top: 2em;*/
     min-height: 4em;
     /* font-size: 0.80357142857143em; */
 }
@@ -1346,7 +1346,7 @@ ______________________________________________________________________________ *
 
 @media (min-width: 768px) and (max-width: 979px) {
     .wrapper > .container-fluid {
-        max-width: 768px;
+        /*max-width: 768px;*/
       }
     #emory-wide .top .nav-box {
         right: 0;
@@ -2483,7 +2483,7 @@ ______________________________________________________________________________ *
 }
 @media (min-width: 980px) {
   .wrapper {
-        width: 960px;
+        /*width: 960px;*/
     }
 }
 
