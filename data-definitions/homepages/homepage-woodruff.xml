@@ -941,6 +941,7 @@
                   <dropdown-item value="user-md" />
                   <dropdown-item value="wheelchair" />
                   <dropdown-item value="wheelchair-alt" />
+
             </text>
             <text wysiwyg="true" identifier="summary" label="Summary for Section Page"/>
       </group>

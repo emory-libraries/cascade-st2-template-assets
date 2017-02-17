@@ -61,7 +61,7 @@
         var $subjects = $(".subjects p a"),
         $sort_input = $("#filter-on-page"),
         $subject_dropdown = $('<select></select>').attr({'id':'subject-dropdown','class':'span9'}),
-        options = '<option value="">--All Subjects--</option>',
+        options = '<option value="" selected>--All Subjects--</option>',
         foundSubjects =[],
         uniqueSubjects = [];
 
@@ -90,14 +90,18 @@
             if($.inArray(el, uniqueSubjects) === -1) uniqueSubjects.push(el);
         });
         
+        var optionsArray = [];
+
         $.each(uniqueSubjects, function(){
             var value, option;
             value = this.split('(');
                 value = value[0];
                 option = "<option value='"+value.toLowerCase()+"'>"+ this +"</option>";
-                options+=option;
-            });
+                optionsArray.push(option);
+        });
         
+        options += optionsArray.sort().join('');
+
         $sort_input.hide().val('').keyup();
         
         $subject_dropdown
@@ -107,7 +111,7 @@
             $sort_input.val( $(this).children("option:selected").val()).keyup();
         });
 
-        $('#subject-dropdown option').sort(asc_sort).appendTo('#subject-dropdown');
+        //$('#subject-dropdown option').sort(asc_sort).appendTo('#subject-dropdown');
 
         var $subject_h1 = $(".subject-libs .intro > h1");
 
