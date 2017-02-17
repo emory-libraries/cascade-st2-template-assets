@@ -121,7 +121,7 @@
                             <xsl:attribute name="ga-event-action">download</xsl:attribute>
                         </xsl:if>
                         <xsl:if test="content/system-data-structure/icon != ''">
-                            <span>
+                            <span aria-hidden="true">
                                 <xsl:attribute name="class"><xsl:text>fa </xsl:text><xsl:call-template name="replace-icon"><xsl:with-param name="icon" select="content/system-data-structure/icon"/></xsl:call-template></xsl:attribute>
                             </span>
                         </xsl:if>

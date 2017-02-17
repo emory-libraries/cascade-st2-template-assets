@@ -200,7 +200,7 @@
                 <xsl:variable name="apostrophe">'</xsl:variable>
                 <xsl:variable name="heading-label"><xsl:value-of select="section-heading/heading"/></xsl:variable>
                 <xsl:variable name="heading-id"><xsl:value-of select="translate($heading-label,'ABCDEFGHIJKLMNOPQRSTUVWXYZ ,','abcdefghijklmnopqrstuvwxyz-')"/></xsl:variable>
-                <xsl:element name="{$heading-element}"><xsl:attribute name="id"><xsl:value-of select="$heading-id"/></xsl:attribute><xsl:value-of select="$heading-label"/><xsl:text> </xsl:text><a ga-event-action="{$heading-label}" ga-event-category="Anchors" ga-on="click" href="#{$heading-id}"><span aria-hidden="true" class="fa fa-link fa-flip-horizontal"></span></a></xsl:element>
+                <xsl:element name="{$heading-element}"><xsl:attribute name="id"><xsl:value-of select="$heading-id"/></xsl:attribute><xsl:value-of select="$heading-label"/><xsl:text> </xsl:text><a ga-event-action="{$heading-label}" ga-event-category="Anchors" ga-on="click" href="#{$heading-id}"><span aria-hidden="true" class="fa fa-hashtag"></span></a></xsl:element>
             </xsl:if>
     
             <xsl:call-template name="section-inner"/>

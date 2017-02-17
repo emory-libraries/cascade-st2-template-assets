@@ -11,11 +11,11 @@ ______________________________________________________________________________ *
     text-decoration: underline;
 }*/
 
-#main-content .data-entry section > h2 > a > .fa-link,
-#main-content .data-entry section > h3 > a > .fa-link,
-#main-content .data-entry section > h4 > a > .fa-link,
-#main-content .data-entry section > h5 > a > .fa-link,
-#main-content .data-entry section > h6 > a > .fa-link {
+#main-content .data-entry section > h2 > a > .fa,
+#main-content .data-entry section > h3 > a > .fa,
+#main-content .data-entry section > h4 > a > .fa,
+#main-content .data-entry section > h5 > a > .fa,
+#main-content .data-entry section > h6 > a > .fa {
     font-size: .9em;
     color: #999;
     text-decoration: none;
@@ -23,11 +23,11 @@ ______________________________________________________________________________ *
     transition: opacity .5s;
 }
 
-#main-content .data-entry section > h2:hover > a > .fa-link,
-#main-content .data-entry section > h3:hover > a > .fa-link,
-#main-content .data-entry section > h4:hover > a > .fa-link,
-#main-content .data-entry section > h5:hover > a > .fa-link,
-#main-content .data-entry section > h6:hover > a > .fa-link {
+#main-content .data-entry section > h2:hover > a > .fa,
+#main-content .data-entry section > h3:hover > a > .fa,
+#main-content .data-entry section > h4:hover > a > .fa,
+#main-content .data-entry section > h5:hover > a > .fa,
+#main-content .data-entry section > h6:hover > a > .fa {
     opacity: 1;
     transition: opacity .1s;
 }
