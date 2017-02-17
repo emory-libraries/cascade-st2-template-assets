@@ -242,7 +242,7 @@
         <xsl:if test="section-heading/heading!=''">
             <h2 class="accordion-heading">
                 <a class="accordion-toggle" data-parent="#accordion" data-toggle="collapse" href="#collapse{position()}">
-                    <span class="icon-angle-right"></span>
+                    <span aria-hidden="true" class="fa fa-angle-right"></span>
                     <xsl:value-of select="section-heading/heading"/>
                 </a>
             </h2>

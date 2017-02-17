@@ -23,11 +23,11 @@ $(function() {
         });
     }
     if ($('form#database-filter').length > 0) {
-        $('form#database-filter .accordion-heading > a').after('<span class="icon-angle-right"></span>');
+        $('form#database-filter .accordion-heading > a').after('<span aria-hidden="true" class="fa fa-angle-right"></span>');
         $('.collapse').on('show', function(){
-            $(this).parent().find('.icon-angle-right').removeClass('icon-angle-right').addClass('icon-angle-down');
+            $(this).parent().find('.fa-angle-right').addClass('fa-rotate-90');
         }).on('hide', function(){
-            $(this).parent().find('.icon-angle-down').removeClass('icon-angle-down').addClass('icon-angle-right');
+            $(this).parent().find('.fa-angle-right').removeClass('fa-rotate-90');
         });
     }
 });
@@ -91,8 +91,8 @@ $(document).ready(function($) {
 
 //Toggle rotation of accordion heading arrows
 $('#accordion').on('show', function (e) {
-    $(e.target).prev('h2.accordion-heading').children('a').children('span').addClass('icon-rotate-90');
+    $(e.target).prev('h2.accordion-heading').children('a').children('span').addClass('fa-rotate-90');
 });
 $('#accordion').on('hide', function () {
-    $(this).find('.icon-rotate-90').removeClass('icon-rotate-90');
+    $(this).find('.fa-rotate-90').removeClass('fa-rotate-90');
 });

@@ -97,8 +97,8 @@
             <!-- responsive view for nav and search -->
             <div>
                 <xsl:attribute name="class">toggles container</xsl:attribute>   
-                <a class="toggle-nav" href="#"><span class="icon-list"></span> Navigation</a>
-                <a class="toggle-search" href="#" title="Search"><span class="icon-search"></span> Search</a>
+                <a class="toggle-nav" href="#"><span aria-hidden="true" class="fa fa-bars"></span> Navigation</a>
+                <a class="toggle-search" href="#" title="Search"><span aria-hidden="true" class="fa fa-search"></span> Search</a>
             </div>
             
             <!-- utility nav: imported -->

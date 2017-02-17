@@ -1299,7 +1299,7 @@ ______________________________________________________________________________ *
 .big-search .input-append {
     position: relative;
 }
-.big-search span.icon-clear {
+.big-search span.fa-times {
     position: absolute;
     right: 144px;
     right: 9rem;
@@ -1312,7 +1312,7 @@ ______________________________________________________________________________ *
     color: #999;
     z-index: 10;
 }
-.big-search span.icon-clear:hover {
+.big-search span.fa-times:hover {
     color: #BDBFC1;
 }
 /* end clear button for search fields */

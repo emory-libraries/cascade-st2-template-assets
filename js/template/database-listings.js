@@ -57,11 +57,11 @@ function loadPageVar(key, url) {
 
 function searchClear() {
   var field, io;
-  $('#main-content input[type="search"]').after('<span class="icon-clear">x</span>');
+  $('#main-content input[type="search"]').after('<span aria-hidden="true" class="fa fa-times">x</span>');
   if ($('#main-content input[type="search"]').val().length > 1) {
     field = $('#main-content input[type="search"]');
     io = $(field).val().length ? 1 : 0 ;
-    $(field).next('.icon-clear').stop().fadeTo(200,io);
+    $(field).next('.fa-times').stop().fadeTo(200,io);
   }
 }
 
@@ -331,14 +331,14 @@ function prepareForm() {
     $(this).contents().unwrap(); // remove the link so there is just label and input
   });
 
-  $('form#database-filter .accordion-heading > a').after('<span class="icon-angle-right"></span>');
+  $('form#database-filter .accordion-heading > a').after('<span aria-hidden="true" class="fa fa-angle-right"></span>');
   $('.collapse').on('show', function(){
-    $(this).parent().find('.icon-angle-right').removeClass('icon-angle-right').addClass('icon-angle-down');
+    $(this).parent().find('.fa-angle-right').addClass('fa-rotate-90');
   }).on('hide', function(){
-    $(this).parent().find('.icon-angle-down').removeClass('icon-angle-down').addClass('icon-angle-right');
+    $(this).parent().find('.fa-angle-right').removeClass('fa-rotate-90');
   });
 
-  $('form#database-filter .accordion-body.in').parent().find('.accordion-heading span').removeClass('icon-angle-right').addClass('icon-angle-down');
+  $('form#database-filter .accordion-body.in').parent().find('.accordion-heading span').addClass('fa-rotate-90');
 
   // set the initial checkboxes based on url, in case this request is a page refresh
   setCheckboxes();
@@ -486,11 +486,11 @@ function prepareForm() {
     // handle search field typing
     $(document).on('propertychange keyup input paste', '#main-content input[type="search"]', function() {
       var io = $(this).val().length ? 1 : 0 ;
-      $(this).next('.icon-clear').stop().fadeTo(200,io);
+      $(this).next('.fa-times').stop().fadeTo(200,io);
     });
 
     // handle search field clear
-    $(document).on('click', '.icon-clear', function(event) {
+    $(document).on('click', '.fa-times', function(event) {
       $(this).delay(200).fadeTo(200,0).prev('input').val('');
       $(this).parents('form').submit();
     });
@@ -523,19 +523,19 @@ function expandDetails() {
 
   $('.database-details').on('show', function () {
     $(this).parent().addClass('expanded');
-    $('a.expand', $(this).parent()).html('Collapse <span class="icon-angle-up"></span>');
+    $('a.expand', $(this).parent()).html('Collapse <span aria-hidden="true" class="fa fa-angle-up"></span>');
   });
 
   $('.database-details').on('hide', function () {
     $(this).parent().removeClass('expanded');
-    $('a.expand', $(this).parent()).html('Expand <span class="icon-angle-down"></span>');
+    $('a.expand', $(this).parent()).html('Expand <span aria-hidden="true" class="fa fa-angle-down"></span>');
   });*/
   $('.databases .listings a.expand').click(function(event){
     $(this).prev('.database-details').toggleClass('collapse');
     $(this).parent().toggleClass('expanded');
 
-    var expand = 'Expand <span class="icon-angle-down"></span>';
-    var collapse = 'Collapse <span class="icon-angle-up"></span>';
+    var expand = 'Expand <span aria-hidden="true" class="fa fa-angle-down"></span>';
+    var collapse = 'Collapse <span aria-hidden="true" class="fa fa-angle-up"></span>';
 
     switch( $(this).html() ) {
       case expand :

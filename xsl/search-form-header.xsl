@@ -16,7 +16,7 @@
                     </label>
                     <button class="btn" type="submit">
                         <strong class="label">Search</strong>
-                        <span class="icon-search"></span>
+                        <span aria-hidden="true" class="fa fa-search"></span>
                     </button>
                 </div>
                 <fieldset class="search-scope">

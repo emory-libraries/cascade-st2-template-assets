@@ -6,7 +6,7 @@
         <!-- set the number of days in seconds -->
         <xsl:variable name="lastYear" select="$currentDateTime - (31536000*1000)"/>
           <aside class="feed-icon pull-right">
-            <p><a href="http://staging.web.emory.edu/librariestemplate/news1/index.rss"><span class="icon-rss-sign"></span></a></p>
+            <p><a href="http://staging.web.emory.edu/librariestemplate/news1/index.rss"><span aria-hidden="true" class="fa fa-rss-square"></span></a></p>
         </aside> 
         <dl class="dl-horizontal news-index">
             <!--<xsl:apply-templates select="descendant::system-page[start-date &gt; $lastYear]">

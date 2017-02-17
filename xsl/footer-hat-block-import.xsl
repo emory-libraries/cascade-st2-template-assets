@@ -168,37 +168,37 @@
                 <xsl:variable name="social-icon">
                     <xsl:choose>
                         <xsl:when test="$social = 'youtube'">
-                            <xsl:text>icon-youtube-play</xsl:text>
+                            <xsl:text>fa-youtube-play</xsl:text>
                         </xsl:when>
                         <xsl:when test="$social = 'itunesu'">
-                            <xsl:text>icon-music</xsl:text>
+                            <xsl:text>fa-graduation-cap</xsl:text>
                         </xsl:when>
                         <xsl:when test="$social = 'blog'">
-                            <xsl:text>icon-comment</xsl:text>
+                            <xsl:text>fa-comment</xsl:text>
                         </xsl:when>
                         <xsl:when test="$social = 'other'">
                             <xsl:choose>
                                 <xsl:when test="./name = 'Pinterest' or ./name = 'Instagram' or ./name = 'Dropbox' or ./name = 'Skype' or ./name = 'Flickr' or ./name = 'Tumblr' or ./name = 'Foursquare' or ./name = 'Github'">
-                                    <xsl:text>icon-</xsl:text>
+                                    <xsl:text>fa-</xsl:text>
                                     <xsl:value-of select="translate(./name, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz')"/>
                                 </xsl:when>
                                 <xsl:when test="./name = 'Google Plus' or ./name = 'Google+' or ./name = 'Google plus' or ./name = 'Google-Plus'">
-                                    <xsl:text>icon-google-plus</xsl:text>
+                                    <xsl:text>fa-google-plus</xsl:text>
                                 </xsl:when>
                                 <xsl:otherwise>
-                                    <xsl:text>icon-external-link-sign</xsl:text>
+                                    <xsl:text>fa-external-link-square</xsl:text>
                                 </xsl:otherwise>
                             </xsl:choose>
                         </xsl:when>
                         <xsl:otherwise>
-                            <xsl:text>icon-</xsl:text>
+                            <xsl:text>fa-</xsl:text>
                             <xsl:value-of select="$social"/>
                         </xsl:otherwise>
                     </xsl:choose>
                 </xsl:variable>
                 <li>
                     <a href="{$href}" rel="external">
-                        <span class="{$social-icon}">
+                        <span aria-hidden="true" class="fa {$social-icon}">
                             <xsl:text/>
                         </span>
                         <xsl:value-of select="$name"/>

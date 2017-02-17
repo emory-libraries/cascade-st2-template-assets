@@ -426,7 +426,7 @@ class Form {
     </label>
     <input id="datepicker1" name="{name}-date" {readonly}{disabled} size="16" type="text" data-validate="{rules}"/>
     <label class="add-on" for="datepicker">
-    <span class="icon-th"></span>
+    <span class="fa fa-th"></span>
     </label>
     </div>
     <div class="input-append bootstrap-timepicker">
@@ -435,7 +435,7 @@ class Form {
     </label>
     <input class="input-small" id="timepicker1" name="{name}-time" type="text" data-validate="{rules}"/>
     <span class="add-on">
-    <span class="icon-time"></span>
+    <span class="fa fa-clock-o"></span>
     </span>
     </div>
     </fieldset>
@@ -455,7 +455,7 @@ class Form {
 
     <div class="input-append date" data-date-format="dd-mm-yyyy">
         <input id="{id}" class="{class}" placeholder="{placeholder}" name="{name}" type="{type}" value="dd-mm-yyyy" {attributes} {disabled}{readonly}{checked}{selected} data-validate="{rules}"/>
-        <label class="add-on" for="{id}"><span class="icon-th"></span></label>
+        <label class="add-on" for="{id}"><span class="fa fa-th"></span></label>
     </div>
     
     {suffix}
@@ -509,7 +509,7 @@ class Form {
      * Stores a field icon prototype.
      * @var string
      */
-    private static $_icon_template = '<i class="icon icon-{icon}"></i>';
+    private static $_icon_template = '<i class="fa fa-{icon}"></i>';
 
     // --------------------------------------------------------------------
 

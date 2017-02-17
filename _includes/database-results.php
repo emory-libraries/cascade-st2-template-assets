@@ -369,7 +369,7 @@ class DatabaseResults {
                             echo '<div class="input-append span12">                                    
                                 <input '.$formparams.' id="db_q" name="db_q" placeholder="'.$this->placeholderValue().'"'.$this->formValue().' type="search"/>                                    
                         <button class="btn btn-search" type="submit"> <strong class="label">Search</strong>
-                            <span class="icon-search"></span>
+                            <span class="fa fa-search"></span>
                         </button>
                     </div>
                 </form>';
@@ -381,7 +381,7 @@ class DatabaseResults {
                         if ($this->show_selections_body !== true && $this->resource_type !== '' || $this->show_selections_body !== true && $this->letter !== '' || $this->show_selections_body !== true && $this->status !== '') {
                             $title = 'Database Results for Your Selections';
                         } else if (is_array($this->items) && $this->show_selections_body == true) {
-                            $this->items[] = '<li class="subject"><a href="'.$url.'" title="Remove this filter" class="remove"><span>'.$this->titleCase(urldecode(urldecode($this->subject))).'</span> <span class="icon-remove-sign"></span></a></li>';
+                            $this->items[] = '<li class="subject"><a href="'.$url.'" title="Remove this filter" class="remove"><span>'.$this->titleCase(urldecode(urldecode($this->subject))).'</span> <span class="fa fa-times-circle"></span></a></li>';
                         }
                     } else {
                         foreach ($this->subject as $value) {
@@ -390,7 +390,7 @@ class DatabaseResults {
                             if ($this->show_selections_body !== true) {
                                 $title = 'Database Results for Your Selections';
                             } else if (is_array($this->items) && $this->show_selections_body == true) {
-                                $this->items[] = '<li class="subject"><a href="'.$url.'" title="Remove this filter" class="remove"><span>'.$this->titleCase(urldecode(urldecode($value))).'</span> <span class="icon-remove-sign"></span></a></li>';
+                                $this->items[] = '<li class="subject"><a href="'.$url.'" title="Remove this filter" class="remove"><span>'.$this->titleCase(urldecode(urldecode($value))).'</span> <span class="fa fa-times-circle"></span></a></li>';
                             }
                         }               
                     }
@@ -403,7 +403,7 @@ class DatabaseResults {
                         if ($this->show_selections_body !== true && $this->subject !== '' || $this->show_selections_body !== true && $this->letter !== '' || $this->show_selections_body !== true && $this->status !== '') {
                             $title = 'Database Results for Your Selections';
                         } else if (isset($this->items) && $this->show_selections_body == true) {
-                            $this->items[] = '<li class="resource_type"><a href="'.$url.'" title="Remove this filter" class="remove"><span>'.$this->titleCase(urldecode(urldecode($this->resource_type))).'</span> <span class="icon-remove-sign"></span></a></li>';
+                            $this->items[] = '<li class="resource_type"><a href="'.$url.'" title="Remove this filter" class="remove"><span>'.$this->titleCase(urldecode(urldecode($this->resource_type))).'</span> <span class="fa fa-times-circle"></span></a></li>';
                         }
                     } else {
                         foreach ($this->resource_type as $value) {
@@ -412,7 +412,7 @@ class DatabaseResults {
                             if ($this->show_selections_body !== true) {
                                 $title = 'Database Results for Your Selections';
                             } else if (is_array($this->items) && $this->show_selections_body == true) {
-                                $this->items[] = '<li class="resource_type"><a href="'.$url.'" title="Remove this filter" class="remove"><span>'.$this->titleCase(urldecode(urldecode($value))).'</span> <span class="icon-remove-sign"></span></a></li>';
+                                $this->items[] = '<li class="resource_type"><a href="'.$url.'" title="Remove this filter" class="remove"><span>'.$this->titleCase(urldecode(urldecode($value))).'</span> <span class="fa fa-times-circle"></span></a></li>';
                             }
                         }                       
                     }
@@ -425,7 +425,7 @@ class DatabaseResults {
                         if ($this->show_selections_body !== true && $this->subject !== '' || $this->show_selections_body !== true && $this->resource_type !== '' || $this->show_selections_body !== true && $this->status !== '') {
                             $title = 'Database Results for Your Selections';
                         } else if (is_array($this->items) && $this->show_selections_body == true) {
-                            $this->items[] = '<li class="letter"><a href="'.$url.'" title="Remove this filter" class="remove"><span>'.$this->titleCase(urldecode(urldecode($this->letter))).'</span> <span class="icon-remove-sign"></span></a></li>';
+                            $this->items[] = '<li class="letter"><a href="'.$url.'" title="Remove this filter" class="remove"><span>'.$this->titleCase(urldecode(urldecode($this->letter))).'</span> <span class="fa fa-times-circle"></span></a></li>';
                         }
                     } else {
                         foreach ($this->letter as $value) {
@@ -434,7 +434,7 @@ class DatabaseResults {
                             if ($this->show_selections_body !== true) {
                                 $title = 'Database Results for Your Selections';
                             } else if (is_array($this->items) && $this->show_selections_body == true) {
-                                $this->items[] = '<li class="letter"><a href="'.$url.'" title="Remove this filter" class="remove"><span>'.$this->titleCase(urldecode(urldecode($value))).'</span> <span class="icon-remove-sign"></span></a></li>';
+                                $this->items[] = '<li class="letter"><a href="'.$url.'" title="Remove this filter" class="remove"><span>'.$this->titleCase(urldecode(urldecode($value))).'</span> <span class="fa fa-times-circle"></span></a></li>';
                             }
                         }                       
                     }
@@ -447,7 +447,7 @@ class DatabaseResults {
                         if ($this->show_selections_body !== true || $this->show_selections_body !== true && $this->subject !== '' || $this->show_selections_body !== true && $this->resource_type !== '' || $this->show_selections_body !== true && $this->letter !== '') {
                             $title = 'Database Results for Your Selections';
                         } else if (is_array($this->items) && $this->show_selections_body == true) {
-                            $this->items[] = '<li class="status"><a href="'.$url.'" title="Remove this filter" class="remove"><span>'.$this->titleCase(urldecode(urldecode($this->status))).'</span> <span class="icon-remove-sign"></span></a></li>';
+                            $this->items[] = '<li class="status"><a href="'.$url.'" title="Remove this filter" class="remove"><span>'.$this->titleCase(urldecode(urldecode($this->status))).'</span> <span class="fa fa-times-circle"></span></a></li>';
                         }
                     } else {
                         foreach ($this->status as $value) {
@@ -456,7 +456,7 @@ class DatabaseResults {
                             if ($this->show_selections_body !== true) {
                                 $title = 'Database Results for Your Selections';
                             } else if (is_array($this->items) && $this->show_selections_body == true) {
-                                $this->items[] = '<li class="status"><a href="'.$url.'" title="Remove this filter" class="remove"><span>'.$this->titleCase(urldecode(urldecode($value))).'</span> <span class="icon-remove-sign"></span></a></li>';
+                                $this->items[] = '<li class="status"><a href="'.$url.'" title="Remove this filter" class="remove"><span>'.$this->titleCase(urldecode(urldecode($value))).'</span> <span class="fa fa-times-circle"></span></a></li>';
                             }
                         }                   
                     }
@@ -863,7 +863,7 @@ class DatabaseResults {
                         $expand .= $subjects;
                     }
                 $expand .= '</div>';
-                $expand .= '<a class="expand muted" data-target="#'.$status.'_'.$key.'" data-toggle="collapse" href="#">Expand <span class="icon-angle-down"></span></a>';
+                $expand .= '<a class="expand muted" data-target="#'.$status.'_'.$key.'" data-toggle="collapse" href="#">Expand <span class="fa fa-angle-down"></span></a>';
             }
         }
 

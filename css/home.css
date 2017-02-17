@@ -253,8 +253,7 @@ ______________________________________________________________________________ *
 .library-search footer ul a:active {
     color: #4E86DB;
 }
-
-.library-search footer h4 a span.icon-angle-right {
+.library-search footer h4 a span.fa-angle-right {
     display: inline-block;
     margin-left: 0.5em;
     text-decoration: none;
@@ -698,12 +697,14 @@ ______________________________________________________________________________ *
 .hero .featured-links ul li {
     margin: 0 0 0.75em 0;
 }
-
-.hero .featured-links ul li span {
-    display: block;
+.hero .featured-links ul li .fa {
+    width: 2em;
+    /* margin-right: 0.5em; */
+    text-align: center;
+    /*display: inline;
     float: left;
     margin-right: 16px;
-    margin-right: 1rem;
+    margin-right: 1rem;*/
 }
 
 .hero .featured-links ul li a {
@@ -808,9 +809,10 @@ ______________________________________________________________________________ *
     float: left;
     margin-top: -12px;
 }
-
-.gbl.hero .links span {
-    margin-right: 0.5em
+.gbl.hero .links .fa {
+    width: 2em;
+    /* margin-right: 0.5em; */
+    text-align: center;
 }
 
 .gbl.hero .aside {

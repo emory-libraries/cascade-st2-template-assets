@@ -1,5 +1,6 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
     <!-- relative to system-data-structure/toprow/search/ -->
+    <xsl:import href="/_cms/xsl/patterns.xsl"/>
     <xsl:output indent="yes"/>
 
     <xsl:template name="featured-links-home">
@@ -43,7 +44,7 @@
                         <xsl:if test="icon != '---'">
                             <span>
                                 <xsl:attribute name="class">
-                                    <xsl:text>icon-</xsl:text><xsl:value-of select="icon"/>
+                                    <xsl:text>fa </xsl:text><xsl:call-template name="replace-icon"><xsl:with-param name="icon" select="icon"/></xsl:call-template>
                                 </xsl:attribute>
                             </span><xsl:text> </xsl:text>
                         </xsl:if>
