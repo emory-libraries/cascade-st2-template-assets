@@ -1,4 +1,5 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
+    <xsl:import href="/_cms/xsl/patterns.xsl"/>
     <xsl:import href="/_cms/xsl/drafts/wysiwyg-strip-tags.xsl"/>
     <xsl:import href="/_cms/xsl/components/photo-gallery.xsl"/>
     <xsl:import href="/_cms/xsl/components/video-gallery.xsl"/>
