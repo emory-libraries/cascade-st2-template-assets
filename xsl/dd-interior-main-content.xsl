@@ -217,7 +217,7 @@
 
         <xsl:if test="section-heading/heading!=''">
             <h2 class="accordion-heading" id="collapse{position()}">
-                <a class="accordion-toggle" data-parent="#accordion" data-toggle="collapse" ga-event-action="toggle {section-heading/heading}" ga-event-category="Accordions" ga-on="click" href="#collapse{position()}"><span><xsl:attribute name="class">fa fa-angle-right fa-rotate-90<xsl:if test="expanded/value = 'Yes'"> expanded</xsl:if></xsl:attribute></span><xsl:value-of select="section-heading/heading"/></a>
+                <a class="accordion-toggle" data-parent="#accordion" data-toggle="collapse" ga-event-action="toggle {section-heading/heading}" ga-event-category="Accordions" ga-on="click"><span><xsl:attribute name="class">fa fa-angle-right fa-rotate-90<xsl:if test="expanded/value = 'Yes'"> expanded</xsl:if></xsl:attribute></span><xsl:value-of select="section-heading/heading"/></a>
             </h2>
         </xsl:if>
         
