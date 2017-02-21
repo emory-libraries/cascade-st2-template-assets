@@ -57,11 +57,11 @@ function loadPageVar(key, url) {
 
 function searchClear() {
   var field, io;
-  $('#main-content input[type="search"]').after('<span aria-hidden="true" class="fa fa-times">x</span>');
+  $('#main-content input[type="search"]').after('<span aria-hidden="true" class="clear">x</span>');
   if ($('#main-content input[type="search"]').val().length > 1) {
     field = $('#main-content input[type="search"]');
     io = $(field).val().length ? 1 : 0 ;
-    $(field).next('.fa-times').stop().fadeTo(200,io);
+    $(field).next('.clear').stop().fadeTo(200,io);
   }
 }
 
@@ -486,11 +486,11 @@ function prepareForm() {
     // handle search field typing
     $(document).on('propertychange keyup input paste', '#main-content input[type="search"]', function() {
       var io = $(this).val().length ? 1 : 0 ;
-      $(this).next('.fa-times').stop().fadeTo(200,io);
+      $(this).next('.clear').stop().fadeTo(200,io);
     });
 
     // handle search field clear
-    $(document).on('click', '.fa-times', function(event) {
+    $(document).on('click', '.clear', function(event) {
       $(this).delay(200).fadeTo(200,0).prev('input').val('');
       $(this).parents('form').submit();
     });
