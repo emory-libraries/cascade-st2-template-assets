@@ -254,9 +254,14 @@ transition: 0.1s all;
 content: " »"
 }*/
 
-.data-entry .accordion h2.accordion-heading .fa-angle-right {
+#main-content .data-entry .accordion h2.accordion-heading .fa {
     font-size: 1em;
-    padding-right: .5em;
+    /* padding-right: .5em; */
+    width: 1.5em;
+    opacity: 1;
+    text-align: center;
+    color: #002878;
+    font-weight: bold;
 }
 
 #toggle-all {
