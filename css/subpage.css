@@ -11,6 +11,17 @@ ______________________________________________________________________________ *
     text-decoration: underline;
 }*/
 
+#main-content .data-entry section > .section-heading > a {
+    color: #333;
+}
+
+#main-content .data-entry section > .section-heading:hover > a,
+#main-content .data-entry section > .section-heading > a:focus {
+    text-decoration: none;
+    color: #333;
+}
+
+#main-content .data-entry section > .section-heading > a > .fa,
 #main-content .data-entry section > h2 > a > .fa,
 #main-content .data-entry section > h3 > a > .fa,
 #main-content .data-entry section > h4 > a > .fa,
@@ -23,6 +34,7 @@ ______________________________________________________________________________ *
     transition: opacity .5s;
 }
 
+#main-content .data-entry section > .section-heading:hover > a > .fa,
 #main-content .data-entry section > h2:hover > a > .fa,
 #main-content .data-entry section > h3:hover > a > .fa,
 #main-content .data-entry section > h4:hover > a > .fa,
