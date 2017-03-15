@@ -1513,6 +1513,14 @@ ______________________________________________________________________________ *
     margin: 0 0 10px 10px;
 }
 
+.database-login {
+    border-width: 1px 0;
+    border-color: #ccc;
+    border-style: solid;
+    margin: 1.5em 0;
+    padding: 1em 0;
+}
+
 .database-access .well, #main-content .alert {
     margin-bottom:10px;
 }
