@@ -1530,6 +1530,19 @@ ______________________________________________________________________________ *
     margin: 0 0 10px 10px;
 }
 
+.database-login {
+    margin: 1em 0;
+    padding: 1em 1em 0;
+    border-width: 1px;
+    border-color: #ccc;
+    border-style: solid;
+    border-radius: 6px
+}
+
+.database-login .btn {
+    margin-bottom: 1em;
+}
+
 .database-access .well, #main-content .alert {
     margin-bottom:10px;
 }
