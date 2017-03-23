@@ -11,11 +11,22 @@ ______________________________________________________________________________ *
     text-decoration: underline;
 }*/
 
-#main-content .data-entry section > h2 > a > .icon-link,
-#main-content .data-entry section > h3 > a > .icon-link,
-#main-content .data-entry section > h4 > a > .icon-link,
-#main-content .data-entry section > h5 > a > .icon-link,
-#main-content .data-entry section > h6 > a > .icon-link {
+#main-content .data-entry section > .section-heading > a {
+    color: #333;
+}
+
+#main-content .data-entry section > .section-heading:hover > a,
+#main-content .data-entry section > .section-heading > a:focus {
+    text-decoration: none;
+    color: #333;
+}
+
+#main-content .data-entry section > .section-heading > a > .fa,
+#main-content .data-entry section > h2 > a > .fa,
+#main-content .data-entry section > h3 > a > .fa,
+#main-content .data-entry section > h4 > a > .fa,
+#main-content .data-entry section > h5 > a > .fa,
+#main-content .data-entry section > h6 > a > .fa {
     font-size: .9em;
     color: #999;
     text-decoration: none;
@@ -23,11 +34,12 @@ ______________________________________________________________________________ *
     transition: opacity .5s;
 }
 
-#main-content .data-entry section > h2:hover > a > .icon-link,
-#main-content .data-entry section > h3:hover > a > .icon-link,
-#main-content .data-entry section > h4:hover > a > .icon-link,
-#main-content .data-entry section > h5:hover > a > .icon-link,
-#main-content .data-entry section > h6:hover > a > .icon-link {
+#main-content .data-entry section > .section-heading:hover > a > .fa,
+#main-content .data-entry section > h2:hover > a > .fa,
+#main-content .data-entry section > h3:hover > a > .fa,
+#main-content .data-entry section > h4:hover > a > .fa,
+#main-content .data-entry section > h5:hover > a > .fa,
+#main-content .data-entry section > h6:hover > a > .fa {
     opacity: 1;
     transition: opacity .1s;
 }
@@ -254,9 +266,14 @@ transition: 0.1s all;
 content: " »"
 }*/
 
-.data-entry .accordion h2.accordion-heading .icon-angle-right {
+#main-content .data-entry .accordion h2.accordion-heading .fa {
     font-size: 1em;
-    padding-right: .5em;
+    /* padding-right: .5em; */
+    width: 1.5em;
+    opacity: 1;
+    text-align: center;
+    color: #002878;
+    font-weight: bold;
 }
 
 #toggle-all {
@@ -508,12 +525,12 @@ figure > a:hover, figure > a:focus, figure > a:active {
 
 /*    News Index    */
 
-.feed-icon a .icon-rss-sign {
+.feed-icon a .fa-rss-square {
     color: orange;
     margin-left: 2em;
 }
 
-.feed-icon a:hover .icon-rss-sign {
+.feed-icon a:hover .fa-rss-square {
     text-decoration: none;
 }
 
@@ -1514,11 +1531,16 @@ ______________________________________________________________________________ *
 }
 
 .database-login {
-    border-width: 1px 0;
+    margin: 1em 0;
+    padding: 1em 1em 0;
+    border-width: 1px;
     border-color: #ccc;
     border-style: solid;
-    margin: 1.5em 0;
-    padding: 1em 0;
+    border-radius: 6px
+}
+
+.database-login .btn {
+    margin-bottom: 1em;
 }
 
 .database-access .well, #main-content .alert {
