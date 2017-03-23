@@ -260,10 +260,10 @@ td .thumbnail>img {
     padding: 5px 0 5px 25px;
 }
 
-div.wrapper>div.container,
+/*div.wrapper>div.container,
 div.wrapper>div.container-fluid {
     background-color: #fcfcfc;
-}
+}*/
 
 .alpha {
     margin-left: 0!important;

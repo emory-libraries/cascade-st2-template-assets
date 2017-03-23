@@ -37,7 +37,7 @@ nav ul, nav ul li {
 }
 .breadcrumb {
     margin: 0;
-    background: #fff;
+    background: transparent;
     padding: 0;
     font-family: "PT Sans", Verdana, Arial, sans-serif;
     font-size: 12px;
