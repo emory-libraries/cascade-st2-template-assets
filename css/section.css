@@ -369,6 +369,12 @@ textarea.span12,
     width: 100%
 }
 
+.pages.hierarchical {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
 .pages.hierarchical section,
 .pages.hierarchical article {
     padding-bottom: 0;
@@ -525,11 +531,12 @@ h2.page-name {
 }
 
 .pages>article.page {
-    margin-bottom: 15px;
+    /*margin-bottom: 15px;*/
+    /* margin: 5px; */
     float: left;
     width: 280px;
     border: 1px solid #dbdbdb;
-    box-shadow: 1px 1px 6px #e0e0e0;
+    /* box-shadow: 1px 1px 6px #e0e0e0; */
     background-color: white;
 }
 
@@ -588,7 +595,7 @@ h2.page-name {
 }
 
 .pages>article.page:first-child {
-    margin-left: 0;
+    /* margin-left: 0; */
 }
 
 article.list article {
@@ -1185,10 +1192,10 @@ td .bio-attachments p {
         width: 200px;
         margin-bottom: 1em;
     }
-    .pages.hierarchical section:first-child,
+    /* .pages.hierarchical section:first-child,
     .pages.hierarchical article:first-child {
         margin-top: 1em;
-    }
+    } */
     .pages.hierarchical section h3,
     .pages.hierarchical article h3 {
         clear: both;
