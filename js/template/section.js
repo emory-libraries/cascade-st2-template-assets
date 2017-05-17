@@ -131,47 +131,49 @@
 // assign functions to run when the page loads
 $(document).ready(function() {
     searchOnPage('.people:first', '.people li', 'Search people by name, title, or department.');
-        placeholderFallback(); // need to run this again since it is a new form
+    // need to run this again since it is a new form
+    placeholderFallback();
 
-        $("#filter-on-page").val("").keyup();
+    $("#filter-on-page").val("").keyup();
 
-        roundHeadshots();
-        
-        if($('.data-entry').hasClass('subject-libs') && $('table').hasClass('full-width')){
-            searchOnPage('.full-width', '.full-width tbody tr', 'Search people by name, contact info, or position.');
-            placeholderFallback(); // need to run this again since it is a new form
-            subjectLibrarianSort();
-        }
-        else if($('.data-entry').hasClass('subject-libs')){
-            subjectLibrarianSort();
-        }
-        
-        
-        if($('table').hasClass('full-bio-listing')){
-            searchOnPage('.full-bio-listing', '.full-bio-listing tbody tr', 'Search people by name, contact info, or position.');
-            placeholderFallback(); // need to run this asgain since it is a new form
-            $("#filter-on-page").bind("keyup",function(){
-                $("html, body").animate({scrollTop: $("#main-content").offset().top},500);
-            });
-            
-            $(window).scroll(function(){
-                $("html, body").stop(true,true);
-            });
-        }
-        
+    roundHeadshots();
 
-        var $container = $('div.pages');
-        if($container.length>0){
-            if ( $.browser.msie && $.browser.version < 8 ) {
-            }
-            else{
+    if($('.data-entry').hasClass('subject-libs') && $('table').hasClass('full-width')){
+        searchOnPage('.full-width', '.full-width tbody tr', 'Search people by name, contact info, or position.');
+        // need to run this again since it is a new form
+        placeholderFallback();
+        subjectLibrarianSort();
+    }
+    else if($('.data-entry').hasClass('subject-libs')){
+        subjectLibrarianSort();
+    }
 
-        // initialize
-        $container.masonry({
-            "columnWidth": 10,
-            "itemSelector": '.page',
-            "gutter": 10
+
+    if($('table').hasClass('full-bio-listing')){
+        searchOnPage('.full-bio-listing', '.full-bio-listing tbody tr', 'Search people by name, contact info, or position.');
+        // need to run this again since it is a new form
+        placeholderFallback(); 
+        $("#filter-on-page").bind("keyup",function(){
+            $("html, body").animate({scrollTop: $("#main-content").offset().top},500);
+        });
+
+        $(window).scroll(function(){
+            $("html, body").stop(true,true);
         });
     }
-}
+
+
+    /*var $container = $('div.pages');
+    if($container.length>0){
+        if ( $.browser.msie && $.browser.version < 8 ) {
+        }
+        else{
+            // initialize
+            $container.masonry({
+                "columnWidth": 10,
+                "itemSelector": '.page',
+                "gutter": 10
+            });
+       }
+    }*/
 });
